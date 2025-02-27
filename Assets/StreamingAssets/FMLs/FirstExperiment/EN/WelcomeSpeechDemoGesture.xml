@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+        <bml>
+            <speech id="s1" language="english" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+                <tm id="tm1"/>Hello
+				<tm id="tm2"/>!
+				<tm id="tm3"/>Welcome
+				<tm id="tm4"/>my
+				<tm id="tm5"/>name
+				<tm id="tm6"/>is
+				<tm id="tm7"/>Camille
+				<tm id="tm8"/>and
+				<tm id="tm9"/>I am
+				<tm id="tm10"/>a virtual
+				<tm id="tm11"/>agent.
+				<tm id="tm12"/>You can
+				<tm id="tm13"/>try
+				<tm id="tm14"/>to
+				<tm id="tm15"/>manipulate
+				<tm id="tm16"/>the
+				<tm id="tm17"/>virtual
+				<tm id="tm18"/>objects
+				<tm id="tm19"/>around
+				<tm id="tm20"/>you
+				<tm id="tm21"/>and
+				<tm id="tm22"/>when
+				<tm id="tm23"/>you're
+				<tm id="tm24"/>ready
+				<tm id="tm25"/>to proceed
+				<tm id="tm26"/>we'll
+				<tm id="tm27"/>play
+				<tm id="tm28"/>a
+				<tm id="tm29"/>small
+				<tm id="tm30"/>fun
+				<tm id="tm31"/>game
+				<tm id="tm32"/>together.
+				<tm id="tm33"/>
+		</speech>
+        </bml>
+		<fml>
+        <fml/>
+
+		    <emotion id="e1" type="joyStrong" start="0" end="s1:tm33" importance="1.0"/>
+        <ideationalunit end="s1:tm11-0.2" id="id_2" importance="1.0" main="im_10" start="s1:tm1-0.2"/>
+        <imageschema POSroot="adverb" end="s1:tm15-0.2" id="im_10" importance="1.0" previous="true" start="s1:tm13-0.2" type="in"/>
+        <imageschema POSroot="noun" end="s1:tm16-0.2" id="im_11" importance="1.0" indexword="11" start="s1:tm15-0.2" type="object"/>
+        <imageschema POSroot="adjective" end="s1:tm27-0.2" id="im_14" importance="1.0" indexword="7" previous="true" start="s1:tm22-0.2" type="small"/>
+        <ideationalunit end="s1:tm23-0.2" id="id_4" importance="1.0" main="im_36" start="s1:tm1-0.2"/>
+        <ideationalunit end="s1:tm38-0.2" id="id_5" importance="1.0" main="im_45" start="s1:tm1-0.2"/>
+        <ideationalunit end="s1:tm20-0.2" id="id_6" importance="1.0" main="im_57" start="s1:tm1-0.2"/>
+        <ideationalunit end="s1:tm29-0.2" id="id_7" importance="1.0" main="im_71" start="s1:tm1-0.2"/>
+
+
+
+</fml>
+</fml-apml>

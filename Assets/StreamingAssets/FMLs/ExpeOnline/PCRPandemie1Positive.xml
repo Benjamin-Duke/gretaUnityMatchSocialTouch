@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+        <bml>
+            <speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+            <tm id="tm1"/>Honnêtement
+			<tm id="tm2"/>je 
+			<tm id="tm3"/>comprends 
+			<tm id="tm4"/>très 
+			<tm id="tm5"/>bien 
+			<tm id="tm6"/>ton 
+			<tm id="tm7"/>ressenti,  
+			<tm id="tm8"/>mais 
+			<tm id="tm9"/>pour 
+			<tm id="tm10"/>moi 
+			<tm id="tm11"/>le  
+			<tm id="tm12"/>premier  
+			<tm id="tm13"/>confinement 
+			<tm id="tm14"/>en  
+			<tm id="tm15"/>2020 
+			<tm id="tm16"/>est 
+			<tm id="tm17"/>plutôt 
+			<tm id="tm18"/>bien 
+			<tm id="tm19"/>tombé 
+			<tm id="tm20"/>finalement. 
+			<tm id="tm21"/>J'étais  
+			<tm id="tm22"/>un 
+			<tm id="tm23"/>peu 
+			<tm id="tm24"/>en 
+			<tm id="tm25"/>galère 
+			<tm id="tm26"/>au  
+			<tm id="tm27"/>niveau 
+			<tm id="tm28"/>professionnel 
+			<tm id="tm29"/>et 
+			<tm id="tm30"/>ça  
+			<tm id="tm31"/>m'a 
+			<tm id="tm32"/>permi 
+			<tm id="tm33"/>de  
+			<tm id="tm34"/>me 
+			<tm id="tm35"/>recentrer,  
+			<tm id="tm36"/>de 
+			<tm id="tm37"/>changer 
+			<tm id="tm38"/>de  
+			<tm id="tm39"/>domaine     
+			<tm id="tm40"/>et 
+			<tm id="tm41"/>de 
+			<tm id="tm42"/>prendre 
+			<tm id="tm43"/>du 
+			<tm id="tm44"/>temps 
+			<tm id="tm45"/>pour 
+			<tm id="tm46"/>moi 
+			<tm id="tm47"/>pour 
+			<tm id="tm48"/>me 
+			<tm id="tm49"/>remettre. 
+			<tm id="tm50"/>
+            </speech>
+        </bml>
+	<fml>
+
+
+</fml>
+</fml-apml>

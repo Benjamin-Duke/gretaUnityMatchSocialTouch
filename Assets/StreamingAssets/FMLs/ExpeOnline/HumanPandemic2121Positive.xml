@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+        <bml>
+            <speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+            <tm id="tm1"/>Pour 
+			<tm id="tm2"/>moi, 
+			<tm id="tm3"/>je 
+			<tm id="tm4"/>dirais 
+			<tm id="tm5"/>que 
+			<tm id="tm6"/>ça 
+			<tm id="tm7"/>va 
+			<tm id="tm8"/>quand 
+			<tm id="tm9"/>même, 
+			<tm id="tm10"/>j’ai 
+			<tm id="tm11"/>plus 
+			<tm id="tm12"/>ou 
+			<tm id="tm13"/>moins 
+			<tm id="tm14"/>appris 
+			<tm id="tm15"/>à 
+			<tm id="tm16"/>faire 
+			<tm id="tm17"/>avec 
+			<tm id="tm18"/>la 
+			<tm id="tm19"/>situation, 
+			<tm id="tm20"/>je 
+			<tm id="tm21"/>ne 
+			<tm id="tm22"/>souffre 
+			<tm id="tm23"/>plus 
+			<tm id="tm24"/>autant 
+			<tm id="tm25"/>de 
+			<tm id="tm26"/>l’isolement, 
+			<tm id="tm27"/>je 
+			<tm id="tm28"/>profite 
+			<tm id="tm29"/>de 
+			<tm id="tm30"/>toutes 
+			<tm id="tm31"/>les 
+			<tm id="tm32"/>occasions 
+			<tm id="tm33"/>pour 
+			<tm id="tm34"/>aller 
+			<tm id="tm35"/>faire 
+			<tm id="tm36"/>un 
+			<tm id="tm37"/>tour 
+			<tm id="tm38"/>dehors, 
+			<tm id="tm39"/>etc. 
+			<tm id="tm40"/>Même 
+			<tm id="tm41"/>niveau 
+			<tm id="tm42"/>boulot
+			<tm id="tm43"/>ça 
+			<tm id="tm44"/>va. 
+			<tm id="tm45"/>Mais 
+			<tm id="tm46"/>ce 
+			<tm id="tm47"/>qui 
+			<tm id="tm48"/>est 
+			<tm id="tm49"/>vraiment 
+			<tm id="tm50"/>angoissant 
+			<tm id="tm51"/>c’est 
+			<tm id="tm52"/>de 
+			<tm id="tm53"/>ne 
+			<tm id="tm54"/>pas 
+			<tm id="tm55"/>savoir 
+			<tm id="tm56"/>quand 
+			<tm id="tm57"/>ça 
+			<tm id="tm58"/>va 
+			<tm id="tm59"/>finir 
+			<tm id="tm60"/>tout 
+			<tm id="tm61"/>ça, 
+			<tm id="tm62"/>et 
+			<tm id="tm63"/>quand 
+			<tm id="tm64"/>on 
+			<tm id="tm65"/>pourra 
+			<tm id="tm66"/>à 
+			<tm id="tm67"/>nouveau 
+			<tm id="tm68"/>aller 
+			<tm id="tm69"/>dans 
+			<tm id="tm70"/>les 
+			<tm id="tm71"/>restaurants 
+			<tm id="tm72"/>et 
+			<tm id="tm73"/>au 
+			<tm id="tm74"/>cinéma, 
+			<tm id="tm75"/>etc.
+			<tm id="tm76"/>C'est 
+			<tm id="tm77"/>vraiment 
+			<tm id="tm78"/>ça 
+			<tm id="tm79"/>qui 
+			<tm id="tm80"/>est 
+			<tm id="tm81"/>le 
+			<tm id="tm82"/>plus 
+			<tm id="tm83"/>dur.
+			<tm id="tm84"/>
+            </speech>
+        </bml>
+	<fml>
+    
+		<!-- <deictic end="s1:tm15" id="1" importance="1.0" start="s1:tm3" type="me"/>
+		<beat end="s1:tm15" id="2" importance="1.0" start="s1:tm3" type="LowLf1"/>
+		<deictic end="s1:tm28" id="3" importance="1.0" start="s1:tm16" type="me"/>
+		<deictic end="s1:tm54" id="4" importance="1.0" start="s1:tm42" type="me"/>
+		<performative end="s1:tm56" id="5" importance="1.0" start="s1:tm44" type="negativebottom"/>
+		<deictic end="s1:tm72" id="6" importance="1.0" start="s1:tm60" type="me"/>
+		<deictic end="s1:tm92" id="7" importance="1.0" start="s1:tm80" type="me"/>
+		<deictic end="s1:tm112" id="8" importance="1.0" start="s1:tm100" type="me"/>
+		<deictic end="s1:tm114" id="9" importance="1.0" start="s1:tm102" type="me"/>
+		<deictic end="s1:tm126" id="10" importance="1.0" start="s1:tm114" type="me"/>
+		<deictic end="s1:tm152" id="11" importance="1.0" start="s1:tm140" type="me"/>
+		<performative end="s1:tm154" id="12" importance="1.0" start="s1:tm142" type="negativebottom"/>
+		<beat end="s1:tm170" id="13" importance="1.0" start="s1:tm158" type="LowLf1"/>
+		<deictic end="s1:tm190" id="14" importance="1.0" start="s1:tm178" type="me"/>
+		<beat end="s1:tm210" id="15" importance="1.0" start="s1:tm198" type="LowLf1"/>
+		<deictic end="s1:tm212" id="16" importance="1.0" start="s1:tm200" type="me"/>
+		<deictic end="s1:tm224" id="17" importance="1.0" start="s1:tm212" type="me"/>
+		<deictic end="s1:tm250" id="18" importance="1.0" start="s1:tm238" type="me"/>
+		<performative end="s1:tm252" id="19" importance="1.0" start="s1:tm240" type="negation"/>
+		<beat end="s1:tm268" id="20" importance="1.0" start="s1:tm256" type="LowLf1"/>
+		<beat end="s1:tm288" id="21" importance="1.0" start="s1:tm276" type="LowLf1"/>
+		<deictic end="s1:tm308" id="22" importance="1.0" start="s1:tm296" type="me"/>
+		<deictic end="s1:tm310" id="23" importance="1.0" start="s1:tm298" type="me"/>
+		<beat end="s1:tm322" id="24" importance="1.0" start="s1:tm310" type="LowLf1"/>
+		<beat end="s1:tm348" id="25" importance="1.0" start="s1:tm336" type="LowLf1"/>
+		<performative end="s1:tm350" id="26" importance="1.0" start="s1:tm338" type="negativebottom"/>
+		<deictic end="s1:tm366" id="27" importance="1.0" start="s1:tm354" type="me"/>
+		<deictic end="s1:tm386" id="28" importance="1.0" start="s1:tm374" type="me"/>
+        <ideationalunit end="s1:tm67-0.2" id="id_1" importance="1.0" main="im_11" start="s1:tm0-0.2"/>
+        <imageschema POSroot="adverb" end="s1:tm25-0.2" id="im_11" importance="1.0" indexword="17" previous="true" start="s1:tm16-0.2" type="small"/>
+        <imageschema POSroot="noun" end="s1:tm26-0.2" id="im_12" importance="1.0" indexword="24" start="s1:tm25-0.2" type="object"/>
+        <imageschema POSroot="verb" end="s1:tm32-0.2" id="im_14" importance="1.0" indexword="29" previous="true" start="s1:tm28-0.2" type="enablement"/>
+        <imageschema POSroot="noun" end="s1:tm37-0.2" id="im_15" importance="1.0" previous="true" start="s1:tm32-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm51-0.2" id="im_21" importance="1.0" indexword="46" previous="true" start="s1:tm46-0.2" type="object"/>
+        <imageschema POSroot="verb" end="s1:tm55-0.2" id="im_22" importance="1.0" indexword="50" previous="true" start="s1:tm51-0.2" type="interval"/>
+        <imageschema POSroot="noun" end="s1:tm56-0.2" id="im_23" importance="1.0" indexword="54" start="s1:tm55-0.2" type="interval"/>
+        <imageschema POSroot="noun" end="s1:tm61-0.2" id="im_26" importance="1.0" indexword="60" start="s1:tm59-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm63-0.2" id="im_27" importance="1.0" indexword="60" previous="true" start="s1:tm61-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm64-0.2" id="im_28" importance="1.0" start="s1:tm63-0.2" type="link"/>
+        <imageschema POSroot="verb" end="s1:tm69-0.2" id="im_30" importance="1.0" indexword="66" previous="true" start="s1:tm66-0.2" type="interval"/>
+        <ideationalunit end="s1:tm37-0.2" id="id_2" importance="1.0" main="im_48" start="s1:tm0-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm75-0.2" id="im_43" importance="1.0" start="s1:tm74-0.2" type="whole"/>
+        <imageschema POSroot="noun" end="s1:tm79-0.2" id="im_45" importance="1.0" indexword="29" start="s1:tm77-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm87-0.2" id="im_48" importance="1.0" indexword="35" previous="true" start="s1:tm82-0.2" type="object"/> -->
+    
+
+
+</fml>
+</fml-apml>

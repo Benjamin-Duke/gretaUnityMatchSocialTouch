@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+        <bml>
+            <speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+            <tm id="tm1"/>Super 
+			<tm id="tm2"/>alors. 
+			<tm id="tm3"/>Désolée, 
+			<tm id="tm4"/>tu 
+			<tm id="tm5"/>as 
+			<tm id="tm6"/>peut-être 
+			<tm id="tm7"/>l’habitude 
+			<tm id="tm8"/>de 
+			<tm id="tm9"/>voir 
+			<tm id="tm10"/>des 
+			<tm id="tm11"/>personnages 
+			<tm id="tm12"/>virtuels 
+			<tm id="tm13"/>plus réalistes, 
+			<tm id="tm14"/>notamment 
+			<tm id="tm15"/>au 
+			<tm id="tm16"/>niveau 
+			<tm id="tm17"/>de 
+			<tm id="tm18"/>la 
+			<tm id="tm19"/>voix 
+			<tm id="tm20"/>ou 
+			<tm id="tm21"/>des
+			<tm id="tm22"/>mouvements.
+			<tm id="tm23"/>Mais 
+			<tm id="tm24"/>j’espère 
+			<tm id="tm25"/>que 
+			<tm id="tm26"/>j’arriverai 
+			<tm id="tm27"/>quand 
+			<tm id="tm28"/>même 
+			<tm id="tm29"/>à 
+			<tm id="tm30"/>te surprendre !
+			<tm id="tm31"/>Dans 
+			<tm id="tm32"/>tous 
+			<tm id="tm33"/>les 
+			<tm id="tm34"/>cas 
+			<tm id="tm35"/>dis-moi 
+			<tm id="tm36"/>quand 
+			<tm id="tm37"/>tu 
+			<tm id="tm38"/>seras 
+			<tm id="tm39"/>prêt
+			<tm id="tm40"/>à 
+			<tm id="tm41"/>discuter 
+			<tm id="tm42"/>un 
+			<tm id="tm43"/>peu !
+			<tm id="tm44"/>
+            </speech>
+        </bml>
+	<fml>
+    
+    
+        <ideationalunit end="s1:tm23-0.2" id="id_2" importance="1.0" main="im_9" start="s1:tm20-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm18-0.2" id="im_9" importance="1.0" indexword="12" start="s1:tm14-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm26-0.2" id="im_15" importance="1.0" indexword="20" start="s1:tm24-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm29-0.2" id="im_16" importance="1.0" indexword="23" start="s1:tm27-0.2" type="object"/>
+        <ideationalunit end="s1:tm14-0.2" id="id_4" importance="1.0" main="im_31" start="s1:tm10-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm55-0.2" id="im_31" importance="1.0" indexword="14" start="s1:tm52-0.2" type="object"/>
+		<emotion type="TapR" id="0" importance="1.0" start="s1:tm28" end="s1:tm31"/>
+    
+
+
+	</fml>
+</fml-apml>

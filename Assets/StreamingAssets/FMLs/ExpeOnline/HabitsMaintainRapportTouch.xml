@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+        <bml>
+            <speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+            <tm id="tm1"/>
+				Moi 
+			<tm id="tm2"/>
+				ça va
+			<tm id="tm3"/>
+				très
+			<tm id="tm4"/>
+				bien ! 
+			<tm id="tm5"/>
+				Avant 
+			<tm id="tm6"/>
+				qu’on 
+			<tm id="tm7"/>
+				commence, 
+			<tm id="tm8"/>
+				n’hésite 
+			<tm id="tm9"/>
+				pas 
+			<tm id="tm10"/>
+				à te
+			<tm id="tm11"/>
+				déplacer 
+			<tm id="tm12"/>
+				un 
+			<tm id="tm13"/>
+				peu 
+			<tm id="tm14"/>
+				dans 
+			<tm id="tm15"/>
+				l’environnement 
+			<tm id="tm16"/>
+				et 
+			<tm id="tm17"/>
+				regarder 
+			<tm id="tm18"/>
+				ce 
+			<tm id="tm19"/>
+				qui 
+			<tm id="tm20"/>
+				t’intéresse.
+			<tm id="tm21"/>
+				Est-ce 
+			<tm id="tm22"/>
+				que 
+			<tm id="tm23"/>
+				tu 
+			<tm id="tm24"/>
+				as 
+			<tm id="tm25"/>
+				l’habitude 
+			<tm id="tm26"/>
+				des 
+			<tm id="tm27"/>
+				environnements 
+			<tm id="tm28"/>
+				virtuels ?
+			<tm id="tm29"/>
+            </speech>
+        </bml>
+	<fml> 
+		<emotion type="TapR" id="em1" importance="1.0" start="s1:tm2" end="s1:tm5"/> 
+		<deictic end="s1:tm15" id="1" importance="1.0" start="s1:tm3" type="me"/>
+		<deictic end="s1:tm22" id="2" importance="1.0" start="s1:tm10" type="me"/>
+		<performative end="s1:tm26" id="3" importance="1.0" start="s1:tm14" type="negation"/>
+		<beat end="s1:tm27" id="4" importance="1.0" start="s1:tm21" type="LowRt1"/>
+		<deictic end="s1:tm31" id="5" importance="1.0" start="s1:tm25" type="me"/>
+        <ideationalunit end="s1:tm22-0.2" id="id_2" importance="1.0" main="im_9" start="s1:tm19-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm21-0.2" id="im_9" importance="1.0" indexword="12" start="s1:tm19-0.2" type="whole"/>
+        <imageschema POSroot="adverb" end="s1:tm23-0.2" id="im_10" importance="1.0" previous="true" start="s1:tm21-0.2" type="in"/>
+        <imageschema POSroot="noun" end="s1:tm24-0.2" id="im_11" importance="1.0" indexword="15" start="s1:tm23-0.2" type="object"/>
+        <ideationalunit end="s1:tm6-0.2" id="id_3" importance="1.0" main="im_22" start="s1:tm6-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm19-0.2" id="im_22" importance="1.0" indexword="6" start="s1:tm18-0.2" type="object"/>
+	</fml>
+</fml-apml>

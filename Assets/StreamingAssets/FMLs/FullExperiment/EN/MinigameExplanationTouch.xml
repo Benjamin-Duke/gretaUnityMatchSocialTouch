@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+
+    
+        <bml>
+            <speech id="s1" language="english" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+                <tm id="tm1"/>Okay
+				<tm id="tm2"/>great.
+				<tm id="tm3"/>Let
+				<tm id="tm4"/>me
+				<tm id="tm5"/>explain
+				<tm id="tm6"/>the
+				<tm id="tm7"/>game
+				<tm id="tm8"/>then
+				<tm id="tm9"/>:
+				<tm id="tm10"/>if
+				<tm id="tm11"/>you
+				<tm id="tm12"/>haven't
+				<tm id="tm13"/>noticed,
+				<tm id="tm14"/>opposite
+				<tm id="tm15"/>to
+				<tm id="tm16"/>the
+				<tm id="tm17"/>stand
+				<tm id="tm18"/>where
+				<tm id="tm19"/>the
+				<tm id="tm20"/>objects
+				<tm id="tm21"/>are
+				<tm id="tm22"/>there
+				<tm id="tm23"/>is
+				<tm id="tm24"/>a
+				<tm id="tm25"/>kind
+				<tm id="tm26"/>of
+				<tm id="tm27"/>glass
+				<tm id="tm28"/>window.
+				<tm id="tm29"/>Behind
+				<tm id="tm30"/>this
+				<tm id="tm31"/>window,
+				<tm id="tm32"/>I
+				<tm id="tm33"/>just
+				<tm id="tm34"/>triggered
+				<tm id="tm35"/>the
+				<tm id="tm36"/>display
+				<tm id="tm37"/>of
+				<tm id="tm38"/>a
+				<tm id="tm39"/>white
+				<tm id="tm40"/>outline.
+				<tm id="tm41"/>Your
+				<tm id="tm42"/>goal
+				<tm id="tm43"/>is
+				<tm id="tm44"/>to
+				<tm id="tm45"/>fill
+				<tm id="tm46"/>the
+				<tm id="tm47"/>glass
+				<tm id="tm48"/>window
+				<tm id="tm49"/>with
+				<tm id="tm50"/>the
+				<tm id="tm51"/>objects
+				<tm id="tm52"/>that
+				<tm id="tm53"/>you
+				<tm id="tm54"/>manipulated
+				<tm id="tm55"/>during
+				<tm id="tm56"/>the
+				<tm id="tm57"/>familiarization
+				<tm id="tm58"/>so
+				<tm id="tm59"/>that
+				<tm id="tm60"/>it
+				<tm id="tm61"/>completes
+				<tm id="tm62"/>the
+				<tm id="tm63"/>outline.
+				<tm id="tm64"/>Here
+				<tm id="tm65"/>is
+				<tm id="tm66"/>an
+				<tm id="tm67"/>example
+				<tm id="tm68"/>of
+				<tm id="tm69"/>a
+				<tm id="tm70"/>properly
+				<tm id="tm71"/>fitted
+				<tm id="tm72"/>outline
+				<tm id="tm73"/>so
+				<tm id="tm74"/>that
+				<tm id="tm75"/>you
+				<tm id="tm76"/>get
+				<tm id="tm77"/>a
+				<tm id="tm78"/>better
+				<tm id="tm79"/>idea
+				<tm id="tm80"/>of
+				<tm id="tm81"/>what
+				<tm id="tm82"/>we
+				<tm id="tm83"/>want
+				<tm id="tm84"/>to
+				<tm id="tm85"/>do.
+				<tm id="tm86"/>However,
+				<tm id="tm87"/>you
+				<tm id="tm88"/>will
+				<tm id="tm89"/>notice
+				<tm id="tm90"/>that
+				<tm id="tm91"/>given
+				<tm id="tm92"/>an
+				<tm id="tm93"/>outline
+				<tm id="tm94"/>there
+				<tm id="tm95"/>could
+				<tm id="tm96"/>be
+				<tm id="tm97"/>multiple
+				<tm id="tm98"/>alternative
+				<tm id="tm99"/>solutions
+				<tm id="tm100"/>in
+				<tm id="tm101"/>terms
+				<tm id="tm102"/>of
+				<tm id="tm103"/>which
+				<tm id="tm104"/>pieces
+				<tm id="tm105"/>you
+				<tm id="tm106"/>use
+				<tm id="tm107"/>and
+				<tm id="tm108"/>in
+				<tm id="tm109"/>which
+				<tm id="tm110"/>positions.
+				<tm id="tm111"/>To
+				<tm id="tm112"/>make
+				<tm id="tm113"/>the
+				<tm id="tm114"/>game
+				<tm id="tm115"/>truly
+				<tm id="tm116"/>cooperative,
+				<tm id="tm117"/>there
+				<tm id="tm118"/>will
+				<tm id="tm119"/>be
+				<tm id="tm120"/>a
+				<tm id="tm121"/>pre-decided
+				<tm id="tm122"/>unique
+				<tm id="tm123"/>solution
+				<tm id="tm124"/>to
+				<tm id="tm125"/>the
+				<tm id="tm126"/>puzzle,
+				<tm id="tm127"/>which
+				<tm id="tm128"/>I
+				<tm id="tm129"/>know.
+				<tm id="tm130"/>While
+				<tm id="tm131"/>we
+				<tm id="tm132"/>play,
+				<tm id="tm133"/>I
+				<tm id="tm134"/>will
+				<tm id="tm135"/>give
+				<tm id="tm136"/>you
+				<tm id="tm137"/>indications,
+				<tm id="tm138"/>when
+				<tm id="tm139"/>necessary,
+				<tm id="tm140"/>regarding
+				<tm id="tm141"/>which
+				<tm id="tm142"/>pieces
+				<tm id="tm143"/>to
+				<tm id="tm144"/>use
+				<tm id="tm145"/>and
+				<tm id="tm146"/>how
+				<tm id="tm147"/>to
+				<tm id="tm148"/>position
+				<tm id="tm149"/>them.
+				<tm id="tm150"/>And
+				<tm id="tm151"/>if
+				<tm id="tm152"/>you
+				<tm id="tm153"/>feel
+				<tm id="tm154"/>that
+				<tm id="tm155"/>I'm
+				<tm id="tm156"/>not
+				<tm id="tm157"/>being
+				<tm id="tm158"/>reactive
+				<tm id="tm159"/>enough
+				<tm id="tm160"/>and
+				<tm id="tm161"/>you
+				<tm id="tm162"/>need
+				<tm id="tm163"/>my
+				<tm id="tm164"/>help,
+				<tm id="tm165"/>you
+				<tm id="tm166"/>can
+				<tm id="tm167"/>touch
+				<tm id="tm168"/>me
+				<tm id="tm169"/>and
+				<tm id="tm170"/>I
+				<tm id="tm171"/>will
+				<tm id="tm172"/>understand
+				<tm id="tm173"/>that
+				<tm id="tm174"/>you
+				<tm id="tm175"/>need
+				<tm id="tm176"/>an
+				<tm id="tm177"/>advice.
+				<tm id="tm178"/>So
+				<tm id="tm179"/>that's
+				<tm id="tm180"/>it,
+				<tm id="tm181"/>overall
+				<tm id="tm182"/>we
+				<tm id="tm183"/>will
+				<tm id="tm184"/>really
+				<tm id="tm185"/>need
+				<tm id="tm186"/>each
+				<tm id="tm187"/>other
+				<tm id="tm188"/>to
+				<tm id="tm189"/>achieve
+				<tm id="tm190"/>the
+				<tm id="tm191"/>goal
+				<tm id="tm192"/>of
+				<tm id="tm193"/>the
+				<tm id="tm194"/>game.
+				<tm id="tm195"/>To
+				<tm id="tm196"/>evaluate
+				<tm id="tm197"/>our
+				<tm id="tm198"/>performance,
+				<tm id="tm199"/>we
+				<tm id="tm200"/>will
+				<tm id="tm201"/>be
+				<tm id="tm202"/>timed
+				<tm id="tm203"/>by
+				<tm id="tm204"/>the
+				<tm id="tm205"/>timer
+				<tm id="tm206"/>above
+				<tm id="tm207"/>the
+				<tm id="tm208"/>window,
+				<tm id="tm209"/>so
+				<tm id="tm210"/>the
+				<tm id="tm211"/>faster
+				<tm id="tm212"/>we
+				<tm id="tm213"/>finish,
+				<tm id="tm214"/>the
+				<tm id="tm215"/>better
+				<tm id="tm216"/>we
+				<tm id="tm217"/>are
+				<tm id="tm218"/>!
+				<tm id="tm219"/>If
+				<tm id="tm220"/>that's
+				<tm id="tm221"/>all
+				<tm id="tm222"/>ok
+				<tm id="tm223"/>for
+				<tm id="tm224"/>you,
+				<tm id="tm225"/>tell
+				<tm id="tm226"/>me
+				<tm id="tm227"/>when
+				<tm id="tm228"/>you're
+				<tm id="tm229"/>ready
+				<tm id="tm230"/>and
+				<tm id="tm231"/>I
+				<tm id="tm232"/>will
+				<tm id="tm233"/>start
+				<tm id="tm234"/>the
+				<tm id="tm235"/>game.
+</speech>
+        </bml>
+		<fml>
+		<fml/>
+    
+    
+        <ideationalunit end="s1:tm3-0.2" id="id_1" importance="1.0" main="im_3" start="s1:tm1-0.2"/>
+        <imageschema POSroot="verb" end="s1:tm5-0.2" id="im_3" importance="1.0" previous="true" start="s1:tm3-0.2" type="enablement"/>
+        <ideationalunit end="s1:tm28-0.2" id="id_2" importance="1.0" main="im_5" start="s1:tm1-0.2"/>
+        <imageschema POSroot="verb" end="s1:tm10-0.2" id="im_5" importance="1.0" previous="true" start="s1:tm6-0.2" type="enablement"/>
+        <imageschema POSroot="noun" end="s1:tm12-0.2" id="im_6" importance="1.0" indexword="5" previous="true" start="s1:tm10-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm25-0.2" id="im_12" importance="1.0" indexword="17" previous="true" start="s1:tm21-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm30-0.2" id="im_13" importance="1.0" indexword="20" previous="true" start="s1:tm25-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm32-0.2" id="im_14" importance="1.0" indexword="25" previous="true" start="s1:tm30-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm33-0.2" id="im_15" importance="1.0" indexword="28" start="s1:tm32-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm34-0.2" id="im_16" importance="1.0" indexword="28" start="s1:tm33-0.2" type="object"/>
+        <ideationalunit end="s1:tm13-0.2" id="id_3" importance="1.0" main="im_18" start="s1:tm1-0.2"/>
+        <imageschema POSroot="verb" end="s1:tm43-0.2" id="im_18" importance="1.0" previous="true" start="s1:tm41-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm47-0.2" id="im_19" importance="1.0" indexword="9" previous="true" start="s1:tm43-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm48-0.2" id="im_20" importance="1.0" indexword="13" start="s1:tm47-0.2" type="object"/>
+        <ideationalunit end="s1:tm23-0.2" id="id_4" importance="1.0" main="im_23" start="s1:tm1-0.2"/>
+        <imageschema POSroot="verb" end="s1:tm55-0.2" id="im_23" importance="1.0" indexword="5" previous="true" start="s1:tm52-0.2" type="full"/>
+        <imageschema POSroot="noun" end="s1:tm56-0.2" id="im_24" importance="1.0" indexword="8" start="s1:tm55-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm59-0.2" id="im_25" importance="1.0" indexword="8" previous="true" start="s1:tm56-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm65-0.2" id="im_26" importance="1.0" indexword="11" previous="true" start="s1:tm59-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm66-0.2" id="im_27" importance="1.0" indexword="17" start="s1:tm65-0.2" type="object"/>
+        <imageschema POSroot="verb" end="s1:tm71-0.2" id="im_30" importance="1.0" previous="true" start="s1:tm69-0.2" type="full"/>
+        <imageschema POSroot="noun" end="s1:tm72-0.2" id="im_31" importance="1.0" indexword="23" start="s1:tm71-0.2" type="object"/>
+        <ideationalunit end="s1:tm22-0.2" id="id_5" importance="1.0" main="im_34" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm81-0.2" id="im_34" importance="1.0" indexword="4" previous="true" start="s1:tm75-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm88-0.2" id="im_35" importance="1.0" indexword="9" previous="true" start="s1:tm81-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm95-0.2" id="im_36" importance="1.0" indexword="16" previous="true" start="s1:tm88-0.2" type="object"/>
+        <ideationalunit end="s1:tm26-0.2" id="id_6" importance="1.0" main="im_41" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm107-0.2" id="im_41" importance="1.0" indexword="9" previous="true" start="s1:tm103-0.2" type="object"/>
+        <imageschema POSroot="verb" end="s1:tm109-0.2" id="im_42" importance="1.0" indexword="12" previous="true" start="s1:tm107-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm110-0.2" id="im_43" importance="1.0" indexword="15" start="s1:tm109-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm111-0.2" id="im_44" importance="1.0" indexword="15" start="s1:tm110-0.2" type="object"/>
+        <imageschema POSroot="adverb" end="s1:tm112-0.2" id="im_45" importance="1.0" start="s1:tm111-0.2" type="in"/>
+        <imageschema POSroot="noun" end="s1:tm115-0.2" id="im_46" importance="1.0" previous="true" start="s1:tm112-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm118-0.2" id="im_47" importance="1.0" previous="true" start="s1:tm115-0.2" type="whole"/>
+        <imageschema POSroot="adverb" end="s1:tm122-0.2" id="im_48" importance="1.0" previous="true" start="s1:tm119-0.2" type="in"/>
+        <ideationalunit end="s1:tm21-0.2" id="id_7" importance="1.0" main="im_54" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm129-0.2" id="im_51" importance="1.0" indexword="4" previous="true" start="s1:tm125-0.2" type="object"/>
+        <imageschema POSroot="verb" end="s1:tm136-0.2" id="im_53" importance="1.0" indexword="10" previous="true" start="s1:tm131-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm139-0.2" id="im_54" importance="1.0" indexword="14" previous="true" start="s1:tm136-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm140-0.2" id="im_55" importance="1.0" indexword="17" start="s1:tm139-0.2" type="whole"/>
+        <ideationalunit end="s1:tm23-0.2" id="id_8" importance="1.0" main="im_64" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm154-0.2" id="im_64" importance="1.0" start="s1:tm153-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm163-0.2" id="im_69" importance="1.0" start="s1:tm160-0.2" type="object"/>
+        <ideationalunit end="s1:tm30-0.2" id="id_9" importance="1.0" main="im_81" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm185-0.2" id="im_81" importance="1.0" indexword="16" start="s1:tm183-0.2" type="enablement"/>
+        <imageschema POSroot="noun" end="s1:tm199-0.2" id="im_90" importance="1.0" indexword="30" start="s1:tm197-0.2" type="object"/>
+        <ideationalunit end="s1:tm19-0.2" id="id_10" importance="1.0" main="im_99" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm218-0.2" id="im_99" importance="1.0" indexword="16" previous="true" start="s1:tm214-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm219-0.2" id="im_100" importance="1.0" indexword="19" start="s1:tm218-0.2" type="object"/>
+        <ideationalunit end="s1:tm26-0.2" id="id_11" importance="1.0" main="im_103" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm224-0.2" id="im_103" importance="1.0" indexword="4" start="s1:tm222-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm234-0.2" id="im_107" importance="1.0" indexword="12" previous="true" start="s1:tm230-0.2" type="whole"/>
+        <imageschema POSroot="noun" end="s1:tm235-0.2" id="im_108" importance="1.0" indexword="15" start="s1:tm234-0.2" type="object"/>
+        <ideationalunit end="s1:tm20-0.2" id="id_12" importance="1.0" main="im_128" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm267-0.2" id="im_128" importance="1.0" indexword="20" start="s1:tm265-0.2" type="object"/>
+    
+
+
+</fml>
+</fml-apml>

@@ -1,0 +1,22 @@
+{
+    "launchlist": [
+        {
+            "name": "Server",
+            "type": 0,
+            "ip": "192.168.95.11",
+            "port": 7777,
+            "displays_id": [
+                0
+            ]
+        },
+        {
+            "name": "Client1",
+            "type": 1,
+            "ip": "192.168.95.10",
+            "port": 7777,
+            "displays_id": [
+                1
+            ]
+        }
+    ]
+}

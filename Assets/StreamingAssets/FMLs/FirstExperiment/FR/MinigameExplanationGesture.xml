@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+
+    
+        <bml>
+            <speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+                <tm id="tm1"/>Okai,
+				<tm id="tm2"/>super.
+				<tm id="tm3"/>Alors
+				<tm id="tm4"/>je
+				<tm id="tm5"/>t'explique.
+				<tm id="tm6"/>comme
+				<tm id="tm7"/>tu 
+				<tm id="tm8"/>l'a
+				<tm id="tm9"/>peut-aitre
+				<tm id="tm10"/>remarqué
+				<tm id="tm11"/>en
+				<tm id="tm12"/>face
+				<tm id="tm13"/>du
+				<tm id="tm14"/>praisentoir,
+				<tm id="tm15"/>devant
+				<tm id="tm16"/>toi,
+				<tm id="tm17"/>il
+				<tm id="tm18"/>y
+				<tm id="tm19"/>a
+				<tm id="tm20"/>une
+				<tm id="tm21"/>vitrine.
+				<tm id="tm22"/>Ton
+				<tm id="tm23"/>objectif
+				<tm id="tm24"/>va
+				<tm id="tm25"/>aitre
+				<tm id="tm26"/>de
+				<tm id="tm27"/>remplir
+				<tm id="tm28"/>la
+				<tm id="tm29"/>vitre
+				<tm id="tm30"/>avec
+				<tm id="tm31"/>les
+				<tm id="tm32"/>objets
+				<tm id="tm33"/>que
+				<tm id="tm34"/>tu
+				<tm id="tm35"/>a
+				<tm id="tm36"/>pu
+				<tm id="tm37"/>essayer
+				<tm id="tm38"/>de
+				<tm id="tm39"/>manipuler
+				<tm id="tm40"/>juste
+				<tm id="tm41"/>avant.
+				<tm id="tm42"/>C'est
+				<tm id="tm43"/>tout,
+				<tm id="tm44"/>mais
+				<tm id="tm45"/>vu
+				<tm id="tm46"/>que
+				<tm id="tm47"/>sa
+				<tm id="tm48"/>ne
+				<tm id="tm49"/>se
+				<tm id="tm50"/>manipule
+				<tm id="tm51"/>pas
+				<tm id="tm52"/>si
+				<tm id="tm53"/>facilement,
+				<tm id="tm54"/>sa
+				<tm id="tm55"/>ne
+				<tm id="tm56"/>sera
+				<tm id="tm57"/>pas
+				<tm id="tm58"/>forsaiment
+				<tm id="tm59"/>simple.
+				<tm id="tm60"/>Tu
+				<tm id="tm61"/>auras
+				<tm id="tm62"/>quatre
+				<tm id="tm63"/>minutes
+				<tm id="tm64"/>pour
+				<tm id="tm65"/>mettre
+				<tm id="tm66"/>le
+				<tm id="tm67"/>plus
+				<tm id="tm68"/>de
+				<tm id="tm69"/>piaices
+				<tm id="tm70"/>possibles
+				<tm id="tm71"/>derriaire
+				<tm id="tm72"/>la
+				<tm id="tm73"/>vitre.
+				<tm id="tm74"/>Le
+				<tm id="tm75"/>but
+				<tm id="tm76"/>est
+				<tm id="tm77"/>de
+				<tm id="tm78"/>réussir
+				<tm id="tm79"/>le
+				<tm id="tm80"/>plus
+				<tm id="tm81"/>vite
+				<tm id="tm82"/>possible
+				<tm id="tm83"/>!
+				<tm id="tm84"/>Si
+				<tm id="tm85"/>c'est
+				<tm id="tm86"/>bon
+				<tm id="tm87"/>pour
+				<tm id="tm88"/>toi,
+				<tm id="tm89"/>dis-moi
+				<tm id="tm90"/>prait
+				<tm id="tm91"/>et
+				<tm id="tm92"/>on
+				<tm id="tm93"/>commence
+				<tm id="tm94"/>!
+
+</speech>
+        </bml>
+		<fml>
+		<fml/>
+    
+		<emotion id="e1" type="joyStrong" start="s1:tm1" end="s1:tm94" importance="1.0"/>
+        <ideationalunit end="s1:tm3-0.2" id="id_1" importance="1.0" main="im_3" start="s1:tm1-0.2"/>
+        <imageschema POSroot="verb" end="s1:tm5-0.2" id="im_3" importance="1.0" previous="true" start="s1:tm3-0.2" type="enablement"/>
+        <ideationalunit end="s1:tm28-0.2" id="id_2" importance="1.0" main="im_5" start="s1:tm1-0.2"/>
+        <imageschema POSroot="verb" end="s1:tm10-0.2" id="im_5" importance="1.0" previous="true" start="s1:tm6-0.2" type="enablement"/>
+        <imageschema POSroot="noun" end="s1:tm12-0.2" id="im_6" importance="1.0" indexword="5" previous="true" start="s1:tm10-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm25-0.2" id="im_12" importance="1.0" indexword="17" previous="true" start="s1:tm21-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm30-0.2" id="im_13" importance="1.0" indexword="20" previous="true" start="s1:tm25-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm32-0.2" id="im_14" importance="1.0" indexword="25" previous="true" start="s1:tm30-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm33-0.2" id="im_15" importance="1.0" indexword="28" start="s1:tm32-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm34-0.2" id="im_16" importance="1.0" indexword="28" start="s1:tm33-0.2" type="object"/>
+        <ideationalunit end="s1:tm17-0.2" id="id_3" importance="1.0" main="im_19" start="s1:tm1-0.2"/>
+        <imageschema POSroot="verb" end="s1:tm41-0.2" id="im_19" importance="1.0" indexword="5" previous="true" start="s1:tm38-0.2" type="full"/>
+        <imageschema POSroot="noun" end="s1:tm42-0.2" id="im_20" importance="1.0" indexword="8" start="s1:tm41-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm45-0.2" id="im_21" importance="1.0" indexword="8" previous="true" start="s1:tm42-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm51-0.2" id="im_22" importance="1.0" indexword="11" previous="true" start="s1:tm45-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm52-0.2" id="im_23" importance="1.0" indexword="17" start="s1:tm51-0.2" type="object"/>
+        <ideationalunit end="s1:tm26-0.2" id="id_4" importance="1.0" main="im_29" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm67-0.2" id="im_29" importance="1.0" indexword="8" previous="true" start="s1:tm59-0.2" type="object"/>
+        <ideationalunit end="s1:tm14-0.2" id="id_5" importance="1.0" main="im_40" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm88-0.2" id="im_40" importance="1.0" indexword="4" previous="true" start="s1:tm82-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm93-0.2" id="im_41" importance="1.0" indexword="9" previous="true" start="s1:tm88-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm94-0.2" id="im_42" importance="1.0" indexword="14" start="s1:tm93-0.2" type="object"/>
+        <ideationalunit end="s1:tm20-0.2" id="id_7" importance="1.0" main="im_63" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm126-0.2" id="im_63" importance="1.0" indexword="20" start="s1:tm124-0.2" type="object"/>
+    
+
+
+</fml>
+</fml-apml>

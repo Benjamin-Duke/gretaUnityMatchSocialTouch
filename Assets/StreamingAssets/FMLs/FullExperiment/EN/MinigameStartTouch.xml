@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+
+    
+        <bml>
+            <speech id="s1" language="english" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+                <tm id="tm1"/>Okay
+				<tm id="tm2"/>great,
+				<tm id="tm3"/>so
+				<tm id="tm4"/>3,
+				<tm id="tm5"/>2,
+				<tm id="tm6"/>1,
+				<tm id="tm7"/>let's
+				<tm id="tm8"/>go!
+</speech>
+        </bml>
+    
+    
+        <ideationalunit end="s1:tm14-0.2" id="id_1" importance="1.0" main="im_3" start="s1:tm1-0.2"/>
+        <imageschema POSroot="verb" end="s1:tm5-0.2" id="im_3" importance="1.0" previous="true" start="s1:tm3-0.2" type="enablement"/>
+        <imageschema POSroot="verb" end="s1:tm15-0.2" id="im_6" importance="1.0" previous="true" start="s1:tm13-0.2" type="enablement"/>
+        <imageschema POSroot="verb" end="s1:tm16-0.2" id="im_7" importance="1.0" indexword="14" start="s1:tm15-0.2" type="interval"/>
+    
+
+
+</fml>
+</fml-apml>

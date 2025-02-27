@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+
+    
+        <bml>
+            <speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+                <tm id="tm1"/>Tu
+				<tm id="tm2"/>te
+				<tm id="tm3"/>daibrouille
+				<tm id="tm4"/>trai
+				<tm id="tm5"/>bien
+				<tm id="tm6"/>c'est
+				<tm id="tm7"/>geignal
+				<tm id="tm8"/>Je
+				<tm id="tm9"/>suis
+				<tm id="tm10"/>sure
+				<tm id="tm11"/>que
+				<tm id="tm12"/>tu
+				<tm id="tm13"/>peux
+				<tm id="tm14"/>tout
+				<tm id="tm15"/>finir
+				<tm id="tm16"/>dans
+				<tm id="tm17"/>les
+				<tm id="tm18"/>temps
+				<tm id="tm19"/>continue
+				<tm id="tm20"/>comme
+				<tm id="tm21"/>sa
+				<tm id="tm22"/>c'est
+				<tm id="tm23"/>trai
+				<tm id="tm24"/>trai
+				<tm id="tm25"/>bien
+				<tm id="tm26"/>
+</speech>
+        </bml>
+		<fml>
+		<fml/>
+    
+		<emotion id="e1" type="joyStrong" start="s1:tm1" end="s1:tm26" importance="1.0"/>
+        <ideationalunit end="s1:tm10-0.2" id="id_1" importance="1.0" main="im_4" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm12-0.2" id="im_4" importance="1.0" indexword="10" start="s1:tm9-0.2" type="object"/>
+        <ideationalunit end="s1:tm23-0.2" id="id_2" importance="1.0" main="im_7" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm26-0.2" id="im_7" importance="1.0" indexword="11" previous="true" start="s1:tm22-0.2" type="whole"/>
+        <ideationalunit end="s1:tm22-0.2" id="id_3" importance="1.0" main="im_14" start="s1:tm1-0.2"/>
+    
+
+
+</fml>
+</fml-apml>

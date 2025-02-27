@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+
+    
+        <bml>
+            <speech id="s1" language="english" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+                <tm id="tm1"/>Wow
+				<tm id="tm2"/>you
+				<tm id="tm3"/>are
+				<tm id="tm4"/>amazing
+				<tm id="tm5"/>keep
+				<tm id="tm6"/>it
+				<tm id="tm7"/>going like this
+				<tm id="tm8"/>and
+				<tm id="tm9"/>you
+				<tm id="tm10"/>will
+				<tm id="tm11"/>finish
+				<tm id="tm12"/>in
+				<tm id="tm13"/>record
+				<tm id="tm14"/>time
+</speech>
+        </bml>
+		<fml>
+		<fml/>
+    
+        <ideationalunit end="s1:tm12-0.2" id="id_2" importance="1.0" main="im_15" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm23-0.2" id="im_15" importance="1.0" indexword="11" start="s1:tm20-0.2" type="object"/>
+        <imageschema POSroot="verb" end="s1:tm24-0.2" id="im_16" importance="1.0" start="s1:tm23-0.2" type="interval"/>
+    
+
+
+</fml>
+</fml-apml>

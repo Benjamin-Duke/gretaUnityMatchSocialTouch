@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+
+    
+        <bml>
+            <speech id="s1" language="english" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+                <tm id="tm1"/>I
+				<tm id="tm2"/>feel
+				<tm id="tm3"/>like
+				<tm id="tm4"/>we
+				<tm id="tm5"/>are
+				<tm id="tm6"/>doing
+				<tm id="tm7"/>very
+				<tm id="tm8"/>well
+				<tm id="tm9"/>!
+				<tm id="tm10"/>It's
+				<tm id="tm11"/>far
+				<tm id="tm12"/>from
+				<tm id="tm13"/>easy
+				<tm id="tm14"/>but
+				<tm id="tm15"/>we
+				<tm id="tm16"/>have
+				<tm id="tm17"/>a
+				<tm id="tm18"/>good
+				<tm id="tm19"/>cooperation
+				<tm id="tm20"/>going.
+</speech>
+        </bml>
+		<fml>
+		<fml/>
+    
+        <ideationalunit end="s1:tm12-0.2" id="id_2" importance="1.0" main="im_15" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm23-0.2" id="im_15" importance="1.0" indexword="11" start="s1:tm20-0.2" type="object"/>
+        <imageschema POSroot="verb" end="s1:tm24-0.2" id="im_16" importance="1.0" start="s1:tm23-0.2" type="interval"/>
+    
+
+
+</fml>
+</fml-apml>

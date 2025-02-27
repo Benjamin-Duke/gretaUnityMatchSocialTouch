@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+
+    
+        <bml>
+            <speech id="s1" language="english" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+                <tm id="tm1"/>Ne
+				<tm id="tm2"/>t'en
+				<tm id="tm3"/>fais
+				<tm id="tm4"/>pas
+				<tm id="tm5"/>la
+				<tm id="tm6"/>manipulation
+				<tm id="tm7"/>est
+				<tm id="tm8"/>vraiment
+				<tm id="tm9"/>difficile
+				<tm id="tm10"/>c'est
+				<tm id="tm11"/>normal
+				<tm id="tm12"/>que
+				<tm id="tm13"/>tu
+				<tm id="tm14"/>aies
+				<tm id="tm15"/>du
+				<tm id="tm16"/>mal
+				<tm id="tm17"/>mais
+				<tm id="tm18"/>tu
+				<tm id="tm19"/>vas
+				<tm id="tm20"/>raiussir
+				<tm id="tm21"/>a
+				<tm id="tm22"/>t'en
+				<tm id="tm23"/>sortir
+
+</speech>
+        </bml>
+		<fml>
+		<fml/>
+    
+		<emotion id="e1" type="joyStrong" start="s1:tm1" end="s1:tm23" importance="1.0"/>
+        <ideationalunit end="s1:tm11-0.2" id="id_1" importance="1.0" main="im_4" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm13-0.2" id="im_4" importance="1.0" indexword="7" previous="true" start="s1:tm7-0.2" type="object"/>
+    
+
+
+</fml>
+</fml-apml>

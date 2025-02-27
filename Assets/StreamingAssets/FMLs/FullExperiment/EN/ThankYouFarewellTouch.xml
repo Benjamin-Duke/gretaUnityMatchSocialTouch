@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+
+    
+        <bml>
+            <speech id="s1" language="english" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+                <tm id="tm1"/>Alright,
+				<tm id="tm2"/>no
+				<tm id="tm3"/>problem,
+				<tm id="tm4"/>in
+				<tm id="tm5"/>any
+				<tm id="tm6"/>case
+				<tm id="tm7"/>thank
+				<tm id="tm8"/>you
+				<tm id="tm9"/>very
+				<tm id="tm10"/>much
+				<tm id="tm11"/>for
+				<tm id="tm12"/>your
+				<tm id="tm13"/>participation
+				<tm id="tm14"/>the
+				<tm id="tm15"/>study
+				<tm id="tm16"/>and
+				<tm id="tm17"/>now
+				<tm id="tm18"/>I
+				<tm id="tm19"/>invite
+				<tm id="tm20"/>you
+				<tm id="tm21"/>to
+				<tm id="tm22"/>take
+				<tm id="tm23"/>off
+				<tm id="tm24"/>your
+				<tm id="tm25"/>headset
+				<tm id="tm26"/>and
+				<tm id="tm27"/>tell
+				<tm id="tm28"/>the
+				<tm id="tm29"/>experimenter
+				<tm id="tm30"/>that
+				<tm id="tm31"/>you're
+				<tm id="tm32"/>done
+				<tm id="tm33"/>so
+				<tm id="tm34"/>that
+				<tm id="tm35"/>they
+				<tm id="tm36"/>may
+				<tm id="tm37"/>give
+				<tm id="tm38"/>you
+				<tm id="tm39"/>the
+				<tm id="tm40"/>questionnaires
+				<tm id="tm41"/>to
+				<tm id="tm42"/>fill
+				<tm id="tm43"/>out
+				<tm id="tm44"/>before
+				<tm id="tm45"/>letting
+				<tm id="tm46"/>you
+				<tm id="tm47"/>go.
+				<tm id="tm48"/>If
+				<tm id="tm49"/>you've
+				<tm id="tm50"/>got
+				<tm id="tm51"/>questions
+				<tm id="tm52"/>about
+				<tm id="tm53"/>the
+				<tm id="tm54"/>study,
+				<tm id="tm55"/>you
+				<tm id="tm56"/>can
+				<tm id="tm57"/>ask
+				<tm id="tm58"/>them
+				<tm id="tm59"/>after
+				<tm id="tm60"/>the
+				<tm id="tm61"/>questionnaire
+				<tm id="tm62"/>and
+				<tm id="tm63"/>the
+				<tm id="tm64"/>experimenter
+				<tm id="tm65"/>will
+				<tm id="tm66"/>tell
+				<tm id="tm67"/>you
+				<tm id="tm68"/>all
+				<tm id="tm69"/>you
+				<tm id="tm70"/>want
+				<tm id="tm71"/>to
+				<tm id="tm72"/>know.
+</speech>
+        </bml>
+    
+    
+        <ideationalunit end="s1:tm51-0.2" id="id_1" importance="1.0" main="im_7" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm19-0.2" id="im_7" importance="1.0" indexword="16" previous="true" start="s1:tm16-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm20-0.2" id="im_8" importance="1.0" indexword="18" start="s1:tm19-0.2" type="object"/>
+        <imageschema POSroot="verb" end="s1:tm27-0.2" id="im_11" importance="1.0" previous="true" start="s1:tm23-0.2" type="enablement"/>
+        <imageschema POSroot="adverb" end="s1:tm29-0.2" id="im_12" importance="1.0" previous="true" start="s1:tm27-0.2" type="far"/>
+        <imageschema POSroot="noun" end="s1:tm30-0.2" id="im_13" importance="1.0" indexword="28" start="s1:tm29-0.2" type="whole"/>
+        <imageschema POSroot="verb" end="s1:tm33-0.2" id="im_14" importance="1.0" previous="true" start="s1:tm31-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm45-0.2" id="im_15" importance="1.0" indexword="32" previous="true" start="s1:tm33-0.2" type="whole"/>
+        <imageschema POSroot="noun" end="s1:tm48-0.2" id="im_16" importance="1.0" indexword="44" previous="true" start="s1:tm45-0.2" type="object"/>
+        <imageschema POSroot="adverb" end="s1:tm52-0.2" id="im_17" importance="1.0" previous="true" start="s1:tm48-0.2" type="out"/>
+        <imageschema POSroot="verb" end="s1:tm53-0.2" id="im_18" importance="1.0" start="s1:tm52-0.2" type="interval"/>
+        <ideationalunit end="s1:tm27-0.2" id="id_2" importance="1.0" main="im_21" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm61-0.2" id="im_21" importance="1.0" previous="true" start="s1:tm58-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm62-0.2" id="im_22" importance="1.0" indexword="8" start="s1:tm61-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm70-0.2" id="im_27" importance="1.0" indexword="16" start="s1:tm68-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm81-0.2" id="im_28" importance="1.0" indexword="19" previous="true" start="s1:tm71-0.2" type="whole"/>
+    
+
+
+</fml>
+</fml-apml>

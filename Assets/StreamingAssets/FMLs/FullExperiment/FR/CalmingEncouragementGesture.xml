@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+
+    
+        <bml>
+            <speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+                <tm id="tm1"/>Je
+				<tm id="tm2"/>sais
+				<tm id="tm3"/>que
+				<tm id="tm4"/>sa
+				<tm id="tm5"/>peut
+				<tm id="tm6"/>aitre
+				<tm id="tm7"/>frustant,
+				<tm id="tm8"/>surtout
+				<tm id="tm9"/>niveau
+				<tm id="tm10"/>manipulation,
+				<tm id="tm11"/>mais
+				<tm id="tm12"/>t'inquiaite
+				<tm id="tm13"/>pas,
+				<tm id="tm14"/>prends
+				<tm id="tm15"/>ton
+				<tm id="tm16"/>temps.
+				<tm id="tm17"/>L'important
+				<tm id="tm18"/>c'est
+				<tm id="tm19"/>que
+				<tm id="tm20"/>tu
+				<tm id="tm21"/>progresses
+				<tm id="tm22"/>une
+				<tm id="tm23"/>piaice
+				<tm id="tm24"/>a
+				<tm id="tm25"/>la
+				<tm id="tm26"/>fois
+				<tm id="tm27"/>!
+</speech>
+        </bml>
+		<fml>
+		<fml/>
+    
+        <ideationalunit end="s1:tm23-0.2" id="id_1" importance="1.0" main="im_8" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm15-0.2" id="im_8" importance="1.0" indexword="11" previous="true" start="s1:tm11-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm16-0.2" id="im_9" importance="1.0" indexword="14" start="s1:tm15-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm25-0.2" id="im_12" importance="1.0" indexword="23" start="s1:tm23-0.2" type="object"/>
+        <ideationalunit end="s1:tm13-0.2" id="id_2" importance="1.0" main="im_18" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm35-0.2" id="im_18" importance="1.0" indexword="10" start="s1:tm33-0.2" type="whole"/>
+        <imageschema POSroot="noun" end="s1:tm38-0.2" id="im_19" importance="1.0" indexword="10" previous="true" start="s1:tm35-0.2" type="whole"/>
+        <imageschema POSroot="noun" end="s1:tm39-0.2" id="im_20" importance="1.0" indexword="13" start="s1:tm38-0.2" type="object"/>
+    
+
+
+</fml>
+</fml-apml>

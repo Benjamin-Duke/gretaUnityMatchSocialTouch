@@ -1,0 +1,17 @@
+{
+    "trackerServers": [
+        {
+            "name": "trackerServer",
+            "type": 1,
+            "ip": "192.168.95.10",
+            "port": 3883,
+            "trackers": [
+                {
+                    "id": 0,
+                    "name": "joyWin32",
+                    "type": 2
+                }
+            ]
+        }
+    ]
+}

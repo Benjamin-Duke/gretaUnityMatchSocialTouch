@@ -1,0 +1,94 @@
+[
+  {
+    "fml":  "Anger"
+  },
+  {
+    "fml": "AngerCaress",
+    "touch": "Comfort1",
+    "delayBeforeTouch": 1800
+  },
+  {
+    "fml": "AngerTap",
+    "touch": "TapSoftSequence",
+    "delayBeforeTouch": 1300
+  },
+  {
+    "fml": "AngryHit",
+    "touch": "Hit2",
+    "delayBeforeTouch": 1700
+  },
+  {
+    "fml": "AngerSustained",
+    "touch": "TouchSoft",
+    "delayBeforeTouch": 1300
+  },
+  {
+    "fml": "Joy"
+  },
+  {
+    "fml": "JoyCaress",
+    "touch": "Comfort1",
+    "delayBeforeTouch": 1800
+  },
+  {
+    "fml": "JoyTap",
+    "touch": "TapSoftSequence",
+    "delayBeforeTouch": 1300
+  },
+  {
+    "fml": "JoyHit",
+    "touch": "Hit2",
+    "delayBeforeTouch": 1700
+  },
+  {
+    "fml": "JoySustained",
+    "touch": "TouchSoft",
+    "delayBeforeTouch": 1300
+  },
+  {
+    "fml": "Sad"
+  },
+  {
+    "fml": "SadCaress",
+    "touch": "Comfort1",
+    "delayBeforeTouch": 1800
+  },
+  {
+    "fml": "SadTap",
+    "touch": "TapSoftSequence",
+    "delayBeforeTouch": 1300
+  },
+  {
+    "fml": "SadHit",
+    "touch": "Hit2",
+    "delayBeforeTouch": 1700
+  },
+  {
+    "fml": "SadSustained",
+    "touch": "TouchSoft",
+    "delayBeforeTouch": 1300
+  },
+  {
+    "fml": "Neutral"
+  },
+  {
+    "fml": "NeutralTap",
+    "touch": "TapSoftSequence",
+    "delayBeforeTouch": 1300
+  },
+  {
+    "fml": "NeutralHit",
+    "touch": "Hit2",
+    "delayBeforeTouch": 1700
+  },
+  {
+    "fml": "NeutralCaress",
+    "touch": "Comfort1",
+    "delayBeforeTouch": 1800
+  },
+  {
+    "fml": "NeutralSustained",
+    "touch": "TouchSoft",
+    "delayBeforeTouch": 1300
+  }
+]

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+
+    
+        <bml>
+            <speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+                <tm id="tm1"/>Si je pouvais
+				<tm id="tm2"/>je 
+				<tm id="tm3"/>t'applaudirais
+				<tm id="tm4"/>
+
+</speech>
+        </bml>
+		<fml>
+		<fml/>
+    
+
+
+</fml>
+</fml-apml>

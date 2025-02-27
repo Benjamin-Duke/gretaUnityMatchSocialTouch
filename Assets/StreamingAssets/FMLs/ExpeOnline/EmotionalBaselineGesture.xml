@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+		<bml>
+            <speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+            <tm id="tm1"/>
+				Bonjour, 
+			<tm id="tm2"/>
+				je 
+			<tm id="tm3"/>
+				m’appelle 
+			<tm id="tm4"/>
+				Camille ! 
+			<tm id="tm5"/>
+				Je 
+			<tm id="tm6"/>
+				suis 
+			<tm id="tm7"/>
+				très 
+			<tm id="tm8"/>
+				contente 
+			<tm id="tm9"/>
+				de 
+			<tm id="tm10"/>
+				pouvoir 
+			<tm id="tm11"/>
+				discuter 
+			<tm id="tm12"/>
+				un 
+			<tm id="tm13"/>
+				peu 
+			<tm id="tm14"/>
+				avec 
+			<tm id="tm15"/>
+				toi 
+			<tm id="tm16"/>
+				aujourd’hui. 
+			<tm id="tm17"/>
+				Comment 
+			<tm id="tm18"/>
+				tu 
+			<tm id="tm19"/>
+				vas ?
+			<tm id="tm20"/>
+            </speech>
+        </bml>
+	<fml>
+		
+		<rest id="rp1" type="restpose_handsTogether_Pos_B" start="0" end="1" importance="1.0"/>
+		<beat end="s1:tm15" id="s01" importance="1.0" start="s1:tm3" type="LowLf1"/>
+		<beat end="s1:tm13" id="s01" importance="1.0" start="s1:tm1" type="LowLf1"/>
+		<beat end="s1:tm15" id="s01" importance="1.0" start="s1:tm3" type="LowRt1"/>
+		<deictic end="s1:tm16" id="s01" importance="1.0" start="s1:tm4" type="me"/>
+        <ideationalunit end="s1:tm7-0.2" id="id_1" importance="1.0" main="im_5" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm9-0.2" id="im_5" importance="1.0" indexword="5" previous="true" start="s1:tm5-0.2" type="link"/>
+        <ideationalunit end="s1:tm14-0.2" id="id_2" importance="1.0" main="im_12" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm19-0.2" id="im_12" importance="1.0" indexword="11" previous="true" start="s1:tm17-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm20-0.2" id="im_13" importance="1.0" start="s1:tm19-0.2" type="interval"/>
+		<rest id="rp1" type="restpose_handsTogether_Pos_B" start="s1:tm20" end="1" importance="1.0"/>
+    
+
+
+</fml>
+</fml-apml>

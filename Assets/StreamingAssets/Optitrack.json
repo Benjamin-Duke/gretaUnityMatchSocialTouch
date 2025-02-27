@@ -1,0 +1,8 @@
+{
+    "ConnectionType": 0,
+    "LocalAddress": "192.168.95.11",
+    "ServerAddress": "192.168.95.10",
+    "ServerCommandPort": 1510,
+    "ServerDataPort": 1511,
+    "BoneNamingConvention": 0
+}

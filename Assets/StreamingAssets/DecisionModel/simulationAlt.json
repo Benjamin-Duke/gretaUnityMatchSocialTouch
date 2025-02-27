@@ -1,0 +1,14 @@
+[
+  { "actionName": "Speak",
+    "actionArgs": ["EmotionalBaseline", "VirtualEnvironment", "NegativeMood", "Human"],
+    "actionType": "Action-End"},
+  { "actionName": "Speak",
+    "actionArgs": ["Habits", "Realisme", "NoHabits", "Human"],
+    "actionType": "Action-End"},
+  { "actionName": "Speak",
+    "actionArgs": ["PremierConfinementRessenti", "Pandemie1", "Positive", "Human"],
+    "actionType": "Action-End"},
+  { "actionName": "Speak",
+    "actionArgs": ["Pandemie2021", "Fin", "Negative", "Human"],
+    "actionType": "Action-End"},
+]

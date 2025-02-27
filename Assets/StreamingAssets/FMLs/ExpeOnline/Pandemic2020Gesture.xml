@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+        <bml>
+            <speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+            <tm id="tm1"/>La 
+			<tm id="tm2"/>pandémie 
+			<tm id="tm3"/>est 
+			<tm id="tm4"/>vraiment 
+			<tm id="tm5"/>éprouvante, 
+			<tm id="tm6"/>avec 
+			<tm id="tm7"/>tous 
+			<tm id="tm8"/>ces 
+			<tm id="tm9"/>confinements, 
+			<tm id="tm10"/>l’impossibilité 
+			<tm id="tm11"/>de 
+			<tm id="tm12"/>voir 
+			<tm id="tm13"/>des 
+			<tm id="tm14"/>gens 
+			<tm id="tm15"/>au 
+			<tm id="tm16"/>quotidien, 
+			<tm id="tm17"/>l’impossibilité 
+			<tm id="tm18"/>de 
+			<tm id="tm19"/>sortir 
+			<tm id="tm20"/>pour 
+			<tm id="tm21"/>aller 
+			<tm id="tm22"/>au 
+			<tm id="tm23"/>cinéma, 
+			<tm id="tm24"/>se 
+			<tm id="tm25"/>changer 
+			<tm id="tm26"/>les 
+			<tm id="tm27"/>idées 
+			<tm id="tm28"/>au 
+			<tm id="tm29"/>restaurant 
+			<tm id="tm30"/>ou 
+			<tm id="tm31"/>dans 
+			<tm id="tm32"/>un 
+			<tm id="tm33"/>bar,... 
+			<tm id="tm34"/>J’ai 
+			<tm id="tm35"/>vraiment 
+			<tm id="tm36"/>eu 
+			<tm id="tm37"/>du 
+			<tm id="tm38"/>mal 
+			<tm id="tm39"/>à 
+			<tm id="tm40"/>vivre 
+			<tm id="tm41"/>tout 
+			<tm id="tm42"/>ça 
+			<tm id="tm43"/>au 
+			<tm id="tm44"/>début. 
+			<tm id="tm45"/>Le 
+			<tm id="tm46"/>premier 
+			<tm id="tm47"/>confinement 
+			<tm id="tm48"/>a 
+			<tm id="tm49"/>été 
+			<tm id="tm50"/>très 
+			<tm id="tm51"/>dur, 
+			<tm id="tm52"/>l’isolement 
+			<tm id="tm53"/>et 
+			<tm id="tm54"/>toutes 
+			<tm id="tm55"/>les 
+			<tm id="tm56"/>régulations 
+			<tm id="tm57"/>des 
+			<tm id="tm58"/>sorties 
+			<tm id="tm59"/>ça 
+			<tm id="tm60"/>m’a 
+			<tm id="tm61"/>miné 
+			<tm id="tm62"/>le 
+			<tm id="tm63"/>moral...  
+			<tm id="tm64"/>Comment 
+			<tm id="tm65"/>ça 
+			<tm id="tm66"/>s’est 
+			<tm id="tm67"/>passé 
+			<tm id="tm68"/>2020 
+			<tm id="tm69"/>pour 
+			<tm id="tm70"/>toi ?
+			<tm id="tm71"/>
+            </speech>
+        </bml>
+	<fml>
+    
+		<deictic end="s1:tm258" id="1" importance="1.0" start="s1:tm246" type="me"/>
+		<deictic end="s1:tm284" id="2" importance="1.0" start="s1:tm272" type="me"/>
+        <ideationalunit end="s1:tm60-0.2" id="id_1" importance="1.0" main="im_5" start="s1:tm57-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm13-0.2" id="im_5" importance="1.0" indexword="11" start="s1:tm10-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm17-0.2" id="im_6" importance="1.0" indexword="14" previous="true" start="s1:tm14-0.2" type="object"/>
+        <imageschema POSroot="verb" end="s1:tm18-0.2" id="im_7" importance="1.0" indexword="16" start="s1:tm17-0.2" type="enablement"/>
+        <imageschema POSroot="noun" end="s1:tm22-0.2" id="im_8" importance="1.0" previous="true" start="s1:tm18-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm23-0.2" id="im_9" importance="1.0" indexword="21" start="s1:tm22-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm35-0.2" id="im_15" importance="1.0" indexword="33" start="s1:tm33-0.2" type="object"/>
+        <imageschema POSroot="adverb" end="s1:tm43-0.2" id="im_18" importance="1.0" previous="true" start="s1:tm41-0.2" type="in"/>
+        <imageschema POSroot="noun" end="s1:tm44-0.2" id="im_19" importance="1.0" indexword="42" start="s1:tm43-0.2" type="whole"/>
+        <imageschema POSroot="noun" end="s1:tm47-0.2" id="im_20" importance="1.0" indexword="45" start="s1:tm45-0.2" type="whole"/>
+        <imageschema POSroot="noun" end="s1:tm61-0.2" id="im_24" importance="1.0" indexword="53" previous="true" start="s1:tm52-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm62-0.2" id="im_25" importance="1.0" indexword="60" start="s1:tm61-0.2" type="object"/>
+        <ideationalunit end="s1:tm21-0.2" id="id_2" importance="1.0" main="im_29" start="s1:tm18-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm71-0.2" id="im_29" importance="1.0" start="s1:tm70-0.2" type="object"/>
+        <ideationalunit end="s1:tm11-0.2" id="id_3" importance="1.0" main="im_34" start="s1:tm9-0.2"/>
+    
+
+</fml>
+</fml-apml>

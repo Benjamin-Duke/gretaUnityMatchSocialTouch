@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+
+    
+        <bml>
+            <speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+				<tm id="tm1"/>Tu
+				<tm id="tm2"/>n'aura
+				<tm id="tm3"/>qu'a
+				<tm id="tm4"/>me
+				<tm id="tm5"/>dire
+				<tm id="tm6"/>prait
+				<tm id="tm7"/>quand
+				<tm id="tm8"/>tu
+				<tm id="tm9"/>penses
+				<tm id="tm10"/>que tu a fai le tour et que
+				<tm id="tm11"/>tu
+				<tm id="tm12"/>es
+				<tm id="tm13"/>prait
+				<tm id="tm14"/>pour
+				<tm id="tm15"/>commencer
+				<tm id="tm16"/>le
+				<tm id="tm17"/>petit
+				<tm id="tm18"/>jeu.
+			</speech>
+        </bml>
+<fml>
+        <fml/>
+    
+		<emotion id="e1" type="joyStrong" start="s1:tm1" end="s1:tm68" importance="1.0"/>
+        <ideationalunit end="s1:tm12-0.2" id="id_1" importance="1.0" main="im_9" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm14-0.2" id="im_9" importance="1.0" start="s1:tm13-0.2" type="object"/>
+        <ideationalunit end="s1:tm22-0.2" id="id_2" importance="1.0" main="im_14" start="s1:tm1-0.2"/>
+    
+
+
+</fml>
+</fml-apml>

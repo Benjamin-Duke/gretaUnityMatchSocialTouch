@@ -1,0 +1,94 @@
+{
+    "name": "VRControl",
+    "maps": [
+        {
+            "name": "VRControls",
+            "id": "15d427d0-5ca6-469e-8b58-b9143fdec6d1",
+            "actions": [
+                {
+                    "name": "HMDLEyePos",
+                    "type": "Value",
+                    "id": "5cf81804-4584-4c88-ba97-43ce62c8f2a5",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "HMDREyePos",
+                    "type": "Value",
+                    "id": "259b1ca0-bcea-42a2-aa5b-0991017e63b8",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "HMDLEyeRot",
+                    "type": "Value",
+                    "id": "e4723a6f-9e15-4dc0-86b5-36f8351736ed",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "HMDREyeRot",
+                    "type": "Value",
+                    "id": "f6d5a0fd-4cf7-43cb-b648-95059106caef",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "d2d0786c-7bb0-4e37-95c2-a4d76a2d7cf3",
+                    "path": "<XRHMD>/leftEyePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HMDLEyePos",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4d10d22d-7cb0-4ff0-8e52-11746e0597a4",
+                    "path": "<XRHMD>/leftEyeRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HMDLEyeRot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bcb3f7e6-e945-4dc1-a83f-50bf14c7bf97",
+                    "path": "<XRHMD>/rightEyeRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HMDREyeRot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3596c350-adcf-4567-9624-993666b6640b",
+                    "path": "<XRHMD>/rightEyePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HMDREyePos",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

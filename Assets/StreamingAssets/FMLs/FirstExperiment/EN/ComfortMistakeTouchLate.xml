@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+
+    
+        <bml>
+            <speech id="s1" language="english" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+                <tm id="tm1"/>It's
+				<tm id="tm2"/>ok
+				<tm id="tm3"/>the
+				<tm id="tm4"/>manipulation
+				<tm id="tm5"/>is
+				<tm id="tm6"/>really
+				<tm id="tm7"/>difficult,
+				<tm id="tm8"/>You
+				<tm id="tm9"/>can
+				<tm id="tm10"/>try
+				<tm id="tm11"/>different
+				<tm id="tm12"/>ways to hold the pieces
+				<tm id="tm13"/>like putting
+				<tm id="tm14"/>a hand under
+				<tm id="tm15"/>the piece
+				<tm id="tm16"/>and using the other
+				<tm id="tm17"/>hand
+				<tm id="tm18"/>to
+				<tm id="tm19"/>grab
+				<tm id="tm20"/>it
+				<tm id="tm21"/>directly
+				<tm id="tm22"/>You still have
+				<tm id="tm23"/>time
+
+</speech>
+        </bml>
+		<fml>
+		<fml/>
+    
+    
+        <ideationalunit end="s1:tm11-0.2" id="id_1" importance="1.0" main="im_4" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm13-0.2" id="im_4" importance="1.0" indexword="7" previous="true" start="s1:tm7-0.2" type="object"/>
+    
+
+
+</fml>
+</fml-apml>

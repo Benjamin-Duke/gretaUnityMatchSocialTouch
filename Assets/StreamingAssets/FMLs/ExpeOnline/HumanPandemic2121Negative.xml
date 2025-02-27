@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+        <bml>
+            <speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+            <tm id="tm1"/>Pour 
+			<tm id="tm2"/>moi 
+			<tm id="tm3"/>c’est 
+			<tm id="tm4"/>même 
+			<tm id="tm5"/>encore 
+			<tm id="tm6"/>plus 
+			<tm id="tm7"/>dur 
+			<tm id="tm8"/>cette 
+			<tm id="tm9"/>année 
+			<tm id="tm10"/>par 
+			<tm id="tm11"/>rapport 
+			<tm id="tm12"/>à 
+			<tm id="tm13"/>2020 
+			<tm id="tm14"/>honnêtement, 
+			<tm id="tm15"/>j’aimerais 
+			<tm id="tm16"/>pouvoir 
+			<tm id="tm17"/>retrouver 
+			<tm id="tm18"/>une 
+			<tm id="tm19"/>vie 
+			<tm id="tm20"/>sociale 
+			<tm id="tm21"/>qui 
+			<tm id="tm22"/>me 
+			<tm id="tm23"/>permette 
+			<tm id="tm24"/>de 
+			<tm id="tm25"/>souffler, 
+			<tm id="tm26"/>surtout 
+			<tm id="tm27"/>que 
+			<tm id="tm28"/>pour 
+			<tm id="tm29"/>les 
+			<tm id="tm30"/>études 
+			<tm id="tm31"/>être 
+			<tm id="tm32"/>toujours 
+			<tm id="tm33"/>à 
+			<tm id="tm34"/>distance 
+			<tm id="tm35"/>ça 
+			<tm id="tm36"/>ne 
+			<tm id="tm37"/>facilite 
+			<tm id="tm38"/>pas 
+			<tm id="tm39"/>les 
+			<tm id="tm40"/>échanges 
+			<tm id="tm41"/>avec 
+			<tm id="tm42"/>les 
+			<tm id="tm43"/>autres 
+			<tm id="tm44"/>étudiants 
+			<tm id="tm45"/>ni 
+			<tm id="tm46"/>avec 
+			<tm id="tm47"/>les 
+			<tm id="tm48"/>professeurs 
+			<tm id="tm49"/>et 
+			<tm id="tm50"/>je 
+			<tm id="tm51"/>me 
+			<tm id="tm52"/>sens 
+			<tm id="tm53"/>encore 
+			<tm id="tm54"/>plus 
+			<tm id="tm55"/>isolé. 
+			<tm id="tm56"/>Et 
+			<tm id="tm57"/>même 
+			<tm id="tm58"/>pour 
+			<tm id="tm59"/>me 
+			<tm id="tm60"/>concentrer 
+			<tm id="tm61"/>sur ce que
+			<tm id="tm62"/>j’ai à 
+			<tm id="tm63"/>faire, 
+			<tm id="tm64"/>le fait 
+			<tm id="tm65"/>de toujours 
+			<tm id="tm66"/>être dans 
+			<tm id="tm67"/>le même 
+			<tm id="tm68"/>environnement 
+			<tm id="tm69"/>familier 
+			<tm id="tm70"/>de chez 
+			<tm id="tm71"/>moi, 
+			<tm id="tm72"/>c’est 
+			<tm id="tm73"/>hyper 
+			<tm id="tm74"/>compliqué 
+			<tm id="tm75"/>de 
+			<tm id="tm76"/>s’y 
+			<tm id="tm77"/>mettre 
+			<tm id="tm78"/>et de 
+			<tm id="tm79"/>rester 
+			<tm id="tm80"/>concentré.
+			<tm id="tm81"/>
+            </speech>
+        </bml>
+	<fml>
+    
+		<!-- <deictic end="s1:tm15" id="1" importance="1.0" start="s1:tm3" type="me"/>
+		<deictic end="s1:tm34" id="2" importance="1.0" start="s1:tm22" type="me"/>
+		<deictic end="s1:tm38" id="3" importance="1.0" start="s1:tm26" type="me"/>
+		<beat end="s1:tm96" id="4" importance="1.0" start="s1:tm84" type="LowLf1"/>
+		<deictic end="s1:tm108" id="5" importance="1.0" start="s1:tm96" type="me"/>
+		<beat end="s1:tm128" id="6" importance="1.0" start="s1:tm116" type="LowLf1"/>
+		<deictic end="s1:tm132" id="7" importance="1.0" start="s1:tm120" type="me"/>
+		<deictic end="s1:tm190" id="8" importance="1.0" start="s1:tm178" type="me"/>
+        <ideationalunit end="s1:tm87-0.2" id="id_1" importance="1.0" main="im_5" start="s1:tm0-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm15-0.2" id="im_5" importance="1.0" indexword="9" previous="true" start="s1:tm9-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm25-0.2" id="im_10" importance="1.0" indexword="22" previous="true" start="s1:tm21-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm32-0.2" id="im_14" importance="1.0" indexword="30" start="s1:tm30-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm42-0.2" id="im_19" importance="1.0" previous="true" start="s1:tm37-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm45-0.2" id="im_20" importance="1.0" indexword="41" previous="true" start="s1:tm42-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm47-0.2" id="im_21" importance="1.0" indexword="46" start="s1:tm45-0.2" type="whole"/>
+        <imageschema POSroot="noun" end="s1:tm48-0.2" id="im_22" importance="1.0" indexword="46" start="s1:tm47-0.2" type="whole"/>
+        <imageschema POSroot="adverb" end="s1:tm74-0.2" id="im_38" importance="1.0" previous="true" start="s1:tm70-0.2" type="in"/>
+        <imageschema POSroot="noun" end="s1:tm77-0.2" id="im_39" importance="1.0" indexword="73" previous="true" start="s1:tm74-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm86-0.2" id="im_40" importance="1.0" indexword="76" previous="true" start="s1:tm77-0.2" type="object"/> -->
+    
+
+
+</fml>
+</fml-apml>

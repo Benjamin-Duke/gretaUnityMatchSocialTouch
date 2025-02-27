@@ -1,0 +1,59 @@
+{
+    "displays": [
+        {
+            "name": "Display 0",
+            "resolution": {
+                "x": 7104.0,
+                "y": 1200.0
+            },
+            "screens": [
+                {
+                    "name": "Screen_left",
+                    "r": {
+                        "serializedVersion": "2",
+                        "x": 144.0,
+                        "y": 0.0,
+                        "width": 1632.0,
+                        "height": 1200.0
+                    },
+                    "id_node": 0
+                },
+                {
+                    "name": "Screen_front",
+                    "r": {
+                        "serializedVersion": "2",
+                        "x": 1776.0,
+                        "y": 0.0,
+                        "width": 1632.0,
+                        "height": 1200.0
+                    },
+                    "id_node": 1
+                },
+                {
+                    "name": "Screen_right",
+                    "r": {
+                        "serializedVersion": "2",
+                        "x": 3408.0,
+                        "y": 0.0,
+                        "width": 1632.0,
+                        "height": 1200.0
+                    },
+                    "id_node": 2
+                },
+                {
+                    "name": "Screen_floor",
+                    "r": {
+                        "serializedVersion": "2",
+                        "x": 5634.0,
+                        "y": 90.0,
+                        "width": 1020.0,
+                        "height": 1020.0
+                    },
+                    "id_node": 3
+                }
+            ],
+            "fullscreen": true
+        }
+    ],
+    "stereoInvert": false
+}

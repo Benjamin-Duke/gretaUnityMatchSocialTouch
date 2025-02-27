@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+		<bml>
+            <speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+            <tm id="tm1"/>Super 
+			<tm id="tm2"/>alors. 
+			<tm id="tm3"/>Désolée, 
+			<tm id="tm4"/>tu 
+			<tm id="tm5"/>as 
+			<tm id="tm6"/>peut-être 
+			<tm id="tm7"/>l’habitude 
+			<tm id="tm8"/>de 
+			<tm id="tm9"/>voir 
+			<tm id="tm10"/>des 
+			<tm id="tm11"/>personnages 
+			<tm id="tm12"/>virtuels 
+			<tm id="tm13"/>plus réalistes, 
+			<tm id="tm14"/>notamment 
+			<tm id="tm15"/>au 
+			<tm id="tm16"/>niveau 
+			<tm id="tm17"/>de 
+			<tm id="tm18"/>la 
+			<tm id="tm19"/>voix 
+			<tm id="tm20"/>ou 
+			<tm id="tm21"/>des 
+			<tm id="tm22"/>mouvements. 
+			<tm id="tm23"/>Mais 
+			<tm id="tm24"/>je 
+			<tm id="tm25"/>suis 
+			<tm id="tm26"/>sympa, 
+			<tm id="tm27"/>ne 
+			<tm id="tm28"/>t'inquiète 
+			<tm id="tm29"/>pas !
+			<tm id="tm30"/>Dans 
+			<tm id="tm31"/>tous 
+			<tm id="tm32"/>les 
+			<tm id="tm33"/>cas, 
+			<tm id="tm34"/>prends 
+			<tm id="tm35"/>ton 
+			<tm id="tm36"/>temps 
+			<tm id="tm37"/>et dis-moi 
+			<tm id="tm38"/>quand 
+			<tm id="tm39"/>tu 
+			<tm id="tm40"/>seras 
+			<tm id="tm41"/>prêt 
+			<tm id="tm42"/>à 
+			<tm id="tm43"/>discuter 
+			<tm id="tm44"/>un 
+			<tm id="tm45"/>peu !
+			<tm id="tm46"/>
+            </speech>
+        </bml>
+	<fml>
+    
+		<deictic end="s1:tm18" id="1" importance="1.0" start="s1:tm6" type="me"/>
+		<beat end="s1:tm23" id="2" importance="1.0" start="s1:tm17" type="LowLf1"/>
+		<beat end="s1:tm26" id="3" importance="1.0" start="s1:tm20" type="LowLf1"/>
+		<deictic end="s1:tm29" id="4" importance="1.0" start="s1:tm23" type="me"/>
+		<beat end="s1:tm43" id="5" importance="1.0" start="s1:tm37" type="LowLf1"/>
+		<beat end="s1:tm46" id="6" importance="1.0" start="s1:tm40" type="LowLf1"/>
+		<iconic end="s1:tm49" id="7" importance="1.0" start="s1:tm43" type="Contemplate_both_torso_head_up_left"/>
+		<deictic end="s1:tm63" id="8" importance="1.0" start="s1:tm57" type="me"/>
+		<deictic end="s1:tm66" id="9" importance="1.0" start="s1:tm60" type="me"/>
+        <ideationalunit end="s1:tm23-0.2" id="id_2" importance="1.0" main="im_9" start="s1:tm20-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm18-0.2" id="im_9" importance="1.0" indexword="12" start="s1:tm14-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm26-0.2" id="im_15" importance="1.0" indexword="20" start="s1:tm24-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm29-0.2" id="im_16" importance="1.0" indexword="23" start="s1:tm27-0.2" type="object"/>
+        <ideationalunit end="s1:tm10-0.2" id="id_3" importance="1.0" main="im_18" start="s1:tm6-0.2"/>
+        <imageschema POSroot="verb" end="s1:tm36-0.2" id="im_18" importance="1.0" previous="true" start="s1:tm32-0.2" type="object"/>
+        <ideationalunit end="s1:tm18-0.2" id="id_4" importance="1.0" main="im_22" start="s1:tm15-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm47-0.2" id="im_22" importance="1.0" indexword="6" start="s1:tm45-0.2" type="object"/>
+        <imageschema POSroot="verb" end="s1:tm58-0.2" id="im_23" importance="1.0" previous="true" start="s1:tm48-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm59-0.2" id="im_24" importance="1.0" indexword="18" start="s1:tm58-0.2" type="object"/>
+		<emotion type="StrokeR" id="0" importance="1.0" start="s1:tm23" end="s1:tm29"/>
+    
+
+
+	</fml>
+</fml-apml>

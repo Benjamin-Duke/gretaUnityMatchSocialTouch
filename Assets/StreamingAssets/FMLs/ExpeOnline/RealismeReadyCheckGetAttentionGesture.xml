@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+        <bml>
+            <speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+            <tm id="tm1"/>Oui 
+			<tm id="tm2"/>c’est 
+			<tm id="tm3"/>toujours 
+			<tm id="tm4"/>déroutant 
+			<tm id="tm5"/>de 
+			<tm id="tm6"/>découvrir 
+			<tm id="tm7"/>ce 
+			<tm id="tm8"/>genre 
+			<tm id="tm9"/>d’environnements 
+			<tm id="tm10"/>et 
+			<tm id="tm11"/>de 
+			<tm id="tm12"/>modes 
+			<tm id="tm13"/>d’interaction.
+			<tm id="tm14"/>Mais 
+			<tm id="tm15"/>ça 
+			<tm id="tm16"/>va 
+			<tm id="tm17"/>aller, 
+			<tm id="tm18"/>en 
+			<tm id="tm19"/>plus 
+			<tm id="tm20"/>si 
+			<tm id="tm21"/>tu 
+			<tm id="tm22"/>me 
+			<tm id="tm23"/>regardes 
+			<tm id="tm24"/>tu 
+			<tm id="tm25"/>peux 
+			<tm id="tm26"/>voir 
+			<tm id="tm27"/>que 
+			<tm id="tm28"/>je 
+			<tm id="tm29"/>ne 
+			<tm id="tm30"/>suis 
+			<tm id="tm31"/>pas 
+			<tm id="tm32"/>si 
+			<tm id="tm33"/>impressionnante.
+			<tm id="tm34"/>Dans 
+			<tm id="tm35"/>tous 
+			<tm id="tm36"/>les 
+			<tm id="tm37"/>cas 
+			<tm id="tm38"/>dis-moi 
+			<tm id="tm39"/>quand 
+			<tm id="tm40"/>tu 
+			<tm id="tm41"/>seras 
+			<tm id="tm42"/>prêt
+			<tm id="tm43"/>à 
+			<tm id="tm44"/>discuter
+			<tm id="tm45"/>un 
+			<tm id="tm46"/>peu !
+			<tm id="tm47"/>
+            </speech>
+        </bml>
+	<fml>
+    
+		<deictic end="s1:tm32" id="1" importance="1.0" start="s1:tm26" type="indicateleft"/>
+		<deictic end="s1:tm39" id="2" importance="1.0" start="s1:tm33" type="me"/>
+		<deictic end="s1:tm42" id="3" importance="1.0" start="s1:tm36" type="me"/>
+		<beat end="s1:tm43" id="4" importance="1.0" start="s1:tm37" type="LowLf1"/>
+		<deictic end="s1:tm46" id="5" importance="1.0" start="s1:tm40" type="me"/>
+        <ideationalunit end="s1:tm48-0.2" id="id_1" importance="1.0" main="im_10" start="s1:tm44-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm13-0.2" id="im_10" importance="1.0" indexword="10" previous="true" start="s1:tm10-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm14-0.2" id="im_11" importance="1.0" start="s1:tm13-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm23-0.2" id="im_12" importance="1.0" previous="true" start="s1:tm15-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm49-0.2" id="im_23" importance="1.0" indexword="37" previous="true" start="s1:tm37-0.2" type="container"/>
+        <imageschema POSroot="noun" end="s1:tm50-0.2" id="im_24" importance="1.0" indexword="48" start="s1:tm49-0.2" type="object"/>
+    
+
+
+	</fml>
+</fml-apml>

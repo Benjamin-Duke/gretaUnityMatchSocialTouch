@@ -1,0 +1,807 @@
+fileFormatVersion: 2
+guid: 1761b9b20cce9734fa135dff9f16df63
+ModelImporter:
+  serializedVersion: 20300
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'caresse_libre_fullbody_002' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'GregSkel_Spine1' has translation
+      animation that will be discarded.\n\t'GregSkel_Head' has translation animation
+      that will be discarded.\n\t'GregSkel_LeftHand' has translation animation that
+      will be discarded.\n\t'GregSkel_RightHand' has translation animation that will
+      be discarded.\n\t'GregSkel_LeftFoot' has translation animation that will be
+      discarded.\n\t'GregSkel_RightFoot' has translation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: caresse_libre_fullbody_002
+      takeName: caresse_libre_fullbody_002
+      internalID: 641474624173635979
+      firstFrame: 200
+      lastFrame: 600
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 1
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: GregSkel_Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_LeftHandThumb3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_LeftHandMiddle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_LeftHandMiddle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_LeftHandMiddle3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_LeftHandRing1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_LeftHandRing2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_LeftHandRing3
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_LeftHandPinky1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_LeftHandPinky2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_LeftHandPinky3
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_RightHandThumb3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_RightHandMiddle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_RightHandMiddle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_RightHandMiddle3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_RightHandRing1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_RightHandRing2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_RightHandRing3
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_RightHandPinky1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_RightHandPinky2
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GregSkel_RightHandPinky3
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: caresse_libre_fullbody_002(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_Hips
+      parentName: caresse_libre_fullbody_002(Clone)
+      position: {x: -0.0000000018626451, y: 0.9785855, z: -0.047324043}
+      rotation: {x: -0.00063394086, y: 0.009550005, z: -0.0039102673, w: 0.9999466}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_Spine
+      parentName: GregSkel_Hips
+      position: {x: -0, y: 0.08352554, z: 0}
+      rotation: {x: -0.11243621, y: 0.012897627, z: -0.010114132, w: 0.9935238}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_Spine1
+      parentName: GregSkel_Spine
+      position: {x: -0.00000072829425, y: 0.1923443, z: -0.0000009983778}
+      rotation: {x: 0.060170125, y: 0.0050307685, z: 0.0057260385, w: 0.99815905}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_Neck
+      parentName: GregSkel_Spine1
+      position: {x: -0, y: 0.21073502, z: 0}
+      rotation: {x: 0.03466165, y: 0.008724298, z: 0.0012854075, w: 0.9993602}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_Head
+      parentName: GregSkel_Neck
+      position: {x: -0, y: 0.15788364, z: 0.020372083}
+      rotation: {x: 0.0238391, y: 0.00018141653, z: 0.03951399, w: 0.9989346}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_LeftShoulder
+      parentName: GregSkel_Spine1
+      position: {x: -0.040657878, y: 0.17320049, z: -0.0028391664}
+      rotation: {x: 0.14231658, y: -0.09750127, z: 0.009490206, w: 0.9849617}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_LeftArm
+      parentName: GregSkel_LeftShoulder
+      position: {x: -0.11382173, y: 0, z: 0}
+      rotation: {x: 0.30896306, y: 0.059800662, z: -0.016384464, w: 0.9490507}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_LeftForeArm
+      parentName: GregSkel_LeftArm
+      position: {x: -0.39121032, y: 0, z: 0}
+      rotation: {x: -0.14632238, y: 0.0033204618, z: -0.004047573, w: 0.9892231}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_LeftHand
+      parentName: GregSkel_LeftForeArm
+      position: {x: -0.15787765, y: 0.0016258846, z: 0.0064878184}
+      rotation: {x: -0.13059556, y: -0.14359222, z: 0.026599623, w: 0.9806215}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_LeftHandThumb1
+      parentName: GregSkel_LeftHand
+      position: {x: -0.015279061, y: -0.025465105, z: 0.05093021}
+      rotation: {x: -0.034245033, y: 0.37419474, z: -0.04117047, w: 0.92580265}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_LeftHandThumb2
+      parentName: GregSkel_LeftHandThumb1
+      position: {x: -0.030558122, y: 0, z: 0}
+      rotation: {x: -0.00000007823106, y: -0.039795022, z: -0.00000092387154, w: 0.99920785}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_LeftHandThumb3
+      parentName: GregSkel_LeftHandThumb2
+      position: {x: -0.030558122, y: 0, z: 0}
+      rotation: {x: 0, y: -0.079087466, z: -0, w: 0.99686766}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_LeftHandIndex1
+      parentName: GregSkel_LeftHand
+      position: {x: -0.09167437, y: 0, z: 0.035651147}
+      rotation: {x: -0.0022652883, y: 0.021540482, z: 0.069421746, w: 0.99735224}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_LeftHandIndex2
+      parentName: GregSkel_LeftHandIndex1
+      position: {x: -0.05093021, y: 0, z: 0}
+      rotation: {x: 0.00000018114216, y: 0.0000014938407, z: 0.03344643, w: 0.9994405}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_LeftHandIndex3
+      parentName: GregSkel_LeftHandIndex2
+      position: {x: -0.025465105, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.10037779, w: 0.9949494}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_LeftHandMiddle1
+      parentName: GregSkel_LeftHand
+      position: {x: -0.09167437, y: 0, z: 0.011815808}
+      rotation: {x: -0.0037232921, y: 0.028526446, z: 0.072126426, w: 0.9969805}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_LeftHandMiddle2
+      parentName: GregSkel_LeftHandMiddle1
+      position: {x: -0.05602323, y: 0, z: 0}
+      rotation: {x: 0.00000018393618, y: 0.00000018998978, z: 0.030480133, w: 0.99953544}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_LeftHandMiddle3
+      parentName: GregSkel_LeftHandMiddle2
+      position: {x: -0.030558122, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.12879048, w: 0.99167186}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_LeftHandRing1
+      parentName: GregSkel_LeftHand
+      position: {x: -0.08658135, y: 0, z: -0.011815808}
+      rotation: {x: -0.005144742, y: 0.03346039, z: 0.07330571, w: 0.9967348}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_LeftHandRing2
+      parentName: GregSkel_LeftHandRing1
+      position: {x: -0.05093021, y: 0, z: 0}
+      rotation: {x: 0.00000012852246, y: 0.00000028312192, z: 0.028080992, w: 0.9996057}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_LeftHandRing3
+      parentName: GregSkel_LeftHandRing2
+      position: {x: -0.025465105, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.15167187, w: 0.9884309}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_LeftHandPinky1
+      parentName: GregSkel_LeftHand
+      position: {x: -0.08148833, y: 0, z: -0.035651147}
+      rotation: {x: -0.0068349675, y: 0.03787467, z: 0.07377777, w: 0.99653184}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_LeftHandPinky2
+      parentName: GregSkel_LeftHandPinky1
+      position: {x: -0.040744167, y: 0, z: 0}
+      rotation: {x: -0.00000035716212, y: -0.0000020042057, z: 0.025777569, w: 0.9996677}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_LeftHandPinky3
+      parentName: GregSkel_LeftHandPinky2
+      position: {x: -0.020372083, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.17759496, w: 0.9841037}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_RightShoulder
+      parentName: GregSkel_Spine1
+      position: {x: 0.04023896, y: 0.17320049, z: -0.0028391664}
+      rotation: {x: 0.1615428, y: -0.062090524, z: -0.058901954, w: 0.9831476}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_RightArm
+      parentName: GregSkel_RightShoulder
+      position: {x: 0.11382173, y: 0, z: 0}
+      rotation: {x: 0.31208253, y: 0.05046964, z: 0.04401023, w: 0.94769216}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_RightForeArm
+      parentName: GregSkel_RightArm
+      position: {x: 0.39121032, y: 0, z: 0}
+      rotation: {x: -0.1903598, y: 0.008771609, z: 0.0040077395, w: 0.98166704}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_RightHand
+      parentName: GregSkel_RightForeArm
+      position: {x: 0.1577255, y: 0.002245877, z: 0.009365299}
+      rotation: {x: -0.08256994, y: 0.21664177, z: -0.11914978, w: 0.96542835}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_RightHandThumb1
+      parentName: GregSkel_RightHand
+      position: {x: 0.015279061, y: -0.025465105, z: 0.05093021}
+      rotation: {x: -0.05302083, y: -0.38283512, z: 0.057665356, w: 0.92048943}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_RightHandThumb2
+      parentName: GregSkel_RightHandThumb1
+      position: {x: 0.030558122, y: 0, z: 0}
+      rotation: {x: 0, y: 0.02742664, z: -0, w: 0.99962384}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_RightHandThumb3
+      parentName: GregSkel_RightHandThumb2
+      position: {x: 0.030558122, y: 0, z: 0}
+      rotation: {x: 0, y: 0.054922976, z: -0, w: 0.99849063}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_RightHandIndex1
+      parentName: GregSkel_RightHand
+      position: {x: 0.09167437, y: 0, z: 0.035651147}
+      rotation: {x: 0.00060655863, y: -0.07658475, z: -0.008063448, w: 0.9970303}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_RightHandIndex2
+      parentName: GregSkel_RightHandIndex1
+      position: {x: 0.05093021, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0.01617503, w: 0.9998692}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_RightHandIndex3
+      parentName: GregSkel_RightHandIndex2
+      position: {x: 0.025465105, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0.00808778, w: 0.99996734}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_RightHandMiddle1
+      parentName: GregSkel_RightHand
+      position: {x: 0.09167437, y: 0, z: 0.011815808}
+      rotation: {x: 0.0002493462, y: -0.048718635, z: -0.025300194, w: 0.99849206}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_RightHandMiddle2
+      parentName: GregSkel_RightHandMiddle1
+      position: {x: 0.05602323, y: 0, z: 0}
+      rotation: {x: 0.000000016443659, y: -0.000000063329914, z: -0.041095797, w: 0.9991553}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_RightHandMiddle3
+      parentName: GregSkel_RightHandMiddle2
+      position: {x: 0.030558122, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0.02529168, w: 0.9996801}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_RightHandRing1
+      parentName: GregSkel_RightHand
+      position: {x: 0.08658135, y: 0, z: -0.011815808}
+      rotation: {x: -0.000115004776, y: -0.020799832, z: -0.042508725, w: 0.99887955}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_RightHandRing2
+      parentName: GregSkel_RightHandRing1
+      position: {x: 0.05093021, y: 0, z: 0}
+      rotation: {x: -0.000000014559186, y: 0.0000005997715, z: -0.039373137, w: 0.9992246}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_RightHandRing3
+      parentName: GregSkel_RightHandRing2
+      position: {x: 0.025465105, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0.04248809, w: 0.999097}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_RightHandPinky1
+      parentName: GregSkel_RightHand
+      position: {x: 0.08148833, y: 0, z: -0.035651147}
+      rotation: {x: -0.00096052873, y: -0.0006370842, z: -0.05304248, w: 0.99859166}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_RightHandPinky2
+      parentName: GregSkel_RightHandPinky1
+      position: {x: 0.040744167, y: 0, z: 0}
+      rotation: {x: -0.00000013486708, y: 0.0000009639184, z: -0.037577737, w: 0.9992938}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_RightHandPinky3
+      parentName: GregSkel_RightHandPinky2
+      position: {x: 0.020372083, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0.0601924, w: 0.9981868}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_LeftUpLeg
+      parentName: GregSkel_Hips
+      position: {x: -0.10186042, y: 0, z: 0}
+      rotation: {x: 0.0057232613, y: 0.004281678, z: 0.019228067, w: 0.9997896}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_LeftLeg
+      parentName: GregSkel_LeftUpLeg
+      position: {x: -0, y: -0.5012764, z: 0}
+      rotation: {x: 0.056223493, y: -0.05875749, z: -0.03161619, w: 0.9961862}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_LeftFoot
+      parentName: GregSkel_LeftLeg
+      position: {x: 0.0005777776, y: -0.41560248, z: -0.00041563064}
+      rotation: {x: -0.06883697, y: 0.016244542, z: -0.01770182, w: 0.9973386}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_LeftToeBase
+      parentName: GregSkel_LeftFoot
+      position: {x: -0, y: -0.06620927, z: 0.15279064}
+      rotation: {x: 0.020662606, y: -0.010440082, z: 0.0036259517, w: 0.99972546}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_RightUpLeg
+      parentName: GregSkel_Hips
+      position: {x: 0.10186042, y: 0, z: 0}
+      rotation: {x: -0.021145297, y: -0.030147757, z: -0.0008246354, w: 0.99932146}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_RightLeg
+      parentName: GregSkel_RightUpLeg
+      position: {x: -0, y: -0.5012764, z: 0}
+      rotation: {x: 0.12518638, y: -0.072599605, z: -0.009392067, w: 0.9894289}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_RightFoot
+      parentName: GregSkel_RightLeg
+      position: {x: -0.0004066974, y: -0.41338593, z: 0.000837639}
+      rotation: {x: -0.0956587, y: 0.13917916, z: 0.0024077336, w: 0.9856332}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GregSkel_RightToeBase
+      parentName: GregSkel_RightFoot
+      position: {x: -0, y: -0.06620927, z: 0.15279064}
+      rotation: {x: -0.011593729, y: -0.0026547052, z: 0.0006444547, w: 0.9999291}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

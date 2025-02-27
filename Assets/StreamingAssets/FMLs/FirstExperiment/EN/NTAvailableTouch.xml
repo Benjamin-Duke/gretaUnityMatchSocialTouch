@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+
+    
+        <bml>
+            <speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+				<tm id="tm1"/>Once
+				<tm id="tm2"/>you
+				<tm id="tm3"/>feel
+				<tm id="tm4"/>like
+				<tm id="tm5"/>you 
+				<tm id="tm6"/>are
+				<tm id="tm7"/>done
+				<tm id="tm8"/>trying
+				<tm id="tm9"/>things
+				<tm id="tm10"/>out
+				<tm id="tm11"/>you
+				<tm id="tm12"/>can
+				<tm id="tm13"/>tell
+				<tm id="tm14"/>me
+				<tm id="tm15"/>ready
+				<tm id="tm16"/>and
+				<tm id="tm17"/>we'll
+				<tm id="tm18"/>start the game.
+			</speech>
+        </bml>
+<fml>
+        <fml/>
+    
+		<emotion id="e1" type="joyStrong" start="s1:tm1" end="s1:tm68" importance="1.0"/>
+        <ideationalunit end="s1:tm12-0.2" id="id_1" importance="1.0" main="im_9" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm14-0.2" id="im_9" importance="1.0" start="s1:tm13-0.2" type="object"/>
+        <ideationalunit end="s1:tm22-0.2" id="id_2" importance="1.0" main="im_14" start="s1:tm1-0.2"/>
+    
+
+
+</fml>
+</fml-apml>

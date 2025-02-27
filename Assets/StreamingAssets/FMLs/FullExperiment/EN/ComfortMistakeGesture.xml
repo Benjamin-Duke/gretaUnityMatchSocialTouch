@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+
+    
+        <bml>
+            <speech id="s1" language="english" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+                <tm id="tm1"/>Don't
+				<tm id="tm2"/>worry,
+				<tm id="tm3"/>neither
+				<tm id="tm4"/>manipulating
+				<tm id="tm5"/>the
+				<tm id="tm6"/>pieces
+				<tm id="tm7"/>nor
+				<tm id="tm8"/>figuring
+				<tm id="tm9"/>out
+				<tm id="tm10"/>which
+				<tm id="tm11"/>to
+				<tm id="tm12"/>use
+				<tm id="tm13"/>and
+				<tm id="tm14"/>how
+				<tm id="tm15"/>to
+				<tm id="tm16"/>assemble
+				<tm id="tm17"/>them
+				<tm id="tm18"/>is
+				<tm id="tm19"/>easy.
+				<tm id="tm20"/>But
+				<tm id="tm21"/>it's
+				<tm id="tm22"/>going
+				<tm id="tm23"/>to
+				<tm id="tm24"/>be
+				<tm id="tm25"/>alright,
+				<tm id="tm26"/>hang
+				<tm id="tm27"/>on
+				<tm id="tm28"/>and
+				<tm id="tm29"/>you'll
+				<tm id="tm30"/>manage
+				<tm id="tm31"/>to
+				<tm id="tm32"/>deal
+				<tm id="tm33"/>with
+				<tm id="tm34"/>all
+				<tm id="tm35"/>of
+				<tm id="tm36"/>it!
+</speech>
+        </bml>
+		<fml>
+		<fml/>
+    
+    
+        <ideationalunit end="s1:tm22-0.2" id="id_1" importance="1.0" main="im_5" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm11-0.2" id="im_5" importance="1.0" indexword="9" start="s1:tm9-0.2" type="object"/>
+    
+
+
+</fml>
+</fml-apml>

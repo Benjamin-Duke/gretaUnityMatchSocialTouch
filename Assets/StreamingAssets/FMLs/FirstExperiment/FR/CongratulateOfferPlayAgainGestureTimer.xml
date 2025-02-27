@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+
+    
+        <bml>
+            <speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+                <tm id="tm1"/>Super
+				<tm id="tm2"/>!
+				<tm id="tm3"/>Bravo,
+				<tm id="tm4"/>tu
+				<tm id="tm5"/>as
+				<tm id="tm6"/>raiussi
+				<tm id="tm7"/>à
+				<tm id="tm8"/>placer
+				<tm id="tm9"/>pas
+				<tm id="tm10"/>mal
+				<tm id="tm11"/>de
+				<tm id="tm12"/>piaices
+				<tm id="tm13"/>finalement
+				<tm id="tm14"/>!
+				<tm id="tm15"/>C'est
+				<tm id="tm16"/>vraiment
+				<tm id="tm17"/>bien
+				<tm id="tm18"/>étant
+				<tm id="tm19"/>donné
+				<tm id="tm20"/>que
+				<tm id="tm21"/>tu
+				<tm id="tm22"/>découvrais
+				<tm id="tm23"/>la
+				<tm id="tm24"/>manipulation
+				<tm id="tm25"/>des
+				<tm id="tm26"/>pièces.
+				<tm id="tm27"/>J'aimerais
+				<tm id="tm28"/>bien
+				<tm id="tm29"/>qu'on
+				<tm id="tm30"/>fasse
+				<tm id="tm31"/>une
+				<tm id="tm32"/>autre
+				<tm id="tm33"/>partie,
+				<tm id="tm34"/>maintenant
+				<tm id="tm35"/>que
+				<tm id="tm36"/>tu
+				<tm id="tm37"/>as
+				<tm id="tm38"/>déjà
+				<tm id="tm39"/>fait
+				<tm id="tm40"/>une
+				<tm id="tm41"/>partie,
+				<tm id="tm42"/>je
+				<tm id="tm43"/>pense
+				<tm id="tm44"/>que
+				<tm id="tm45"/>cette
+				<tm id="tm46"/>fois
+				<tm id="tm47"/>tu
+				<tm id="tm48"/>serais
+				<tm id="tm49"/>capable
+				<tm id="tm50"/>de
+				<tm id="tm51"/>réussir
+				<tm id="tm52"/>à
+				<tm id="tm53"/>toutes
+				<tm id="tm54"/>les
+				<tm id="tm55"/>placer
+				<tm id="tm56"/>dans
+				<tm id="tm57"/>le
+				<tm id="tm58"/>temps
+				<tm id="tm59"/>imparti.
+				<tm id="tm60"/>Qu'est-ce
+				<tm id="tm61"/>que
+				<tm id="tm62"/>tu
+				<tm id="tm63"/>en
+				<tm id="tm64"/>dis
+				<tm id="tm65"/>?
+
+
+</speech>
+        </bml>
+		<fml>
+		<fml/>
+    
+		<emotion id="e1" type="joyStrong" start="s1:tm1" end="s1:tm65" importance="1.0"/>
+        <ideationalunit end="s1:tm10-0.2" id="id_2" importance="1.0" main="im_7" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm15-0.2" id="im_7" importance="1.0" indexword="10" start="s1:tm11-0.2" type="object"/>
+        <ideationalunit end="s1:tm18-0.2" id="id_3" importance="1.0" main="im_10" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm28-0.2" id="im_10" importance="1.0" indexword="6" previous="true" start="s1:tm18-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm33-0.2" id="im_11" importance="1.0" indexword="13" previous="true" start="s1:tm28-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm34-0.2" id="im_12" importance="1.0" indexword="18" start="s1:tm33-0.2" type="object"/>
+        <ideationalunit end="s1:tm28-0.2" id="id_4" importance="1.0" main="im_20" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm58-0.2" id="im_20" importance="1.0" indexword="14" previous="true" start="s1:tm47-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm59-0.2" id="im_21" importance="1.0" indexword="24" start="s1:tm58-0.2" type="whole"/>
+        <imageschema POSroot="adverb" end="s1:tm61-0.2" id="im_22" importance="1.0" previous="true" start="s1:tm59-0.2" type="in"/>
+        <imageschema POSroot="noun" end="s1:tm63-0.2" id="im_23" importance="1.0" indexword="27" previous="true" start="s1:tm61-0.2" type="object"/>
+    
+
+
+</fml>
+</fml-apml>

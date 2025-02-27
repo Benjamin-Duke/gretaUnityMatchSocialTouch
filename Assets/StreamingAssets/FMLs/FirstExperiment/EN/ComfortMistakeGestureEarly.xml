@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+
+    
+        <bml>
+            <speech id="s1" language="english" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+                <tm id="tm1"/>Don't
+				<tm id="tm2"/>worry,
+				<tm id="tm3"/>the
+				<tm id="tm4"/>manipulation
+				<tm id="tm5"/>is
+				<tm id="tm6"/>far
+				<tm id="tm7"/>from
+				<tm id="tm8"/>easy.
+				<tm id="tm9"/>But
+				<tm id="tm10"/>it's
+				<tm id="tm11"/>going
+				<tm id="tm12"/>to
+				<tm id="tm13"/>be
+				<tm id="tm14"/>alright,
+				<tm id="tm15"/>hang
+				<tm id="tm16"/>on
+				<tm id="tm17"/>and
+				<tm id="tm18"/>you'll
+				<tm id="tm19"/>manage
+				<tm id="tm20"/>to
+				<tm id="tm21"/>deal
+				<tm id="tm22"/>with
+				<tm id="tm23"/>it!
+
+</speech>
+        </bml>
+		<fml>
+		<fml/>
+    
+    
+        <ideationalunit end="s1:tm11-0.2" id="id_1" importance="1.0" main="im_4" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm13-0.2" id="im_4" importance="1.0" indexword="7" previous="true" start="s1:tm7-0.2" type="object"/>
+    
+
+
+</fml>
+</fml-apml>

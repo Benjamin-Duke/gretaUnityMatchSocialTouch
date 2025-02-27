@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+
+    
+        <bml>
+            <speech id="s1" language="english" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+                <tm id="tm1"/>La
+				<tm id="tm2"/>manipulation
+				<tm id="tm3"/>des
+				<tm id="tm4"/>objets
+				<tm id="tm5"/>est
+				<tm id="tm6"/>vraiment
+				<tm id="tm7"/>difficile
+				<tm id="tm8"/>mais
+				<tm id="tm9"/>t'inquiaite pas
+				<tm id="tm10"/>tu
+				<tm id="tm11"/>t'en
+				<tm id="tm12"/>sors bien
+				<tm id="tm13"/>tu peux
+				<tm id="tm14"/>essayer d'autres
+				<tm id="tm15"/>fasson de les attraper
+				<tm id="tm16"/>avec une main
+				<tm id="tm17"/>en dessous
+				<tm id="tm18"/>et
+				<tm id="tm19"/>une main
+				<tm id="tm20"/>au dessus
+				<tm id="tm21"/>par exemple
+				<tm id="tm22"/>Tu as encore
+				<tm id="tm23"/>du temps
+
+</speech>
+        </bml>
+		<fml>
+		<fml/>
+    
+		<emotion id="e1" type="joyStrong" start="s1:tm1" end="s1:tm23" importance="1.0"/>
+        <ideationalunit end="s1:tm11-0.2" id="id_1" importance="1.0" main="im_4" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm13-0.2" id="im_4" importance="1.0" indexword="7" previous="true" start="s1:tm7-0.2" type="object"/>
+    
+
+
+</fml>
+</fml-apml>

@@ -1,0 +1,95 @@
+[
+	{"questions":[
+		{"id":1,
+		"text":{
+			"FR":"Le stimulus était agréable",
+			"EN":"The stimulus was pleasant"
+		},
+		"answer":"",
+		"panelType":"Slider",
+		"certainty":"",
+		"condition":false},
+		{"id":2,
+		"text":{
+			"FR":"Le stimulus était intense",
+			"EN":"The stimulus was intense"
+		},
+		"answer":"",
+		"panelType":"Slider",
+		"certainty":"",
+		"condition":false},
+		],
+	"id":1,
+	"conditionalGroup":false,
+	"toRemember":""
+	},
+	{"questions":[
+		{"id":3,
+		"text":{
+			"FR":"Quelle émotion pensez-vous que ce toucher communiquait ?",
+			"EN":"What emotion do you think this touch was trying to convey?"
+		},
+		"answer":"",
+		"panelType":"Emotion",
+		"certainty":"",
+		"condition":false}
+		],
+	"id":2,
+	"conditionalGroup":false,
+	"toRemember":""},
+	{"questions":[
+		{"id":4,
+		"text":{
+			"FR":"Quel type de toucher avez-vous reçu ?",
+			"EN":"What type of touch did you receive?"
+		},
+		"answer":"",
+		"panelType":"Gesture",
+		"certainty":"",
+		"condition":false}
+		],
+	"id":3,
+	"conditionalGroup":false,
+	"toRemember":""},
+	{"questions":[
+		{"id":5,
+		"text":{
+			"FR":"L'agent pouvait m'atteindre",
+			"EN":"The agent could reach me"
+		},
+		"answer":"",
+		"panelType":"Slider",
+		"certainty":"",
+		"condition":false},
+		{"id":6,
+		"text":{
+			"FR":"Je n'ai pas senti de toucher",
+			"EN":"I did not feel a touch"
+		},
+		"answer":"",
+		"panelType":"Slider",
+		"certainty":"",
+		"condition":true},
+		{"id":7,
+		"text":{
+			"FR":"L'agent m'a touché",
+			"EN":"The agent touched me"
+		},
+		"answer":"",
+		"panelType":"Slider",
+		"certainty":"",
+		"condition":false},
+		{"id":8,
+		"text":{
+			"FR":"J'avais l'impression d'être dans la même pièce que l'agent",
+			"EN":"I felt like I was in the same place as the agent"
+		},
+		"answer":"",
+		"panelType":"Slider",
+		"certainty":"",
+		"condition":false}
+		],
+	"id":4,
+	"conditionalGroup":false,
+	"toRemember":""}
+]

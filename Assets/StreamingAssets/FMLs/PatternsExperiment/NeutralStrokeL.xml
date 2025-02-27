@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<fml-apml>
+	<bml>
+	</bml>
+	<fml>
+		<emotion id="e2" type="StrokingAroundL" start="0" end="2" importance="1.0"/>
+	</fml>
+</fml-apml>

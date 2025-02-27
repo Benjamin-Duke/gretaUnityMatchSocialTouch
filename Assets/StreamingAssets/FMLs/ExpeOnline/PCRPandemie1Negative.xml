@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+        <bml>
+            <speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+            <tm id="tm1"/>Pour 
+			<tm id="tm2"/>moi 
+			<tm id="tm3"/>aussi 
+			<tm id="tm4"/>c'était 
+			<tm id="tm5"/>très 
+			<tm id="tm6"/>dur. 
+			<tm id="tm7"/>Surtout  
+			<tm id="tm8"/>que    
+			<tm id="tm9"/>j'étais 
+			<tm id="tm10"/>confiné 
+			<tm id="tm11"/>dans 
+			<tm id="tm12"/>un 
+			<tm id="tm13"/>tout 
+			<tm id="tm14"/>petit  
+			<tm id="tm15"/>appartement 
+			<tm id="tm16"/>à 
+			<tm id="tm17"/>Paris, 
+			<tm id="tm18"/>c'était  
+			<tm id="tm19"/>hyper 
+			<tm id="tm20"/>dur  
+			<tm id="tm21"/>pour 
+			<tm id="tm22"/>se 
+			<tm id="tm23"/>sentir 
+			<tm id="tm24"/>bien, 
+			<tm id="tm25"/>ça  
+			<tm id="tm26"/>plus  
+			<tm id="tm27"/>l'inquiétude   
+			<tm id="tm28"/>de pas 
+			<tm id="tm29"/>savoir 
+			<tm id="tm30"/>ce qui 
+			<tm id="tm31"/>allait 
+			<tm id="tm32"/>se passer 
+			<tm id="tm33"/>ou combien   
+			<tm id="tm34"/>de temps  
+			<tm id="tm35"/>ça allait durer...   
+			<tm id="tm36"/>J'ai 
+			<tm id="tm37"/>même eu 
+			<tm id="tm38"/>des soucis 
+			<tm id="tm39"/>avec    
+			<tm id="tm40"/>l'appartement, 
+			<tm id="tm41"/>c'était 
+			<tm id="tm42"/>hyper  
+			<tm id="tm43"/>incomfortable, 
+			<tm id="tm44"/>je 
+			<tm id="tm45"/>suis  
+			<tm id="tm46"/>passé 
+			<tm id="tm47"/>près de 
+			<tm id="tm48"/>la crise 
+			<tm id="tm49"/>de nerf.  
+			<tm id="tm50"/>
+            </speech>
+        </bml>
+	<fml>
+
+
+</fml>
+</fml-apml>

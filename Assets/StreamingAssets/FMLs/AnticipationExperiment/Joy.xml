@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<fml-apml composition="replace">
+	<bml>
+	</bml>
+	<fml>
+		<emotion id="e1" type="joyStrong" start="0" end="500" importance="1.0"/>
+	</fml>
+</fml-apml>

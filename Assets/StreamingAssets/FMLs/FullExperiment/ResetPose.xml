@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+        <bml>
+            <speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+            </speech>
+        </bml>
+	<fml>
+    <rest id="rp1" type="restpose_bellyGesB" start="0" end="1" importance="1.0"/>
+		<!--<beat end="s1:tm15" id="1" importance="1.0" start="s1:tm3" type="LowLf1"/>
+		<deictic end="s1:tm24" id="2" importance="1.0" start="s1:tm9" type="me"/>
+        <ideationalunit end="s1:tm19-0.2" id="id_1" importance="1.0" main="im_8" start="s1:tm0-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm20-0.2" id="im_8" importance="1.0" indexword="13" previous="true" start="s1:tm11-0.2" type="whole"/>-->
+	</fml>
+</fml-apml>

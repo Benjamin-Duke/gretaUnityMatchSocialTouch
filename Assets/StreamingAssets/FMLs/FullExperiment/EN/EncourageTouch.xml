@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+
+    
+        <bml>
+            <speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+                <tm id="tm1"/>Don't
+				<tm id="tm2"/>hesitate
+				<tm id="tm3"/>to
+				<tm id="tm4"/>just
+				<tm id="tm5"/>try
+				<tm id="tm6"/>different
+				<tm id="tm7"/>things
+				<tm id="tm8"/>out.
+				<tm id="tm9"/>You
+				<tm id="tm10"/>don't
+				<tm id="tm11"/>need
+				<tm id="tm12"/>to
+				<tm id="tm13"/>get
+				<tm id="tm14"/>it
+				<tm id="tm15"/>right
+				<tm id="tm16"/>on
+				<tm id="tm17"/>the
+				<tm id="tm18"/>first
+				<tm id="tm19"/>try,
+				<tm id="tm20"/>you'll
+				<tm id="tm21"/>get
+				<tm id="tm22"/>it
+				<tm id="tm23"/>done
+				<tm id="tm24"/>via
+				<tm id="tm25"/>trial
+				<tm id="tm26"/>and
+				<tm id="tm27"/>error.
+</speech>
+        </bml>
+    
+    
+        <ideationalunit end="s1:tm10-0.2" id="id_1" importance="1.0" main="im_4" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm12-0.2" id="im_4" importance="1.0" indexword="9" start="s1:tm9-0.2" type="link"/>
+        <ideationalunit end="s1:tm22-0.2" id="id_2" importance="1.0" main="im_10" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm25-0.2" id="im_10" importance="1.0" indexword="12" start="s1:tm22-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm34-0.2" id="im_16" importance="1.0" indexword="22" start="s1:tm32-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm35-0.2" id="im_17" importance="1.0" indexword="22" start="s1:tm34-0.2" type="object"/>
+    
+
+
+</fml>
+</fml-apml>

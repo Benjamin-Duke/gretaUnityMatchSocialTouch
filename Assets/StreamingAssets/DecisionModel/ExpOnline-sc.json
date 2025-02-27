@@ -1,0 +1,1263 @@
+{
+	"root":
+		{
+			"classId": 0,
+			"ScenarioName": "InteractiveBuilding",
+			"Description": "v2 du modèle pour simulation",
+			"Dialogues": [
+				{
+					"CurrentState": "S0",
+					"NextState": "S1",
+					"Meaning": "CommunicativeIntention",
+					"Style": "Modalité",
+					"Utterance": "Exemple",
+					"UtteranceId": "TTS-771F5924706521C73464341FC48AFB05"
+				}, 
+				{
+					"CurrentState": "VirtualEnvironment",
+					"NextState": "Habits",
+					"Meaning": "GetAttention",
+					"Style": "Agent",
+					"Utterance": "HabitsGetAttention",
+					"UtteranceId": "TTS-60FEAC62811AA2E1EF4A72E235DA1A26"
+				}, 
+				{
+					"CurrentState": "Realisme",
+					"NextState": "ReadyCheck",
+					"Meaning": "GetAttention",
+					"Style": "Agent",
+					"Utterance": "RealismeReadyCheckGetAttention",
+					"UtteranceId": "TTS-D89329BD42197960D4C727330DE3A593"
+				}, 
+				{
+					"CurrentState": "Habits",
+					"NextState": "Realisme",
+					"Meaning": "NoHabits",
+					"Style": "Human",
+					"Utterance": "Realisme",
+					"UtteranceId": "TTS-11F0B77999546CE888C1D92160F0629F"
+				}, 
+				{
+					"CurrentState": "EmotionalBaseline",
+					"NextState": "VirtualEnvironment",
+					"Meaning": "NegativeMood",
+					"Style": "Human",
+					"Utterance": "VirtualEnvironmentNegative",
+					"UtteranceId": "TTS-5A6BFC6615FE275C94E504EE3AA4D0D9"
+				}, 
+				{
+					"CurrentState": "EmotionalBaseline",
+					"NextState": "VirtualEnvironment",
+					"Meaning": "PositiveMood",
+					"Style": "Human",
+					"Utterance": "VirtualEnvironmentPositive",
+					"UtteranceId": "TTS-B0FB7287936C1E60E38687F094E65A9F"
+				}, 
+				{
+					"CurrentState": "VirtualEnvironment",
+					"NextState": "Habits",
+					"Meaning": "Comfort",
+					"Style": "Agent",
+					"Utterance": "HabitsComfort",
+					"UtteranceId": "TTS-65E005C11729192DF594F1793D539E6A"
+				}, 
+				{
+					"CurrentState": "RealismeHabits",
+					"NextState": "ReadyCheck",
+					"Meaning": "GetAttention",
+					"Style": "Agent",
+					"Utterance": "RealismeHabbitsReadyCheckGetAttention",
+					"UtteranceId": "TTS-2AD89E0DA05672F464FD568CA4A16F88"
+				}, 
+				{
+					"CurrentState": "Realisme",
+					"NextState": "ReadyCheck",
+					"Meaning": "Comfort",
+					"Style": "Agent",
+					"Utterance": "RealismeReadyCheckComfort",
+					"UtteranceId": "TTS-3DC1E26378389D2E9ACDC3BF73687DF5"
+				}, 
+				{
+					"CurrentState": "RealismeHabits",
+					"NextState": "ReadyCheck",
+					"Meaning": "Comfort",
+					"Style": "Agent",
+					"Utterance": "RealismeHabbitsReadyCheckComfort",
+					"UtteranceId": "TTS-CF6F3E03C5CDAE8873FA2533703E958E"
+				}, 
+				{
+					"CurrentState": "LikeCinema",
+					"NextState": "SadMovies",
+					"Meaning": "Likes",
+					"Style": "Human",
+					"Utterance": "Oui, j'adore le cinéma, j'ai hâte que ça revienne, regarder des films chez soi c'est quand même pas pareil.",
+					"UtteranceId": "TTS-76E3245DB96EFC1E59F9B0A8CDD4E590"
+				}, 
+				{
+					"CurrentState": "PremierConfinementRessenti",
+					"NextState": "Pandemie1",
+					"Meaning": "Negative",
+					"Style": "Human",
+					"Utterance": "PCRPandemie1Negative",
+					"UtteranceId": "TTS-FE635229A1FC87F18D4D35794400709B"
+				}, 
+				{
+					"CurrentState": "Habits",
+					"NextState": "RealismeHabits",
+					"Meaning": "HasHabits",
+					"Style": "Human",
+					"Utterance": "RealismHabbits",
+					"UtteranceId": "TTS-B92330E7B63106B28C2FE11104F22E8A"
+				}, 
+				{
+					"CurrentState": "IntroSouvenir",
+					"NextState": "IntroSouvenir",
+					"Meaning": "Comfort",
+					"Style": "Agent",
+					"Utterance": "::",
+					"UtteranceId": "TTS-4501C091B0366D76EA3218B6CFDD8097"
+				}, 
+				{
+					"CurrentState": "Realisme",
+					"NextState": "ReadyCheck",
+					"Meaning": "TurnGiving",
+					"Style": "Agent",
+					"Utterance": "RealismeReadyCheckTurnGiving",
+					"UtteranceId": "TTS-91FC30F230971D66EB377847D08F4A97"
+				}, 
+				{
+					"CurrentState": "IntroSouvenir",
+					"NextState": "IntroSouvenir",
+					"Meaning": "GetAttention",
+					"Style": "Agent",
+					"Utterance": "::",
+					"UtteranceId": "TTS-4501C091B0366D76EA3218B6CFDD8097"
+				}, 
+				{
+					"CurrentState": "IntroSouvenir",
+					"NextState": "IntroSouvenir",
+					"Meaning": "Encouragement",
+					"Style": "Agent",
+					"Utterance": "::",
+					"UtteranceId": "TTS-4501C091B0366D76EA3218B6CFDD8097"
+				}, 
+				{
+					"CurrentState": "IntroSouvenir",
+					"NextState": "IntroSouvenir",
+					"Meaning": "MaintainRapport",
+					"Style": "Agent",
+					"Utterance": "::",
+					"UtteranceId": "TTS-4501C091B0366D76EA3218B6CFDD8097"
+				}, 
+				{
+					"CurrentState": "Pandemie2021",
+					"NextState": "Fin",
+					"Meaning": "Negative",
+					"Style": "Human",
+					"Utterance": "HumanPandemic2121Negative",
+					"UtteranceId": "TTS-19D41038E50036CDD86E6FF7F55864FC"
+				}, 
+				{
+					"CurrentState": "Pandemie1",
+					"NextState": "Pandemie2021",
+					"Meaning": "TurnGiving",
+					"Style": "Agent",
+					"Utterance": "Pandemic2021Negative",
+					"UtteranceId": "TTS-E90833AD234EF630F083B62545CC6DCF"
+				}, 
+				{
+					"CurrentState": "RealismeHabits",
+					"NextState": "ReadyCheck",
+					"Meaning": "TurnGiving",
+					"Style": "Agent",
+					"Utterance": "RealismeHabbitsReadyCheckTurnGiving",
+					"UtteranceId": "TTS-A200C82A96FAB6F15477B9B035C7F1AB"
+				}, 
+				{
+					"CurrentState": "Pandemie2021",
+					"NextState": "Fin",
+					"Meaning": "Positive",
+					"Style": "Human",
+					"Utterance": "HumanPandemic2121Positive",
+					"UtteranceId": "TTS-5CB517EBCBF06E30579121CFBEC5228D"
+				}, 
+				{
+					"CurrentState": "PremierConfinementRessenti",
+					"NextState": "Pandemie1",
+					"Meaning": "Positive",
+					"Style": "Human",
+					"Utterance": "PCRPandemie1Positive",
+					"UtteranceId": "TTS-8C1E9098530E1FC4B692966CEACCB6D8"
+				}, 
+				{
+					"CurrentState": "OUTPandemie1",
+					"NextState": "Pandemie2021",
+					"Meaning": "TurnGiving",
+					"Style": "Agent",
+					"Utterance": "Pandemic2021Positive",
+					"UtteranceId": "TTS-A89AEBE887842B3960E422CA36A9FC95"
+				}, 
+				{
+					"CurrentState": "IntroSouvenir",
+					"NextState": "LikeCinema",
+					"Meaning": "TurnGiving",
+					"Style": "Agent",
+					"Utterance": "Alors est-ce que tu aimes le cinéma ? Tu as hâte qu'on puisse de nouveau sortir voir des films entre amis, ou aller au théâtre ?",
+					"UtteranceId": "TTS-F77FE997EA1BC01A2AF4A67F173A37AB"
+				}, 
+				{
+					"CurrentState": "IntroPandémie",
+					"NextState": "PremierConfinementRessenti",
+					"Meaning": "TurnGiving",
+					"Style": "Agent",
+					"Utterance": "Pandemic2020",
+					"UtteranceId": "TTS-393D45628DEA7DBEC28E1FCB6B479AE0"
+				}, 
+				{
+					"CurrentState": "LikeCinema",
+					"NextState": "SadMovies",
+					"Meaning": "DoesntLike",
+					"Style": "Human",
+					"Utterance": "Ce n'est pas une passion, mais c'est sûr que j'aime bien aller voir des films avec des amis pour passer le temps.",
+					"UtteranceId": "TTS-E387319F923C8C44073C7811AD1E1BE5"
+				}, 
+				{
+					"CurrentState": "VirtualEnvironment",
+					"NextState": "Habits",
+					"Meaning": "MaintainRapport",
+					"Style": "Agent",
+					"Utterance": "HabitsMaintainRapport",
+					"UtteranceId": "TTS-F58FDB9CFD9E8703ABF948740A95A6FD"
+				}, 
+				{
+					"CurrentState": "Start",
+					"NextState": "EmotionalBaseline",
+					"Meaning": "TurnGiving",
+					"Style": "Agent",
+					"Utterance": "EmotionalBaseline",
+					"UtteranceId": "TTS-0E68C8647649D556072504760DBFBF80"
+				}, 
+				{
+					"CurrentState": "ReadyCheck",
+					"NextState": "IntroPandémie",
+					"Meaning": "OK",
+					"Style": "Human",
+					"Utterance": "RCIntroSouvenir",
+					"UtteranceId": "TTS-CA2C67CBB33A316B98D1BED75AD381D2"
+				}],
+			"Characters": [
+				{
+					"KnowledgeBase":
+						{
+							"Perspective": "Camille",
+							"Knowledge":
+								{
+									"SELF":
+										{
+											"DialogState(Human)": "Start, 1",
+											"Has(Floor)": "Camille, 1",
+											"Proxemics(Human)": "Public, 1",
+											"InTouchingRange(Human)": "False, 1",
+											"StaticTouchAvoidance(Human)": "Low, 1",
+											"Attentiveness(Human)": "-1, 1",
+											"MoodArousal(Human)": "3, 1",
+											"MoodValence(Human)": "-1, 1",
+											"isHuman(Camille)": "False, 1",
+											"Current(CI)": "Unassigned, 1",
+											"Current(EtherealPresence)": "Absent, 1",
+											"Human(Look)": "Else, 1",
+											"BodyPart(idTE)": "Prototype, 1",
+											"Type(idTE)": "Prototype, 1",
+											"DurIntClass(idTE)": "Prototype, 1",
+											"ImvIntClass(idTE)": "Prototype, 1",
+											"MeanfIntClass(idTE)": "Prototype, 1",
+											"MeanvIntClass(idTE)": "Prototype, 1",
+											"isSpeaking(Human)": "False, 1",
+											"LookingAt(Human, Eyes)": "False, 1",
+											"LookingAt(Human, Head)": "False, 1",
+											"LookingAt(Human, Body)": "False, 1"
+										}
+								}
+						},
+					"BodyName": null,
+					"VoiceName": null,
+					"EmotionalState":
+						{
+							"Mood": 0,
+							"initialTick": 0,
+							"EmotionalPool": [],
+							"AppraisalConfiguration":
+								{
+									"HalfLifeDecayConstant": 0.5,
+									"EmotionInfluenceOnMoodFactor": 0.3,
+									"MoodInfluenceOnEmotionFactor": 0.3,
+									"MinimumMoodValueForInfluencingEmotions": 0.5,
+									"EmotionalHalfLifeDecayTime": 15,
+									"MoodHalfLifeDecayTime": 60
+								}
+						},
+					"AutobiographicMemory":
+						{
+							"Tick": 0,
+							"records": []
+						},
+					"OtherAgents":
+						{
+							"dictionary": []
+						},
+					"Goals": []
+				}, 
+				{
+					"KnowledgeBase":
+						{
+							"Perspective": "Human",
+							"Knowledge":
+								{
+									"SELF":
+										{
+											"IsHuman(Human)": "True, 1",
+											"DialogState(Camille)": "Start, 1",
+											"Has(Floor)": "Camille, 1",
+											"NextDialogState(Camille)": "Unassigned, 1"
+										}
+								}
+						},
+					"BodyName": null,
+					"VoiceName": null,
+					"EmotionalState":
+						{
+							"Mood": 0,
+							"initialTick": 0,
+							"EmotionalPool": [],
+							"AppraisalConfiguration":
+								{
+									"HalfLifeDecayConstant": 0.5,
+									"EmotionInfluenceOnMoodFactor": 0.3,
+									"MoodInfluenceOnEmotionFactor": 0.3,
+									"MinimumMoodValueForInfluencingEmotions": 0.5,
+									"EmotionalHalfLifeDecayTime": 15,
+									"MoodHalfLifeDecayTime": 60
+								}
+						},
+					"AutobiographicMemory":
+						{
+							"Tick": 0,
+							"records": []
+						},
+					"OtherAgents":
+						{
+							"dictionary": []
+						},
+					"Goals": []
+				}],
+			"WorldModel":
+				{
+					"Actions": [
+						{
+							"Name": "Event(Action-End, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], [meanfint], [meanv], [meanvint]), [t])",
+							"Effects": [],
+							"Conditions":
+								{
+									"ConditionSet": [],
+									"Agents": []
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], Speak([cs], [ns], [ic], Human), [t])",
+							"Effects": [
+								{
+									"PropertyName": "Has(Floor)",
+									"NewValue": "[t]",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}, 
+								{
+									"PropertyName": "DialogState([s])",
+									"NewValue": "[ns]",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}, 
+								{
+									"PropertyName": "Has(Floor)",
+									"NewValue": "[t]",
+									"NewCertainty": 1,
+									"ObserverAgent": "[s]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": [],
+									"Agents": []
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], Speak([cs], [ns], NegativeMood, Human), [t])",
+							"Effects": [
+								{
+									"PropertyName": "MoodValence([s])",
+									"NewValue": 2,
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["[s] = Human"],
+									"Agents": ["-"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], Speak([cs], [ns], [ic], Agent), [t])",
+							"Effects": [
+								{
+									"PropertyName": "Current(CI)",
+									"NewValue": "[ic]",
+									"NewCertainty": 1,
+									"ObserverAgent": "[s]"
+								}, 
+								{
+									"PropertyName": "Next(DialogState)",
+									"NewValue": "[ns]",
+									"NewCertainty": 1,
+									"ObserverAgent": "[s]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": [],
+									"Agents": []
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], Modality([md], [ns]), [t])",
+							"Effects": [
+								{
+									"PropertyName": "Has(Floor)",
+									"NewValue": "[t]",
+									"NewCertainty": 1,
+									"ObserverAgent": "*"
+								}, 
+								{
+									"PropertyName": "DialogState([s])",
+									"NewValue": "[ns]",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}, 
+								{
+									"PropertyName": "Next(DialogState)",
+									"NewValue": "Unassigned",
+									"NewCertainty": 1,
+									"ObserverAgent": "[s]"
+								}, 
+								{
+									"PropertyName": "Current(CI)",
+									"NewValue": "Unassigned",
+									"NewCertainty": 1,
+									"ObserverAgent": "[s]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["Next(DialogState) != DialogState([t])"],
+									"Agents": ["[s]"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], Speak([cs], [ns], PositiveMood, Human), [t])",
+							"Effects": [
+								{
+									"PropertyName": "MoodValence([s])",
+									"NewValue": 6,
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["[s] = Human"],
+									"Agents": ["-"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-Start, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], Weak, [meanf], [meanfint], [meanv], [meanvint]), [t])",
+							"Effects": [
+								{
+									"PropertyName": "MoodArousal([s])",
+									"NewValue": "Math(Ask(MoodArousal([s])), Minus, 1)",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["MoodArousal([s]) > 1"],
+									"Agents": ["[t]"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-Update, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], [meanfint], [meanv], [meanvint]), [t])",
+							"Effects": [],
+							"Conditions":
+								{
+									"ConditionSet": [],
+									"Agents": []
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], DistanceChanged(Intimate), [t])",
+							"Effects": [
+								{
+									"PropertyName": "Proxemics([s])",
+									"NewValue": "Intimate",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}, 
+								{
+									"PropertyName": "InTouchingRange([s])",
+									"NewValue": true,
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": [],
+									"Agents": []
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], DistanceChanged(Personal), [t])",
+							"Effects": [
+								{
+									"PropertyName": "Proxemics([s])",
+									"NewValue": "Personal",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}, 
+								{
+									"PropertyName": "InTouchingRange([s])",
+									"NewValue": false,
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": [],
+									"Agents": []
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], DistanceChanged(Social), [t])",
+							"Effects": [
+								{
+									"PropertyName": "Proxemics([s])",
+									"NewValue": "Social",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}, 
+								{
+									"PropertyName": "InTouchingRange([s])",
+									"NewValue": false,
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": [],
+									"Agents": []
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], DistanceChanged(Public), [t])",
+							"Effects": [
+								{
+									"PropertyName": "Proxemics([s])",
+									"NewValue": "Public",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}, 
+								{
+									"PropertyName": "InTouchingRange([s])",
+									"NewValue": false,
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": [],
+									"Agents": []
+								}
+						}, 
+						{
+							"Name": "Event(Action-Start, [s], EtherealBodyEvent([st], [dur]), [t])",
+							"Effects": [
+								{
+									"PropertyName": "Current(EtherealPresence)",
+									"NewValue": "Present",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": [],
+									"Agents": []
+								}
+						}, 
+						{
+							"Name": "Event(Action-Update, [s], EtherealBodyEvent([st], [dur]), [t])",
+							"Effects": [],
+							"Conditions":
+								{
+									"ConditionSet": [],
+									"Agents": []
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], EtherealBodyEvent([st], [dur]), [t])",
+							"Effects": [
+								{
+									"PropertyName": "Current(EtherealPresence)",
+									"NewValue": "Absent",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": [],
+									"Agents": []
+								}
+						}, 
+						{
+							"Name": "Event(Action-Start, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], Strong, [meanf], [meanfint], [meanv], [meanvint]), [t])",
+							"Effects": [
+								{
+									"PropertyName": "MoodArousal([s])",
+									"NewValue": "Math(Ask(MoodArousal([s])), Plus, 1)",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["MoodArousal([s]) < 7"],
+									"Agents": ["[t]"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-Start, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], High, [meanv], [meanvint]), [t])",
+							"Effects": [
+								{
+									"PropertyName": "MoodArousal([s])",
+									"NewValue": "Math(Ask(MoodArousal([s])), Plus, 1)",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["MoodArousal([s]) < 7"],
+									"Agents": ["[t]"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-Update, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], High, [meanv], [meanvint]), [t])",
+							"Effects": [
+								{
+									"PropertyName": "MoodArousal([s])",
+									"NewValue": "Math(Ask(MoodArousal([s])), Plus, 1)",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["MoodArousal([s]) < 7"],
+									"Agents": ["[t]"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], High, [meanv], [meanvint]), [t])",
+							"Effects": [
+								{
+									"PropertyName": "MoodArousal([s])",
+									"NewValue": "Math(Ask(MoodArousal([s])), Plus, 1)",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["[meanfint] = High", "MoodArousal([s]) < 7"],
+									"Agents": ["[t]", "[t]"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-Start, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], Low, [meanv], [meanvint]), [t])",
+							"Effects": [
+								{
+									"PropertyName": "MoodArousal([s])",
+									"NewValue": "Math(Ask(MoodArousal([s])), Minus, 1)",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["MoodArousal([s]) > 1"],
+									"Agents": ["[t]"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-Update, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], Low, [meanv], [meanvint]), [t])",
+							"Effects": [
+								{
+									"PropertyName": "MoodArousal([s])",
+									"NewValue": "Math(Ask(MoodArousal([s])), Minus, 1)",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["MoodArousal([s]) > 1"],
+									"Agents": ["[t]"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], Low, [meanv], [meanvint]), [t])",
+							"Effects": [
+								{
+									"PropertyName": "MoodArousal([s])",
+									"NewValue": "Math(Ask(MoodArousal([s])), Minus, 1)",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["MoodArousal([s]) > 1"],
+									"Agents": ["[t]"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-Start, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], [meanfint], [meanv], Static), [t])",
+							"Effects": [
+								{
+									"PropertyName": "MoodArousal([s])",
+									"NewValue": "Math(Ask(MoodArousal([s])), Minus, 1)",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["MoodArousal([s]) > 1"],
+									"Agents": ["[t]"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-Update, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], [meanfint], [meanv], Static), [t])",
+							"Effects": [
+								{
+									"PropertyName": "MoodArousal([s])",
+									"NewValue": "Math(Ask(MoodArousal([s])), Minus, 1)",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["MoodArousal([s]) > 1"],
+									"Agents": ["[t]"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], [meanfint], [meanv], Static), [t])",
+							"Effects": [
+								{
+									"PropertyName": "MoodArousal([s])",
+									"NewValue": "Math(Ask(MoodArousal([s])), Minus, 1)",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["MoodArousal([s]) > 1"],
+									"Agents": ["[t]"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-Start, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], [meanfint], [meanv], Fast), [t])",
+							"Effects": [
+								{
+									"PropertyName": "MoodArousal([s])",
+									"NewValue": "Math(Ask(MoodArousal([s])), Plus, 1)",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["MoodArousal([s]) < 7"],
+									"Agents": ["[t]"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-Update, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], [meanfint], [meanv], Fast), [t])",
+							"Effects": [
+								{
+									"PropertyName": "MoodArousal([s])",
+									"NewValue": "Math(Ask(MoodArousal([s])), Plus, 1)",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["MoodArousal([s]) < 7"],
+									"Agents": ["[t]"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], [meanfint], [meanv], Fast), [t])",
+							"Effects": [
+								{
+									"PropertyName": "MoodArousal([s])",
+									"NewValue": "Math(Ask(MoodArousal([s])), Plus, 1)",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["MoodArousal([s]) < 7"],
+									"Agents": ["[t]"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-Start, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], [meanfint], [meanv], [meanvint]), [t])",
+							"Effects": [
+								{
+									"PropertyName": "BodyPart([st])",
+									"NewValue": "[part]",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}, 
+								{
+									"PropertyName": "Type([st])",
+									"NewValue": "[type]",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}, 
+								{
+									"PropertyName": "DurIntClass([st])",
+									"NewValue": "[durint]",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}, 
+								{
+									"PropertyName": "ImvIntClass([st])",
+									"NewValue": "[invint]",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}, 
+								{
+									"PropertyName": "MeanfIntClass([st])",
+									"NewValue": "[meanfint]",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}, 
+								{
+									"PropertyName": "MeanvIntClass([st])",
+									"NewValue": "[meanvint]",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": [],
+									"Agents": []
+								}
+						}, 
+						{
+							"Name": "Event(Action-Update, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], [meanfint], [meanv], [meanvint]), [t])",
+							"Effects": [
+								{
+									"PropertyName": "BodyPart([st])",
+									"NewValue": "[part]",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}, 
+								{
+									"PropertyName": "Type([st])",
+									"NewValue": "[type]",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}, 
+								{
+									"PropertyName": "DurIntClass([st])",
+									"NewValue": "[durint]",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}, 
+								{
+									"PropertyName": "ImvIntClass([st])",
+									"NewValue": "[invint]",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}, 
+								{
+									"PropertyName": "MeanfIntClass([st])",
+									"NewValue": "[meanfint]",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}, 
+								{
+									"PropertyName": "MeanvIntClass([st])",
+									"NewValue": "[meanvint]",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": [],
+									"Agents": []
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], [meanfint], [meanv], [meanvint]), [t])",
+							"Effects": [
+								{
+									"PropertyName": "BodyPart([st])",
+									"NewValue": "[part]",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}, 
+								{
+									"PropertyName": "Type([st])",
+									"NewValue": "[type]",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}, 
+								{
+									"PropertyName": "DurIntClass([st])",
+									"NewValue": "[durint]",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}, 
+								{
+									"PropertyName": "ImvIntClass([st])",
+									"NewValue": "[invint]",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}, 
+								{
+									"PropertyName": "MeanfIntClass([st])",
+									"NewValue": "[meanfint]",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}, 
+								{
+									"PropertyName": "MeanvIntClass([st])",
+									"NewValue": "[meanvint]",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": [],
+									"Agents": []
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], Modality([md], [ns]), [t])",
+							"Effects": [
+								{
+									"PropertyName": "Next(DialogState)",
+									"NewValue": "Unassigned",
+									"NewCertainty": 1,
+									"ObserverAgent": "[s]"
+								}, 
+								{
+									"PropertyName": "Current(CI)",
+									"NewValue": "Unassigned",
+									"NewCertainty": 1,
+									"ObserverAgent": "[s]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["Next(DialogState) = DialogState([t])"],
+									"Agents": ["[s]"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], Speech([v]), [t])",
+							"Effects": [
+								{
+									"PropertyName": "isSpeaking(Human)",
+									"NewValue": "[v]",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["[s] = Human", "[t] = Camille"],
+									"Agents": ["-", "-"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], Arousal([v]), [t])",
+							"Effects": [
+								{
+									"PropertyName": "MoodArousal(Human)",
+									"NewValue": "[v]",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["[s] = Human", "[t] = Camille"],
+									"Agents": ["-", "-"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], Speak([cs], [ns], Positive, Human), [t])",
+							"Effects": [
+								{
+									"PropertyName": "MoodValence([s])",
+									"NewValue": 6,
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["[s] = Human"],
+									"Agents": ["-"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], Speak([cs], [ns], Negative, Human), [t])",
+							"Effects": [
+								{
+									"PropertyName": "MoodValence([s])",
+									"NewValue": 3,
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["[s] = Human"],
+									"Agents": ["-"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], LookDirectionChanged([b], [h], [e]), [t])",
+							"Effects": [
+								{
+									"PropertyName": "LookingAt([s], Body)",
+									"NewValue": "[b]",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}, 
+								{
+									"PropertyName": "LookingAt([s], Head)",
+									"NewValue": "[h]",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}, 
+								{
+									"PropertyName": "LookingAt([s], Eyes)",
+									"NewValue": "[e]",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["Human = [s]", "Camille = [t]"],
+									"Agents": ["-", "-"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], LookDirectionChanged([b], True, [e]), [t])",
+							"Effects": [
+								{
+									"PropertyName": "Attentiveness([s])",
+									"NewValue": "Math(Ask(Attentiveness([s])), Plus, 2)",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["Human = [s]", "Camille = [t]", "LookingAt([s], Head) = False", "LookingAt([s], Body) = False", "Attentiveness([s]) < 7", "Attentiveness([s]) >= 1"],
+									"Agents": ["-", "-", "[t]", "[t]", "[t]", "[t]"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], LookDirectionChanged(True, False, [e]), [t])",
+							"Effects": [
+								{
+									"PropertyName": "Attentiveness([s])",
+									"NewValue": "Math(Ask(Attentiveness([s])), Plus, 1)",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["Human = [s]", "Camille = [t]", "LookingAt([s], Body) = False", "LookingAt([s], Head) = False", "Attentiveness([s]) < 7", "Attentiveness([s]) >= 1"],
+									"Agents": ["-", "-", "[t]", "[t]", "[t]", "[t]"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], LookDirectionChanged(True, False, [e]), [t])",
+							"Effects": [
+								{
+									"PropertyName": "Attentiveness([s])",
+									"NewValue": "Math(Ask(Attentiveness([s])), Minus, 1)",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["Human = [s]", "Camille = [t]", "LookingAt([s], Head) = True", "Attentiveness([s]) <= 7", "Attentiveness([s]) > 1"],
+									"Agents": ["-", "-", "[t]", "[t]", "[t]"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], LookDirectionChanged([b], True, [e]), [t])",
+							"Effects": [
+								{
+									"PropertyName": "Attentiveness([s])",
+									"NewValue": "Math(Ask(Attentiveness([s])), Plus, 1)",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["Human = [s]", "Camille = [t]", "LookingAt([s], Head) = False", "LookingAt([s], Body) = True", "Attentiveness([s]) < 7", "Attentiveness([s]) >= 1"],
+									"Agents": ["-", "-", "[t]", "[t]", "[t]", "[t]"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], LookDirectionChanged(False, False, [e]), [t])",
+							"Effects": [
+								{
+									"PropertyName": "Attentiveness([s])",
+									"NewValue": "Math(Ask(Attentiveness([s])), Minus, 1)",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["Human = [s]", "Camille = [t]", "LookingAt([s], Head) = False", "LookingAt([s], Body) = True", "Attentiveness([s]) > 1", "Attentiveness([s]) <= 7"],
+									"Agents": ["-", "-", "[t]", "[t]", "[t]", "[t]"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], LookDirectionChanged(False, False, [e]), [t])",
+							"Effects": [
+								{
+									"PropertyName": "Attentiveness([s])",
+									"NewValue": "Math(Ask(Attentiveness([s])), Minus, 2)",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["Human = [s]", "Camille = [t]", "LookingAt([s], Head) = True", "Attentiveness([s]) > 1", "Attentiveness([s]) <= 7"],
+									"Agents": ["-", "-", "[t]", "[t]", "[t]"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], LookDirectionChanged(True, False, [e]), [t])",
+							"Effects": [
+								{
+									"PropertyName": "Attentiveness([s])",
+									"NewValue": "Math(7, Minus, 1)",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["Human = [s]", "Camille = [t]", "LookingAt([s], Head) = True", "Attentiveness([s]) > 7", "Attentiveness([s]) > 1"],
+									"Agents": ["-", "-", "[t]", "[t]", "[t]"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], LookDirectionChanged(False, False, [e]), [t])",
+							"Effects": [
+								{
+									"PropertyName": "Attentiveness([s])",
+									"NewValue": "Math(7, Minus, 1)",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["Human = [s]", "Camille = [t]", "LookingAt([s], Head) = False", "LookingAt([s], Body) = True", "Attentiveness([s]) > 1", "Attentiveness([s]) > 7"],
+									"Agents": ["-", "-", "[t]", "[t]", "[t]", "[t]"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], LookDirectionChanged(False, False, [e]), [t])",
+							"Effects": [
+								{
+									"PropertyName": "Attentiveness([s])",
+									"NewValue": "Math(7, Minus, 2)",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["Human = [s]", "Camille = [t]", "LookingAt([s], Head) = True", "Attentiveness([s]) > 1", "Attentiveness([s]) > 7"],
+									"Agents": ["-", "-", "[t]", "[t]", "[t]"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], LookDirectionChanged([b], True, [e]), [t])",
+							"Effects": [
+								{
+									"PropertyName": "Attentiveness([s])",
+									"NewValue": "Math(1, Plus, 2)",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["Human = [s]", "Camille = [t]", "LookingAt([s], Head) = False", "LookingAt([s], Body) = False", "Attentiveness([s]) < 7", "Attentiveness([s]) < 1"],
+									"Agents": ["-", "-", "[t]", "[t]", "[t]", "[t]"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], LookDirectionChanged(True, False, [e]), [t])",
+							"Effects": [
+								{
+									"PropertyName": "Attentiveness([s])",
+									"NewValue": "Math(1, Plus, 1)",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["Human = [s]", "Camille = [t]", "LookingAt([s], Body) = False", "LookingAt([s], Head) = False", "Attentiveness([s]) < 7", "Attentiveness([s]) < 1"],
+									"Agents": ["-", "-", "[t]", "[t]", "[t]", "[t]"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], LookDirectionChanged([b], True, [e]), [t])",
+							"Effects": [
+								{
+									"PropertyName": "Attentiveness([s])",
+									"NewValue": "Math(1, Plus, 1)",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["Human = [s]", "Camille = [t]", "LookingAt([s], Head) = False", "LookingAt([s], Body) = True", "Attentiveness([s]) < 7", "Attentiveness([s]) < 1"],
+									"Agents": ["-", "-", "[t]", "[t]", "[t]", "[t]"]
+								}
+						}, 
+						{
+							"Name": "Event(Action-End, [s], TouchAvoidance([v]), [t])",
+							"Effects": [
+								{
+									"PropertyName": "StaticTouchAvoidance([s])",
+									"NewValue": "[v]",
+									"NewCertainty": 1,
+									"ObserverAgent": "[t]"
+								}],
+							"Conditions":
+								{
+									"ConditionSet": ["[s] = Human", "[t] = Camille"],
+									"Agents": ["-", "-"]
+								}
+						}]
+				}
+		},
+	"types": [
+		{
+			"TypeId": 0,
+			"ClassName": "IntegratedAuthoringTool.IntegratedAuthoringToolAsset, IntegratedAuthoringTool, Version=1.7.0.0, Culture=neutral, PublicKeyToken=null"
+		}]
+}

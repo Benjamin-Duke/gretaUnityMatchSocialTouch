@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+
+    
+        <bml>
+            <speech id="s1" language="english" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+                <tm id="tm1"/>Another
+				<tm id="tm2"/>thing
+				<tm id="tm3"/>I
+				<tm id="tm4"/>can
+				<tm id="tm5"/>do
+				<tm id="tm6"/>is
+				<tm id="tm7"/>interact
+				<tm id="tm8"/>with
+				<tm id="tm9"/>you
+				<tm id="tm10"/>via
+				<tm id="tm11"/>touch.
+				<tm id="tm12"/>If
+				<tm id="tm13"/>you
+				<tm id="tm14"/>don't
+				<tm id="tm15"/>mind,
+				<tm id="tm16"/>you
+				<tm id="tm17"/>can
+				<tm id="tm18"/>come
+				<tm id="tm19"/>close
+				<tm id="tm20"/>to
+				<tm id="tm21"/>me
+				<tm id="tm22"/>and
+				<tm id="tm23"/>try
+				<tm id="tm24"/>and
+				<tm id="tm25"/>I
+				<tm id="tm26"/>will
+				<tm id="tm27"/>touch
+				<tm id="tm28"/>you
+				<tm id="tm29"/>on
+				<tm id="tm30"/>the
+				<tm id="tm31"/>arm.
+				<tm id="tm32"/>You
+				<tm id="tm33"/>should
+				<tm id="tm34"/>be
+				<tm id="tm35"/>able
+				<tm id="tm36"/>to
+				<tm id="tm37"/>feel
+				<tm id="tm38"/>something
+				<tm id="tm39"/>where
+				<tm id="tm40"/>you're
+				<tm id="tm41"/>wearing
+				<tm id="tm42"/>the
+				<tm id="tm43"/>device.
+				<tm id="tm44"/>I
+				<tm id="tm45"/>can
+				<tm id="tm46"/>do
+				<tm id="tm47"/>it
+				<tm id="tm48"/>again
+				<tm id="tm49"/>a
+				<tm id="tm50"/>few
+				<tm id="tm51"/>times
+				<tm id="tm52"/>if
+				<tm id="tm53"/>you
+				<tm id="tm54"/>want,
+				<tm id="tm55"/>and
+				<tm id="tm56"/>when
+				<tm id="tm57"/>you
+				<tm id="tm58"/>are
+				<tm id="tm59"/>done
+				<tm id="tm60"/>you
+				<tm id="tm61"/>can
+				<tm id="tm62"/>just
+				<tm id="tm63"/>tell
+				<tm id="tm64"/>me
+				<tm id="tm65"/>that
+				<tm id="tm66"/>you're
+				<tm id="tm67"/>ready
+				<tm id="tm68"/>to
+				<tm id="tm69"/>proceed
+				<tm id="tm70"/>to
+				<tm id="tm71"/>the
+				<tm id="tm72"/>actual
+				<tm id="tm73"/>game.
+			</speech>
+        </bml>
+<fml>
+        <fml/>
+    
+        <ideationalunit end="s1:tm12-0.2" id="id_1" importance="1.0" main="im_9" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm14-0.2" id="im_9" importance="1.0" start="s1:tm13-0.2" type="object"/>
+        <ideationalunit end="s1:tm22-0.2" id="id_2" importance="1.0" main="im_14" start="s1:tm1-0.2"/>
+        <imageschema POSroot="adverb" end="s1:tm27-0.2" id="im_14" importance="1.0" previous="true" start="s1:tm24-0.2" type="near"/>
+        <imageschema POSroot="noun" end="s1:tm37-0.2" id="im_20" importance="1.0" indexword="22" start="s1:tm35-0.2" type="object"/>
+        <ideationalunit end="s1:tm13-0.2" id="id_3" importance="1.0" main="im_29" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm51-0.2" id="im_29" importance="1.0" indexword="13" start="s1:tm49-0.2" type="whole"/>
+        <ideationalunit end="s1:tm32-0.2" id="id_4" importance="1.0" main="im_33" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm63-0.2" id="im_33" importance="1.0" indexword="8" previous="true" start="s1:tm56-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm84-0.2" id="im_47" importance="1.0" indexword="32" start="s1:tm81-0.2" type="object"/>
+    
+
+
+</fml>
+</fml-apml>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+        <bml>
+            <speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+            <tm id="tm1"/>Je 
+			<tm id="tm2"/>ne 
+			<tm id="tm3"/>m’étais 
+			<tm id="tm4"/>jamais 
+			<tm id="tm5"/>rendu 
+			<tm id="tm6"/>compte 
+			<tm id="tm7"/>d’à 
+			<tm id="tm8"/>quel 
+			<tm id="tm9"/>point 
+			<tm id="tm10"/>la 
+			<tm id="tm11"/>présence, 
+			<tm id="tm12"/>le 
+			<tm id="tm13"/>sentiment 
+			<tm id="tm14"/>d’être 
+			<tm id="tm15"/>avec 
+			<tm id="tm16"/>d’autres 
+			<tm id="tm17"/>personnes, 
+			<tm id="tm18"/>est 
+			<tm id="tm19"/>important, 
+			<tm id="tm20"/>même 
+			<tm id="tm21"/>pour 
+			<tm id="tm22"/>moi 
+			<tm id="tm23"/>qui 
+			<tm id="tm24"/>me 
+			<tm id="tm25"/>considérerais 
+			<tm id="tm26"/>plutôt 
+			<tm id="tm27"/>comme 
+			<tm id="tm28"/>quelqu’un 
+			<tm id="tm29"/>d’introverti.
+			<tm id="tm30"/>Après 
+			<tm id="tm31"/>le 
+			<tm id="tm32"/>milieu 
+			<tm id="tm33"/>de 
+			<tm id="tm34"/>2020 
+			<tm id="tm35"/>ça 
+			<tm id="tm36"/>allait 
+			<tm id="tm37"/>un 
+			<tm id="tm38"/>peu 
+			<tm id="tm39"/>mieux, 
+			<tm id="tm40"/>j’avais 
+			<tm id="tm41"/>l’impression 
+			<tm id="tm42"/>de 
+			<tm id="tm43"/>m’habituer 
+			<tm id="tm44"/>et 
+			<tm id="tm45"/>puis 
+			<tm id="tm46"/>le 
+			<tm id="tm47"/>confinement 
+			<tm id="tm48"/>était 
+			<tm id="tm49"/>fini. 
+			<tm id="tm50"/>Mais 
+			<tm id="tm51"/>depuis 
+			<tm id="tm52"/>la 
+			<tm id="tm53"/>fin 
+			<tm id="tm54"/>d’année, 
+			<tm id="tm55"/>et 
+			<tm id="tm56"/>jusqu’à 
+			<tm id="tm57"/>maintenant 
+			<tm id="tm58"/>j’ai 
+			<tm id="tm59"/>l’impression 
+			<tm id="tm60"/>que 
+			<tm id="tm61"/>je 
+			<tm id="tm62"/>rechute 
+			<tm id="tm63"/>un 
+			<tm id="tm64"/>peu, 
+			<tm id="tm65"/>ça 
+			<tm id="tm66"/>redevient 
+			<tm id="tm67"/>vraiment 
+			<tm id="tm68"/>insupportable 
+			<tm id="tm69"/>et 
+			<tm id="tm70"/>fatigant 
+			<tm id="tm71"/>psychiquement. 
+			<tm id="tm72"/>J’en 
+			<tm id="tm73"/>peux 
+			<tm id="tm74"/>plus 
+			<tm id="tm75"/>quoi, 
+			<tm id="tm76"/>j’ai 
+			<tm id="tm77"/>envie 
+			<tm id="tm78"/>de 
+			<tm id="tm79"/>contact 
+			<tm id="tm80"/>social 
+			<tm id="tm81"/>et 
+			<tm id="tm82"/>de 
+			<tm id="tm83"/>pouvoir 
+			<tm id="tm84"/>juste 
+			<tm id="tm85"/>voir 
+			<tm id="tm86"/>mes 
+			<tm id="tm87"/>amis, 
+			<tm id="tm88"/>faire 
+			<tm id="tm89"/>des 
+			<tm id="tm90"/>activités 
+			<tm id="tm91"/>dehors. 
+			<tm id="tm92"/>C’est 
+			<tm id="tm93"/>hyper 
+			<tm id="tm94"/>frustrant 
+			<tm id="tm95"/>et 
+			<tm id="tm96"/>déprimant !
+			<tm id="tm97"/>C’est
+			<tm id="tm98"/>comment 
+			<tm id="tm99"/>pour toi
+			<tm id="tm100"/>cette année
+			<tm id="tm101"/>par rapport
+			<tm id="tm102"/>à l’année dernière ?
+			<tm id="tm103"/>
+            </speech>
+        </bml>
+	<fml>
+    
+		<beat end="s1:tm15" id="1" importance="1.0" start="s1:tm3" type="LowLf1"/>
+		<deictic end="s1:tm26" id="2" importance="1.0" start="s1:tm20" type="me"/>
+		<deictic end="s1:tm33" id="3" importance="1.0" start="s1:tm27" type="me"/>
+		<beat end="s1:tm53" id="4" importance="1.0" start="s1:tm47" type="LowLf1"/>
+		<beat end="s1:tm60" id="5" importance="1.0" start="s1:tm54" type="LowLf1"/>
+		<deictic end="s1:tm80" id="6" importance="1.0" start="s1:tm74" type="me"/>
+		<deictic end="s1:tm87" id="7" importance="1.0" start="s1:tm81" type="me"/>
+        <ideationalunit end="s1:tm82-0.2" id="id_1" importance="1.0" main="im_4" start="s1:tm79-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm10-0.2" id="im_4" importance="1.0" indexword="8" start="s1:tm7-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm17-0.2" id="im_5" importance="1.0" indexword="11" previous="true" start="s1:tm11-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm18-0.2" id="im_6" importance="1.0" indexword="16" start="s1:tm17-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm39-0.2" id="im_11" importance="1.0" previous="true" start="s1:tm24-0.2" type="whole"/>
+        <imageschema POSroot="noun" end="s1:tm41-0.2" id="im_12" importance="1.0" indexword="38" previous="true" start="s1:tm39-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm53-0.2" id="im_15" importance="1.0" indexword="44" previous="true" start="s1:tm44-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm61-0.2" id="im_16" importance="1.0" indexword="54" previous="true" start="s1:tm54-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm64-0.2" id="im_17" importance="1.0" indexword="60" previous="true" start="s1:tm61-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm65-0.2" id="im_18" importance="1.0" indexword="63" start="s1:tm64-0.2" type="object"/>
+        <ideationalunit end="s1:tm23-0.2" id="id_2" importance="1.0" main="im_38" start="s1:tm19-0.2"/>
+		<imageschema POSroot="noun" end="s1:tm96-0.2" id="im_38" importance="1.0" indexword="11" start="s1:tm94-0.2" type="object"/>
+		<emotion type="TouchR" id="0" importance="1.0" start="s1:tm100" end="s1:tm103"/>
+
+</fml>
+</fml-apml>

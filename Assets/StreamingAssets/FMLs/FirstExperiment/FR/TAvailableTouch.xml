@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+
+    
+        <bml>
+            <speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+                <tm id="tm1"/>Une
+				<tm id="tm2"/>autre
+				<tm id="tm3"/>chose
+				<tm id="tm4"/>dont
+				<tm id="tm5"/>je
+				<tm id="tm6"/>suis
+				<tm id="tm7"/>capable,
+				<tm id="tm8"/>c'est
+				<tm id="tm9"/>de
+				<tm id="tm10"/>toucher.
+				<tm id="tm11"/>Si
+				<tm id="tm12"/>sa
+				<tm id="tm13"/>te
+				<tm id="tm14"/>dit,
+				<tm id="tm15"/>je
+				<tm id="tm16"/>te
+				<tm id="tm17"/>propose
+				<tm id="tm18"/>de
+				<tm id="tm19"/>t'approcher
+				<tm id="tm20"/>de
+				<tm id="tm21"/>moi
+				<tm id="tm22"/>et
+				<tm id="tm23"/>je
+				<tm id="tm24"/>te
+				<tm id="tm25"/>toucherai
+				<tm id="tm26"/>sur
+				<tm id="tm27"/>le
+				<tm id="tm28"/>bras.
+				<tm id="tm29"/>Tu
+				<tm id="tm30"/>devrais
+				<tm id="tm31"/>sentir
+				<tm id="tm32"/>quelque
+				<tm id="tm33"/>chose
+				<tm id="tm34"/>la
+				<tm id="tm35"/>ou
+				<tm id="tm36"/>tu
+				<tm id="tm37"/>portes
+				<tm id="tm38"/>le
+				<tm id="tm39"/>dispositif.
+				<tm id="tm40"/>On
+				<tm id="tm41"/>peut
+				<tm id="tm42"/>le
+				<tm id="tm43"/>refaire
+				<tm id="tm44"/>plusieurs
+				<tm id="tm45"/>fois
+				<tm id="tm46"/>si
+				<tm id="tm47"/>tu
+				<tm id="tm48"/>veux,
+				<tm id="tm49"/>et
+				<tm id="tm50"/>sinon
+				<tm id="tm51"/>tu
+				<tm id="tm52"/>n'auras
+				<tm id="tm53"/>qu'a
+				<tm id="tm54"/>me
+				<tm id="tm55"/>dire
+				<tm id="tm56"/>prait
+				<tm id="tm57"/>quand
+				<tm id="tm58"/>tu
+				<tm id="tm59"/>penses
+				<tm id="tm60"/>que
+				<tm id="tm61"/>tu
+				<tm id="tm62"/>es
+				<tm id="tm63"/>prait
+				<tm id="tm64"/>pour
+				<tm id="tm65"/>commencer
+				<tm id="tm66"/>le
+				<tm id="tm67"/>petit
+				<tm id="tm68"/>jeu.
+			</speech>
+        </bml>
+<fml>
+        <fml/>
+    
+		<emotion id="e1" type="joyStrong" start="s1:tm1" end="s1:tm68" importance="1.0"/>
+        <ideationalunit end="s1:tm12-0.2" id="id_1" importance="1.0" main="im_9" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm14-0.2" id="im_9" importance="1.0" start="s1:tm13-0.2" type="object"/>
+        <ideationalunit end="s1:tm22-0.2" id="id_2" importance="1.0" main="im_14" start="s1:tm1-0.2"/>
+        <imageschema POSroot="adverb" end="s1:tm27-0.2" id="im_14" importance="1.0" previous="true" start="s1:tm24-0.2" type="near"/>
+        <imageschema POSroot="noun" end="s1:tm37-0.2" id="im_20" importance="1.0" indexword="22" start="s1:tm35-0.2" type="object"/>
+        <ideationalunit end="s1:tm13-0.2" id="id_3" importance="1.0" main="im_29" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm51-0.2" id="im_29" importance="1.0" indexword="13" start="s1:tm49-0.2" type="whole"/>
+        <ideationalunit end="s1:tm32-0.2" id="id_4" importance="1.0" main="im_33" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm63-0.2" id="im_33" importance="1.0" indexword="8" previous="true" start="s1:tm56-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm84-0.2" id="im_47" importance="1.0" indexword="32" start="s1:tm81-0.2" type="object"/>
+    
+
+
+</fml>
+</fml-apml>

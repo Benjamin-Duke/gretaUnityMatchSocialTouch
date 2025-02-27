@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+
+    
+        <bml>
+            <speech id="s1" language="english" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+                <tm id="tm1"/>You
+				<tm id="tm2"/>are
+				<tm id="tm3"/>doing
+				<tm id="tm4"/>extremely
+				<tm id="tm5"/>well,
+				<tm id="tm6"/>Looks
+				<tm id="tm7"/>like
+				<tm id="tm8"/>you
+				<tm id="tm9"/>are
+				<tm id="tm10"/>going
+				<tm id="tm11"/>to
+				<tm id="tm12"/>set
+				<tm id="tm13"/>a
+				<tm id="tm14"/>record
+				<tm id="tm15"/>if
+				<tm id="tm16"/>you
+				<tm id="tm17"/>keep
+				<tm id="tm18"/>it going
+</speech>
+        </bml>
+		<fml>
+		<fml/>
+    
+        <ideationalunit end="s1:tm12-0.2" id="id_2" importance="1.0" main="im_15" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm23-0.2" id="im_15" importance="1.0" indexword="11" start="s1:tm20-0.2" type="object"/>
+        <imageschema POSroot="verb" end="s1:tm24-0.2" id="im_16" importance="1.0" start="s1:tm23-0.2" type="interval"/>
+    
+
+
+</fml>
+</fml-apml>

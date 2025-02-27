@@ -1,0 +1,167 @@
+[
+	{"questions":[
+		{"id":1,
+		"text":{
+			"FR":"Quel âge avez-vous ?",
+			"EN":"How old are you?"
+		},
+		"answer":"",
+		"panelType":"Age",
+		"certainty":"",
+		"condition":false},
+		{"id":2,
+		"text":{
+			"FR":"A quel genre vous identifiez-vous ?",
+			"EN":"What gender do you identify with?"
+		},
+		"answer":"",
+		"panelType":"Gender",
+		"certainty":"",
+		"condition":false},
+		],
+	"id":1,
+	"conditionalGroup":false,
+	"toRemember":""
+	},
+	{"questions":[
+		{"id":3,
+		"text":{
+			"FR":"J’ai de l’expérience avec l’utilisation de dispositifs de réalité virtuelle (casques, salle immersive, réalité augmentée, autre)",
+			"EN":"I have experience with virtual reality devices (head-mounted displays, immersive rooms, augmented reality, other)"
+		},
+		"answer":"",
+		"panelType":"Slider",
+		"certainty":"",
+		"condition":false},
+		{"id":4,
+		"text":{
+			"FR":"J’ai de l’expérience avec et joue régulièrement aux jeux vidéos, notamment en 3D.",
+			"EN":"I have experience with and regularly play video games, especially 3D video games."
+		},
+		"answer":"",
+		"panelType":"Slider",
+		"certainty":"",
+		"condition":false}
+		],
+	"id":2,
+	"conditionalGroup":false,
+	"toRemember":""},
+	{"questions":[
+		{"id":5,
+		"text":{
+			"FR":"Je serais mal à l’aise si les personnages virtuels avaient des émotions.",
+			"EN":"I would be uncomfortable if virtual characters had emotions"
+		},
+		"answer":"",
+		"panelType":"Slider",
+		"certainty":"",
+		"condition":false},
+		{"id":6,
+		"text":{
+			"FR":"Je serais mal à l’aise en parlant avec un personnage virtuel.",
+			"EN":"I would feel uncomfortable talking with a virtual character"
+		},
+		"answer":"",
+		"panelType":"Slider",
+		"certainty":"",
+		"condition":false},
+		{"id":7,
+		"text":{
+			"FR":"Je pourrais être réconforté par un personnage virtuel qui montre des émotions.",
+			"EN":"I could feel comforted by a virtual character expressing emotions"
+		},
+		"answer":"",
+		"panelType":"Slider",
+		"certainty":"",
+		"condition":false},
+		{"id":8,
+		"text":{
+			"FR":"La notion de personnage virtuel n'a aucune signification pour moi.",
+			"EN":"The notion of virtual character has no signification for me"
+		},
+		"answer":"",
+		"panelType":"Slider",
+		"certainty":"",
+		"condition":false},
+		{"id":9,
+		"text":{
+			"FR":"Je détesterais que les personnages virtuels nous jugent.",
+			"EN":"I would hate if virtual characters judged us"
+		},
+		"answer":"",
+		"panelType":"Slider",
+		"certainty":"",
+		"condition":false},
+		{"id":10,
+		"text":{
+			"FR":"Je serais très nerveux si j’étais devant un personnage virtuel.",
+			"EN":"I would feel nervous if I was in front of a virtual character"
+		},
+		"answer":"",
+		"panelType":"Slider",
+		"certainty":"",
+		"condition":false},
+		{"id":11,
+		"text":{
+			"FR":"Je serais inquiet que les personnages virtuels puissent avoir une mauvaise influence sur les enfants",
+			"EN":"I worry that virtual characters could have a bad influence on children"
+		},
+		"answer":"",
+		"panelType":"Slider",
+		"certainty":"",
+		"condition":false}
+		],
+	"id":3,
+	"conditionalGroup":false,
+	"toRemember":""},
+	{"questions":[
+		{"id":12,
+		"text":{
+			"FR":"Je n'apprécie pas quand les gens sont tres affectueux physiquement vis-à-vis de moi",
+			"EN":"I dislike people being very physically affectionate towards me"
+		},
+		"answer":"",
+		"panelType":"Slider",
+		"certainty":"",
+		"condition":false},
+		{"id":13,
+		"text":{
+			"FR":"J'ai besoin de bien connaître quelqu'un pour apprécier une étreinte de sa part",
+			"EN":"I have to know someone quite well to enjoy a hug from them"
+		},
+		"answer":"",
+		"panelType":"Slider",
+		"certainty":"",
+		"condition":true},
+		{"id":14,
+		"text":{
+			"FR":"La familiarité physique me met mal a l'aise",
+			"EN":"I am put off by physical familiarity"
+		},
+		"answer":"",
+		"panelType":"Slider",
+		"certainty":"",
+		"condition":false},
+		{"id":15,
+		"text":{
+			"FR":"Cela me met mal a l'aise si quelqu'un que je ne connais pas tres bien pose sa main sur mon bras de maniere amicale",
+			"EN":"If someone I don’t know very well puts a friendly hand on my arm it makes me feel uncomfortable"
+		},
+		"answer":"",
+		"panelType":"Slider",
+		"certainty":"",
+		"condition":false},
+		{"id":16,
+		"text":{
+			"FR":"Il m'est inconfortable qu'une personne que je ne connais pas tres bien me touche amicalement",
+			"EN":"It makes me feel uncomfortable if someone I don’t know very well touches me in a friendly manner"
+		},
+		"answer":"",
+		"panelType":"Slider",
+		"certainty":"",
+		"condition":false}
+		],
+	"id":4,
+	"conditionalGroup":false,
+	"toRemember":""}
+	]

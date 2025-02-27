@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+		<bml>
+            <speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+            <tm id="tm1"/>
+				Non 
+			<tm id="tm2"/>
+				pas   
+			<tm id="tm3"/>
+				trop, 
+			<tm id="tm4"/>
+				c’est  
+			<tm id="tm5"/>
+				un peu 
+			<tm id="tm6"/>
+				déstabilisant. 
+			<tm id="tm7"/>
+            </speech>
+        </bml>
+	<fml>
+		<!--<performative end="s1:tm15" id="1" importance="1.0" start="s1:tm3" type="negation"/>-->
+	</fml>
+</fml-apml>

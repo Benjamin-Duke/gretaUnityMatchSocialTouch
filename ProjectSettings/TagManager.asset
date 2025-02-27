@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - PersonalPerimeter
+  - GretAnimationRoot
+  - TactileCell
+  - CamilleHead
+  - Human
+  - Hand
+  - Camille
+  - CamilleCollision
+  - CamilleEtheral
+  - Marker
+  - Wrist
+  - Thumb
+  - Index
+  - Middle
+  - Ring
+  - Pinky
+  - Tetro
+  - EN
+  - FR
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - PerceptionModule
+  - Water
+  - UI
+  - Tetrominoes
+  - CustomWorldUI
+  - 
+  - Mirrors
+  - 
+  - 
+  - 
+  - 
+  - NoHandCollision
+  - VisualHandLeft
+  - VisualHandRight
+  - 
+  - Player
+  - Controller
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

@@ -1,0 +1,1485 @@
+[
+"EmotionalAppraisalAsset", 
+{
+	"root":
+		{
+			"classId": 0,
+			"Description": null,
+			"AppraisalRules":
+				{
+					"AppraisalWeight": 1,
+					"Rules": [
+						{
+							"EventName": "Event(Action-End, [s], Speak([cs], [ns], Positive, Human), SELF)",
+							"Conditions":
+								{
+									"Set": []
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": 2,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Praiseworthiness",
+											"Value": 2,
+											"Target": "[s]"
+										}, 
+										{
+											"Name": "Desirability for others",
+											"Value": 2,
+											"Target": "[s]"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-End, [s], Speak([cs], [ns], Failure, Human), SELF)",
+							"Conditions":
+								{
+									"Set": []
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": -3,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Praiseworthiness",
+											"Value": -2,
+											"Target": "[s]"
+										}, 
+										{
+											"Name": "Desirability for others",
+											"Value": -4,
+											"Target": "[s]"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-End, [s], Speak([cs], [ns], Neutral, Human), SELF)",
+							"Conditions":
+								{
+									"Set": []
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": 0,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Desirability for others",
+											"Value": 0,
+											"Target": "[s]"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-End, [s], Speak([cs], [ns], Negative, Human), SELF)",
+							"Conditions":
+								{
+									"Set": []
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": -2,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Desirability for others",
+											"Value": -2,
+											"Target": "[s]"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-End, [s], Speak([cs], [ns], Perfect, Human), SELF)",
+							"Conditions":
+								{
+									"Set": []
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": 3,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Desirability for others",
+											"Value": 4,
+											"Target": "[s]"
+										}, 
+										{
+											"Name": "Praiseworthiness",
+											"Value": 3,
+											"Target": "[s]"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-End, [s], Speak([cs], [ns], Error, Human), SELF)",
+							"Conditions":
+								{
+									"Set": []
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": -2,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Praiseworthiness",
+											"Value": -1,
+											"Target": "[s]"
+										}, 
+										{
+											"Name": "Desirability for others",
+											"Value": -2,
+											"Target": "[s]"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-End, [s], DistanceChanged(Intimate), [t])",
+							"Conditions":
+								{
+									"Set": []
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": 2,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Like",
+											"Value": 1,
+											"Target": "-"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-End, [s], DistanceChanged(Personal), [t])",
+							"Conditions":
+								{
+									"Set": ["Proxemics([s]) != Intimate", "Proxemics([s]) != Personal"]
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": 1,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Like",
+											"Value": 1,
+											"Target": "-"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-End, [s], DistanceChanged(Personal), [t])",
+							"Conditions":
+								{
+									"Set": ["Proxemics([s]) = Intimate"]
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": -1,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Like",
+											"Value": -1,
+											"Target": "-"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-End, [s], DistanceChanged(Social), [t])",
+							"Conditions":
+								{
+									"Set": ["Proxemics([s]) = Public"]
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": 1,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Like",
+											"Value": 1,
+											"Target": "-"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-End, [s], DistanceChanged(Social), [t])",
+							"Conditions":
+								{
+									"Set": ["Proxemics([s]) = Personal"]
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": -1,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Like",
+											"Value": -1,
+											"Target": "-"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-End, [s], DistanceChanged(Public), [t])",
+							"Conditions":
+								{
+									"Set": []
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": -2,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Like",
+											"Value": -1,
+											"Target": "-"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-End, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], [meanfint], [meanv], [meanvint]), [t])",
+							"Conditions":
+								{
+									"Set": ["Human = [s]", "Camille = [t]"]
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": []
+								}
+						}, 
+						{
+							"EventName": "Event(Action-Start, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], [meanfint], [meanv], [meanvint]), [t])",
+							"Conditions":
+								{
+									"Set": ["Human = [s]", "Camille = [t]", "Head = [part]"]
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": -5,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Like",
+											"Value": -5,
+											"Target": "-"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-Start, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], [meanfint], [meanv], [meanvint]), [t])",
+							"Conditions":
+								{
+									"Set": ["Human = [s]", "Camille = [t]", "Torso = [part]"]
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": -5,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Like",
+											"Value": -5,
+											"Target": "-"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-Update, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], [meanfint], [meanv], [meanvint]), [t])",
+							"Conditions":
+								{
+									"Set": ["Human = [s]", "Camille = [t]", "BodyPart([st]) = Head", "Head = [part]"]
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": -6,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Like",
+											"Value": -6,
+											"Target": "-"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-End, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], [meanfint], [meanv], [meanvint]), [t])",
+							"Conditions":
+								{
+									"Set": ["Human = [s]", "Camille = [t]", "BodyPart([st]) = Head", "Head = [part]"]
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": -6,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Like",
+											"Value": -6,
+											"Target": "-"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-End, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], [meanfint], [meanv], [meanvint]), [t])",
+							"Conditions":
+								{
+									"Set": ["Human = [s]", "Camille = [t]", "Press = [type]"]
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": []
+								}
+						}, 
+						{
+							"EventName": "Event(Action-End, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], [meanfint], [meanv], [meanvint]), [t])",
+							"Conditions":
+								{
+									"Set": ["Human = [s]", "Camille = [t]", "Pat = [type]"]
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": 2,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Like",
+											"Value": 2,
+											"Target": "-"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-End, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], [meanfint], [meanv], [meanvint]), [t])",
+							"Conditions":
+								{
+									"Set": ["Human = [s]", "Camille = [t]", "Hit = [type]"]
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": -2,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Like",
+											"Value": -2,
+											"Target": "-"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-End, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], [meanfint], [meanv], [meanvint]), [t])",
+							"Conditions":
+								{
+									"Set": ["Human = [s]", "Camille = [t]", "Caress = [type]"]
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": 2,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Like",
+											"Value": 2,
+											"Target": "-"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-End, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], [meanfint], [meanv], [meanvint]), [t])",
+							"Conditions":
+								{
+									"Set": ["Human = [s]", "Camille = [t]", "Rub = [type]"]
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": -1,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Like",
+											"Value": -1,
+											"Target": "-"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-End, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], [meanfint], [meanv], [meanvint]), [t])",
+							"Conditions":
+								{
+									"Set": ["Human = [s]", "Camille = [t]", "Scratch = [type]"]
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": -2,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Like",
+											"Value": -2,
+											"Target": "-"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-End, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], [meanfint], [meanv], [meanvint]), [t])",
+							"Conditions":
+								{
+									"Set": ["Human = [s]", "Camille = [t]", "Brush = [type]"]
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": 1,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Like",
+											"Value": 1,
+											"Target": "-"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-Update, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], [meanfint], [meanv], [meanvint]), [t])",
+							"Conditions":
+								{
+									"Set": ["Human = [s]", "Camille = [t]"]
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": -6,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Like",
+											"Value": -6,
+											"Target": "-"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-Start, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], [meanfint], [meanv], [meanvint]), [t])",
+							"Conditions":
+								{
+									"Set": ["Human = [s]", "Camille = [t]", "Weak = [invint]"]
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": 1,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Like",
+											"Value": 1,
+											"Target": "-"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-Start, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], [meanfint], [meanv], [meanvint]), [t])",
+							"Conditions":
+								{
+									"Set": ["Human = [s]", "Camille = [t]", "Medium = [invint]"]
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": 2,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Like",
+											"Value": 2,
+											"Target": "-"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-Start, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], [meanfint], [meanv], [meanvint]), [t])",
+							"Conditions":
+								{
+									"Set": ["Human = [s]", "Camille = [t]", "Strong = [invint]", "SI([s]) < 50"]
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": -2,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Like",
+											"Value": -2,
+											"Target": "-"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-Start, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], [meanfint], [meanv], [meanvint]), [t])",
+							"Conditions":
+								{
+									"Set": ["Human = [s]", "Camille = [t]", "Strong = [invint]", "SI([s]) >= 50"]
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": -1,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Like",
+											"Value": -1,
+											"Target": "-"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-End, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], [meanfint], [meanv], [meanvint]), [t])",
+							"Conditions":
+								{
+									"Set": ["Human = [s]", "Camille = [t]", "CTOptimal = [meanvint]"]
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": 2,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Like",
+											"Value": 2,
+											"Target": "-"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-Update, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], [meanfint], [meanv], [meanvint]), [t])",
+							"Conditions":
+								{
+									"Set": ["Human = [s]", "Camille = [t]", "CTOptimal = [meanvint]"]
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": 2,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Like",
+											"Value": 2,
+											"Target": "-"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-Update, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], [meanfint], [meanv], [meanvint]), [t])",
+							"Conditions":
+								{
+									"Set": ["Human = [s]", "Camille = [t]", "Fast = [meanvint]"]
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": -1,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Like",
+											"Value": -1,
+											"Target": "-"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-End, [s], TouchEvent([st], [en], [part], [type], [dur], [durint], [curv], [iniv], [invint], [meanf], [meanfint], [meanv], [meanvint]), [t])",
+							"Conditions":
+								{
+									"Set": ["Human = [s]", "Camille = [t]", "Fast = [meanvint]"]
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": -1,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Like",
+											"Value": -1,
+											"Target": "-"
+										}]
+								}
+						}]
+				}
+		},
+	"types": [
+		{
+			"TypeId": 0,
+			"ClassName": "EmotionalAppraisal.EmotionalAppraisalAsset, EmotionalAppraisal, Version=1.4.1.0, Culture=neutral, PublicKeyToken=null"
+		}]
+},
+"EmotionalDecisionMakingAsset", 
+{
+	"root":
+		{
+			"classId": 0,
+			"ActionTendencies": [
+				{
+					"Action": "Speak([cs], [ns], [m], [sty])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Comfort = [m]", "isSpeaking([t]) = False", "DialogState([t]) = [cs]", "ValidDialogue([cs], [ns], [m], [sty]) = True", "Has(Floor) = SELF", "EventId(Action-End, *, Speak([cs], [ns], [m], *), [x]) = -1", "MoodValence([t]) <= 3", "Current(CI) = Unassigned"]
+						},
+					"Priority": 4
+				}, 
+				{
+					"Action": "Speak([cs], [ns], [m], [sty])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["GetAttention = [m]", "isSpeaking([t]) = False", "DialogState([t]) = [cs]", "ValidDialogue([cs], [ns], [m], [sty]) = True", "Has(Floor) = SELF", "EventId(Action-End, *, Speak([cs], [ns], [m], *), [x]) = -1", "Attentiveness([t]) <= 3", "Current(CI) = Unassigned"]
+						},
+					"Priority": 3
+				}, 
+				{
+					"Action": "Speak([cs], [ns], [m], [sty])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["MaintainRapport = [m]", "isSpeaking([t]) = False", "DialogState([t]) = [cs]", "ValidDialogue([cs], [ns], [m], [sty]) = True", "Has(Floor) = SELF", "EventId(Action-End, SELF, Speak([cs], [ns], [m], *), [t]) = -1", "SI(Human) >= 50", "Current(CI) = Unassigned"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Modality([md], [ns])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["InTouchingRange([t]) = True", "Current(CI) = Comfort", "Touch = [md]", "Has(Floor) = SELF", "SI(Human) < 20", "StaticTouchAvoidance([t]) = Low", "Next(DialogState) = [ns]"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Modality([md], [ns])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Current(CI) = Comfort", "Touch = [md]", "Has(Floor) = SELF", "SI(Human) <= 30", "SI(Human) >= 10", "StaticTouchAvoidance([t]) = Medium", "InTouchingRange([t]) = True", "Next(DialogState) = [ns]"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Modality([md], [ns])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Current(CI) = Comfort", "Touch = [md]", "Has(Floor) = SELF", "SI(Human) > 40", "InTouchingRange([t]) = True", "Next(DialogState) = [ns]"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Modality([md], [ns])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Current(CI) = TurnGiving", "Touch = [md]", "Has(Floor) = SELF", "StaticTouchAvoidance([t]) = Low", "SI(Human) >= 50", "EmotionalOctant(Human) != AUP", "InTouchingRange([t]) = True", "Next(DialogState) = [ns]"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Modality([md], [ns])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Current(CI) = TurnGiving", "Touch = [md]", "Has(Floor) = SELF", "SI(Human) >= 60", "Attentiveness([t]) <= 3", "EmotionalOctant(Human) = P", "InTouchingRange([t]) = True", "Next(DialogState) = [ns]"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Modality([md], [ns])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Current(CI) = TurnGiving", "Touch = [md]", "Has(Floor) = SELF", "SI(Human) >= 50", "Attentiveness([t]) <= 4", "EmotionalOctant(Human) != UP", "InTouchingRange([t]) = True", "Next(DialogState) = [ns]"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Modality([md], [ns])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Current(CI) = GetAttention", "Touch = [md]", "Has(Floor) = SELF", "MoodValence([t]) >= 4", "SI(Human) >= 50", "InTouchingRange([t]) = True", "Next(DialogState) = [ns]"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Modality([md], [ns])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Current(CI) = GetAttention", "Touch = [md]", "Has(Floor) = SELF", "MoodValence([t]) >= 4", "SI(Human) < 50", "StaticTouchAvoidance([t]) != High", "InTouchingRange([t]) = True", "Next(DialogState) = [ns]"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "DistanceChanged(Public)",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["IsHuman(SELF) = True", "Camille = [t]"]
+						},
+					"Priority": 1
+				}, 
+				{
+					"Action": "DistanceChanged(Social)",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["IsHuman(SELF) = True", "Camille = [t]"]
+						},
+					"Priority": 1
+				}, 
+				{
+					"Action": "DistanceChanged(Personal)",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["IsHuman(SELF) = True", "Camille = [t]"]
+						},
+					"Priority": 1
+				}, 
+				{
+					"Action": "DistanceChanged(Intimate)",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["IsHuman(SELF) = True", "Camille = [t]"]
+						},
+					"Priority": 1
+				}, 
+				{
+					"Action": "Speak([cs], [ns], [m], [sty])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Human = [sty]", "DialogState([t]) = [cs]", "ValidDialogue([cs], [ns], [m], [sty]) = True", "Has(Floor) = SELF", "EventId(Action-End, *, Speak([cs], [ns], [m], *), [x]) = -1"]
+						},
+					"Priority": 1
+				}, 
+				{
+					"Action": "Speak([cs], [ns], [m], [sty])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["TurnGiving = [m]", "isSpeaking([t]) = False", "DialogState([t]) = [cs]", "ValidDialogue([cs], [ns], [m], [sty]) = True", "Has(Floor) = SELF", "EventId(Action-End, SELF, Speak([cs], [ns], [m], *), [t]) = -1", "Current(CI) = Unassigned"]
+						},
+					"Priority": 1
+				}, 
+				{
+					"Action": "Modality(Gesture, [ns])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Next(DialogState) != Unassigned", "Current(CI) != Unassigned", "Has(Floor) = SELF", "Human = [t]", "Next(DialogState) = [ns]"]
+						},
+					"Priority": 1
+				}, 
+				{
+					"Action": "Modality([md], [ns])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Current(CI) = EmotionEmphasis", "Touch = [md]", "Has(Floor) = SELF", "SI(Human) > 85", "StaticTouchAvoidance([t]) = High", "InTouchingRange([t]) = True", "Next(DialogState) = [ns]"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Modality([md], [ns])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Current(CI) = TurnGiving", "Touch = [md]", "Has(Floor) = SELF", "Attentiveness([t]) < 4", "SI(Human) > 30", "StaticTouchAvoidance([t]) != High", "InTouchingRange([t]) = True", "Next(DialogState) = [ns]"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Modality([md], [ns])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Current(CI) = Encouragement", "Touch = [md]", "Has(Floor) = SELF", "SI(Human) > 80", "StaticTouchAvoidance([t]) = High", "InTouchingRange([t]) = True", "Next(DialogState) = [ns]"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Modality([md], [ns])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Current(CI) = Calm", "Touch = [md]", "Has(Floor) = SELF", "SI(Human) > 40", "StaticTouchAvoidance([t]) = High", "InTouchingRange([t]) = True", "Next(DialogState) = [ns]"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Modality([md], [ns])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Current(CI) = MaintainRapport", "Touch = [md]", "Has(Floor) = SELF", "SI(Human) > 90", "StaticTouchAvoidance([t]) = High", "InTouchingRange([t]) = True", "Next(DialogState) = [ns]"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Modality([md], [ns])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Current(CI) = EmotionEmphasis", "Touch = [md]", "Has(Floor) = SELF", "SI(Human) > 75", "StaticTouchAvoidance([t]) = Medium", "InTouchingRange([t]) = True", "Next(DialogState) = [ns]"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Modality([md], [ns])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Current(CI) = EmotionEmphasis", "Touch = [md]", "Has(Floor) = SELF", "SI(Human) > 60", "StaticTouchAvoidance([t]) = Low", "InTouchingRange([t]) = True", "Next(DialogState) = [ns]"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Modality([md], [ns])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Current(CI) = Encouragement", "Touch = [md]", "Has(Floor) = SELF", "SI(Human) > 70", "StaticTouchAvoidance([t]) = Medium", "InTouchingRange([t]) = True", "Next(DialogState) = [ns]"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Modality([md], [ns])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Current(CI) = Encouragement", "Touch = [md]", "Has(Floor) = SELF", "SI(Human) > 60", "StaticTouchAvoidance([t]) = Low", "InTouchingRange([t]) = True", "Next(DialogState) = [ns]"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Modality([md], [ns])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Current(CI) = Calm", "Touch = [md]", "Has(Floor) = SELF", "SI(Human) > 30", "StaticTouchAvoidance([t]) = Medium", "InTouchingRange([t]) = True", "Next(DialogState) = [ns]"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Modality([md], [ns])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Current(CI) = Calm", "Touch = [md]", "Has(Floor) = SELF", "SI(Human) > 10", "StaticTouchAvoidance([t]) = Low", "InTouchingRange([t]) = True", "Next(DialogState) = [ns]"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Modality([md], [ns])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Current(CI) = MaintainRapport", "Touch = [md]", "Has(Floor) = SELF", "SI(Human) > 75", "StaticTouchAvoidance([t]) = Medium", "InTouchingRange([t]) = True", "Next(DialogState) = [ns]"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Modality([md], [ns])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Current(CI) = MaintainRapport", "Touch = [md]", "Has(Floor) = SELF", "SI(Human) > 65", "StaticTouchAvoidance([t]) = Low", "InTouchingRange([t]) = True", "Next(DialogState) = [ns]"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Modality([md], [ns])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Current(CI) = TurnGiving", "Touch = [md]", "Has(Floor) = SELF", "SI(Human) >= 75", "Attentiveness([t]) <= 3", "EmotionalOctant(Human) = UAP", "InTouchingRange([t]) = True", "Next(DialogState) = [ns]"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Modality([md], [ns])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Current(CI) = TurnGiving", "Touch = [md]", "Has(Floor) = SELF", "SI(Human) >= 75", "Attentiveness([t]) <= 3", "EmotionalOctant(Human) = LA", "InTouchingRange([t]) = True", "Next(DialogState) = [ns]"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Modality([md], [ns])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Current(CI) = TurnGiving", "Touch = [md]", "Has(Floor) = SELF", "SI(Human) >= 60", "Attentiveness([t]) <= 4", "EmotionalOctant(Human) != UAUP", "InTouchingRange([t]) = True", "Next(DialogState) = [ns]"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Modality([md], [ns])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Current(CI) = TurnGiving", "Touch = [md]", "Has(Floor) = SELF", "SI(Human) >= 60", "Attentiveness([t]) <= 4", "EmotionalOctant(Human) != AUP", "InTouchingRange([t]) = True", "Next(DialogState) = [ns]"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Backchannel(Touch)",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["isHuman(SELF) = False", "isSpeaking([t]) = True", "InTouchingRange([t]) = True", "SI(Human) >= 50", "EmotionalOctant(Human) = UP"]
+						},
+					"Priority": 3
+				}, 
+				{
+					"Action": "Backchannel(Nod)",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["isHuman(SELF) = False", "isSpeaking([t]) = True"]
+						},
+					"Priority": 1
+				}, 
+				{
+					"Action": "Backchannel(Sad)",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["isHuman(SELF) = False", "isSpeaking([t]) = True", "EmotionalOctant(Human) = UP"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Backchannel(Smile)",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["isHuman(SELF) = False", "isSpeaking([t]) = True", "EmotionalOctant(Human) = P"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Backchannel(Touch)",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["isHuman(SELF) = False", "isSpeaking([t]) = True", "InTouchingRange([t]) = True", "SI(Human) >= 50", "EmotionalOctant(Human) = UAUP"]
+						},
+					"Priority": 3
+				}, 
+				{
+					"Action": "Backchannel(Touch)",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["isHuman(SELF) = False", "isSpeaking([t]) = True", "InTouchingRange([t]) = False", "SI(Human) >= 70", "EmotionalOctant(Human) = UAUP"]
+						},
+					"Priority": 3
+				}, 
+				{
+					"Action": "Backchannel(Touch)",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["isHuman(SELF) = False", "isSpeaking([t]) = True", "InTouchingRange([t]) = False", "SI(Human) >= 70", "EmotionalOctant(Human) = UP"]
+						},
+					"Priority": 3
+				}, 
+				{
+					"Action": "Backchannel(Touch)",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["isHuman(SELF) = False", "isSpeaking([t]) = True", "InTouchingRange([t]) = True", "SI(Human) >= 50", "EmotionalOctant(Human) = LA"]
+						},
+					"Priority": 3
+				}, 
+				{
+					"Action": "Backchannel(Touch)",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["isHuman(SELF) = False", "isSpeaking([t]) = True", "InTouchingRange([t]) = False", "SI(Human) >= 70", "EmotionalOctant(Human) = LA"]
+						},
+					"Priority": 3
+				}, 
+				{
+					"Action": "Backchannel(Touch)",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["isHuman(SELF) = False", "isSpeaking([t]) = True", "InTouchingRange([t]) = True", "SI(Human) >= 40", "Attentiveness([t]) <= 2"]
+						},
+					"Priority": 3
+				}, 
+				{
+					"Action": "Backchannel(Sad)",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["isHuman(SELF) = False", "isSpeaking([t]) = True", "EmotionalOctant(Human) = UAUP"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Backchannel(Sad)",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["isHuman(SELF) = False", "isSpeaking([t]) = True", "EmotionalOctant(Human) = AUP"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Backchannel(Smile)",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["isHuman(SELF) = False", "isSpeaking([t]) = True", "EmotionalOctant(Human) = UAP"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Backchannel(Smile)",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["isHuman(SELF) = False", "isSpeaking([t]) = True", "EmotionalOctant(Human) = AP"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Modality([md], [ns])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Current(CI) = GetAttention", "InTouchingRange([t]) = False", "Touch = [md]", "Has(Floor) = SELF", "MoodValence([t]) >= 4", "Attentiveness([t]) <= 2", "StaticTouchAvoidance([t]) != High", "Next(DialogState) = [ns]"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Modality([md], [ns])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Current(CI) = Comfort", "InTouchingRange([t]) = False", "Touch = [md]", "Has(Floor) = SELF", "MoodValence([t]) <= 2", "StaticTouchAvoidance([t]) = Low", "Next(DialogState) = [ns]"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Modality([md], [ns])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Current(CI) = TurnGiving", "Touch = [md]", "Has(Floor) = SELF", "SI(Human) >= 75", "StaticTouchAvoidance([t]) = Low", "InTouchingRange([t]) = True", "Next(DialogState) = [ns]"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "Modality([md], [ns])",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["Current(CI) = TurnGiving", "Touch = [md]", "Has(Floor) = SELF", "SI(Human) >= 90", "StaticTouchAvoidance([t]) != High", "InTouchingRange([t]) = True", "Next(DialogState) = [ns]"]
+						},
+					"Priority": 2
+				}, 
+				{
+					"Action": "LookDirectionChanged(False, False, False)",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["IsHuman(SELF) = True", "Camille = [t]"]
+						},
+					"Priority": 1
+				}, 
+				{
+					"Action": "LookDirectionChanged(True, False, False)",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["IsHuman(SELF) = True", "Camille = [t]"]
+						},
+					"Priority": 1
+				}, 
+				{
+					"Action": "LookDirectionChanged(True, True, False)",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["IsHuman(SELF) = True", "Camille = [t]"]
+						},
+					"Priority": 1
+				}, 
+				{
+					"Action": "LookDirectionChanged(True, True, True)",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["IsHuman(SELF) = True", "Camille = [t]"]
+						},
+					"Priority": 1
+				}, 
+				{
+					"Action": "Speech(False)",
+					"Target": "[t]",
+					"Layer": "-",
+					"Conditions":
+						{
+							"Set": ["IsHuman(SELF) = True", "Camille = [t]", "NextDialogState([t]) != Unassigned"]
+						},
+					"Priority": 1
+				}]
+		},
+	"types": [
+		{
+			"TypeId": 0,
+			"ClassName": "EmotionalDecisionMaking.EmotionalDecisionMakingAsset, EmotionalDecisionMaking, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null"
+		}]
+},
+"SocialImportanceAsset", 
+{
+	"root":
+		{
+			"classId": 0,
+			"AttributionRules": [
+				{
+					"RuleName": "Very High Attention",
+					"Target": "[t]",
+					"Value": 45,
+					"Conditions":
+						{
+							"Set": ["Attentiveness([t]) >= 7"]
+						}
+				}, 
+				{
+					"RuleName": "High Attention",
+					"Target": "[t]",
+					"Value": 40,
+					"Conditions":
+						{
+							"Set": ["Attentiveness([t]) = 6"]
+						}
+				}, 
+				{
+					"RuleName": "Very Low Attention",
+					"Target": "[t]",
+					"Value": 5,
+					"Conditions":
+						{
+							"Set": ["Attentiveness([t]) <= 1"]
+						}
+				}, 
+				{
+					"RuleName": "Low Attention",
+					"Target": "[t]",
+					"Value": 10,
+					"Conditions":
+						{
+							"Set": ["Attentiveness([t]) = 2"]
+						}
+				}, 
+				{
+					"RuleName": "Low Medium Attention",
+					"Target": "[t]",
+					"Value": 15,
+					"Conditions":
+						{
+							"Set": ["Attentiveness([t]) = 3"]
+						}
+				}, 
+				{
+					"RuleName": "Medium Attention",
+					"Target": "[t]",
+					"Value": 25,
+					"Conditions":
+						{
+							"Set": ["Attentiveness([t]) = 4"]
+						}
+				}, 
+				{
+					"RuleName": "High Medium Attention",
+					"Target": "[t]",
+					"Value": 30,
+					"Conditions":
+						{
+							"Set": ["Attentiveness([t]) = 5"]
+						}
+				}, 
+				{
+					"RuleName": "Very Low Valence",
+					"Target": "[t]",
+					"Value": 5,
+					"Conditions":
+						{
+							"Set": ["MoodValence([t]) = 1"]
+						}
+				}, 
+				{
+					"RuleName": "Low Valence",
+					"Target": "[t]",
+					"Value": 10,
+					"Conditions":
+						{
+							"Set": ["MoodValence([t]) = 2"]
+						}
+				}, 
+				{
+					"RuleName": "Low Medium Valence",
+					"Target": "[t]",
+					"Value": 15,
+					"Conditions":
+						{
+							"Set": ["MoodValence([t]) = 3"]
+						}
+				}, 
+				{
+					"RuleName": "Medium Valence",
+					"Target": "[t]",
+					"Value": 25,
+					"Conditions":
+						{
+							"Set": ["MoodValence([t]) = 4"]
+						}
+				}, 
+				{
+					"RuleName": "High Medium Valence",
+					"Target": "[t]",
+					"Value": 30,
+					"Conditions":
+						{
+							"Set": ["MoodValence([t]) = 5"]
+						}
+				}, 
+				{
+					"RuleName": "Unset Valence",
+					"Target": "[t]",
+					"Value": 0,
+					"Conditions":
+						{
+							"Set": ["MoodValence([t]) < 1"]
+						}
+				}, 
+				{
+					"RuleName": "High Valence",
+					"Target": "[t]",
+					"Value": 40,
+					"Conditions":
+						{
+							"Set": ["MoodValence([t]) = 6"]
+						}
+				}, 
+				{
+					"RuleName": "Very High Valence",
+					"Target": "[t]",
+					"Value": 45,
+					"Conditions":
+						{
+							"Set": ["MoodValence([t]) >= 7"]
+						}
+				}, 
+				{
+					"RuleName": "Personal Space",
+					"Target": "[t]",
+					"Value": 5,
+					"Conditions":
+						{
+							"Set": ["Proxemics([t]) = Personal"]
+						}
+				}, 
+				{
+					"RuleName": "Intimate Space",
+					"Target": "[t]",
+					"Value": 10,
+					"Conditions":
+						{
+							"Set": ["Proxemics([t]) = Intimate"]
+						}
+				}]
+		},
+	"types": [
+		{
+			"TypeId": 0,
+			"ClassName": "SocialImportance.SocialImportanceAsset, SocialImportance, Version=1.5.0.0, Culture=neutral, PublicKeyToken=null"
+		}]
+},
+"CommeillFautAsset", 
+{
+	"root":
+		{
+			"classId": 0,
+			"SocialExchanges": []
+		},
+	"types": [
+		{
+			"TypeId": 0,
+			"ClassName": "CommeillFaut.CommeillFautAsset, CommeillFaut, Version=1.7.0.0, Culture=neutral, PublicKeyToken=null"
+		}]
+}
+]

@@ -1,0 +1,226 @@
+[
+  {
+    "type": "wait",
+    "params": {
+      "name": "Wait420",
+      "duration": 420
+    }
+  },
+  {
+    "type": "static",
+    "params": {
+      "name": "TapSoft",
+      "duration": 220,
+      "rampUp": 0,
+      "rampDown": 70,
+      "minimumModulation": 0,
+      "modulationType": "exponential",
+      "intensity": 0.9,
+      "touchType": "tap_fast_soft",
+      "actuators": [
+        [ 0, 0 ],
+        [ 0, 1 ],
+        [ 1, 1 ],
+        [ 2, 0 ],
+        [ 2, 1 ],
+        [ 3, 0 ],
+        [ 3, 1 ]
+      ]
+    }
+  },
+  {
+    "type": "sequence",
+    "params": {
+      "name": "TapSoftSequence",
+      "signals": [ "TapSoft", "Wait420", "TapSoft" ]
+    }
+  },
+  {
+    "type": "static",
+    "params": {
+      "name": "Hit2",
+      "duration": 1000,
+      "rampUp": 0,
+      "rampDown": 900,
+      "minimumModulation": 0,
+      "modulationType": "exponential",
+      "intensity": 1.0,
+      "touchType": "hit_2",
+      "actuators": [
+        [ 0, 0 ],
+        [ 0, 1 ],
+        [ 1, 1 ],
+        [ 2, 0 ],
+        [ 2, 1 ],
+        [ 3, 0 ],
+        [ 3, 1 ]
+      ]
+    }
+  },
+  {
+    "type": "static",
+    "params": {
+      "name": "TouchSoft1",
+      "duration": 1500,
+      "rampUp": 300,
+      "rampDown": 300,
+      "minimumModulation": 0,
+      "modulationType": "logarithmic",
+      "intensity": 1.0,
+      "touchType": "touch_soft",
+      "actuators": [
+        [ 0, 0 ]
+      ]
+    }
+  },
+  {
+    "type": "static",
+    "params": {
+      "name": "TouchSoft2",
+      "duration": 1500,
+      "rampUp": 300,
+      "rampDown": 300,
+      "minimumModulation": 0,
+      "modulationType": "logarithmic",
+      "intensity": 1.0,
+      "touchType": "touch_soft",
+      "actuators": [
+        [ 0, 1 ]
+      ]
+    }
+  },
+  {
+    "type": "static",
+    "params": {
+      "name": "TouchSoft3",
+      "duration": 1500,
+      "rampUp": 300,
+      "rampDown": 300,
+      "minimumModulation": 0,
+      "modulationType": "logarithmic",
+      "intensity": 1.0,
+      "touchType": "touch_soft",
+      "actuators": [
+        [ 1, 1 ]
+      ]
+    }
+  },
+  {
+    "type": "static",
+    "params": {
+      "name": "TouchSoft4",
+      "duration": 1500,
+      "rampUp": 300,
+      "rampDown": 300,
+      "minimumModulation": 0,
+      "modulationType": "logarithmic",
+      "intensity": 1.0,
+      "touchType": "touch_soft",
+      "actuators": [
+        [ 2, 0 ]
+      ]
+    }
+  },
+  {
+    "type": "static",
+    "params": {
+      "name": "TouchSoft5",
+      "duration": 1500,
+      "rampUp": 300,
+      "rampDown": 300,
+      "minimumModulation": 0,
+      "modulationType": "logarithmic",
+      "intensity": 1.0,
+      "touchType": "touch_soft",
+      "actuators": [
+        [ 2, 1 ]
+      ]
+    }
+  },
+  {
+    "type": "static",
+    "params": {
+      "name": "TouchSoft6",
+      "duration": 1500,
+      "rampUp": 300,
+      "rampDown": 300,
+      "minimumModulation": 0,
+      "modulationType": "logarithmic",
+      "intensity": 1.0,
+      "touchType": "touch_soft",
+      "actuators": [
+        [ 1, 0 ]
+      ]
+    }
+  },
+  {
+    "type": "static",
+    "params": {
+      "name": "BasicSin",
+      "duration": 1500,
+      "rampUp": 0,
+      "rampDown": 0,
+      "minimumModulation": 0,
+      "modulationType": "linear",
+      "intensity": 1.0,
+      "touchType": "buzz",
+      "actuators": [
+        [ 0, 0 ],
+        [ 0, 1 ],
+        [ 1, 1 ],
+        [ 2, 0 ],
+        [ 2, 1 ],
+        [ 3, 0 ],
+        [ 3, 1 ]
+      ]
+    }
+  },
+  {
+    "type": "stroke",
+    "params": {
+      "name": "Comfort1",
+      "start": [ 0.0, 0.0 ],
+      "end": [ 3.0, 1.0 ],
+      "duration": 1200,
+      "intensity": 1.0,
+      "touchType": "comfort_1",
+      "minimumModulation": 0.3,
+      "minimumFullIntensityFactor": 0.0,
+      "modulationType": "logarithmic"
+    }
+  },
+  {
+    "type": "static",
+    "params": {
+      "name": "tapElbowSide",
+      "duration": 1500,
+      "rampUp": 0,
+      "rampDown": 0,
+      "minimumModulation": 0,
+      "modulationType": "linear",
+      "intensity": 1.0,
+      "touchType": "buzz",
+      "actuators": [
+        [ 0, 0 ],
+        [ 0, 1 ]
+      ]
+    }
+  },
+  {
+    "type": "static",
+    "params": {
+      "name": "tapWristSide",
+      "duration": 1500,
+      "rampUp": 0,
+      "rampDown": 0,
+      "minimumModulation": 0,
+      "modulationType": "linear",
+      "intensity": 1.0,
+      "touchType": "buzz",
+      "actuators": [
+        [ 2, 0 ],
+        [ 2, 1 ]
+      ]
+    }
+  }
+]

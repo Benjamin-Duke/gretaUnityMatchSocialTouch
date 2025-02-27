@@ -1,0 +1,126 @@
+[
+	{"questions":[
+		{"id":1,
+		"text":{
+			"FR":"Le stimulus était agréable",
+			"EN":"The stimulus was pleasant"
+		},
+		"answer":"",
+		"panelType":"Slider",
+		"certainty":"",
+		"condition":false},
+		{"id":2,
+		"text":{
+			"FR":"Le stimulus était intense",
+			"EN":"The stimulus was intense"
+		},
+		"answer":"",
+		"panelType":"Slider",
+		"certainty":"",
+		"condition":false},
+		],
+	"id":1,
+	"conditionalGroup":false,
+	"toRemember":""
+	},
+	{"questions":[
+		{"id":3,
+		"text":{
+			"FR":"J'ai senti l'agent me toucher",
+			"EN":"I felt the agent touch me"
+		},
+		"answer":"",
+		"panelType":"Slider",
+		"certainty":"",
+		"condition":false},
+		{"id":4,
+		"text":{
+			"FR":"J'avais l'impression de ne pas être au même endroit que l'agent",
+			"EN":"It felt like I was not in the same place as the agent"
+		},
+		"answer":"",
+		"panelType":"Slider",
+		"certainty":"",
+		"condition":false},
+		{"id":5,
+		"text":{
+			"FR":"L'agent pouvait m'atteindre",
+			"EN":"The agent could not reach me"
+		},
+		"answer":"",
+		"panelType":"Slider",
+		"certainty":"",
+		"condition":false},
+		{"id":6,
+		"text":{
+			"FR":"L'agent voulait me toucher",
+			"EN":"The agent wanted to touch me"
+		},
+		"answer":"",
+		"panelType":"Slider",
+		"certainty":"",
+		"condition":false},
+		{"id":7,
+		"text":{
+			"FR":"Ce que j'ai ressenti a été causé par l'agent",
+			"EN":"What I felt was caused by the agent"
+		},
+		"answer":"",
+		"panelType":"Slider",
+		"certainty":"",
+		"condition":false}
+		],
+	"id":2,
+	"conditionalGroup":false,
+	"toRemember":""},
+	{"questions":[
+		{"id":8,
+		"text":{
+			"FR":"Je ne me suis pas senti touché",
+			"EN":"I did not feel touched"
+		},
+		"answer":"",
+		"panelType":"Slider",
+		"certainty":"",
+		"condition":false},
+		{"id":9,
+		"text":{
+			"FR":"Je m'attendais à sentir quelque chose sur mon corps",
+			"EN":"I expected to feel something on my body"
+		},
+		"answer":"",
+		"panelType":"Slider",
+		"certainty":"",
+		"condition":true},
+		{"id":10,
+		"text":{
+			"FR":"J'ai été touché sur le bras",
+			"EN":"I was touched on the arm"
+		},
+		"answer":"",
+		"panelType":"Slider",
+		"certainty":"",
+		"condition":false},
+		{"id":11,
+		"text":{
+			"FR":"Le stimulus communique le toucher social de manière crédible",
+			"EN":"The stimulus conveyed social touch believably"
+		},
+		"answer":"",
+		"panelType":"Slider",
+		"certainty":"",
+		"condition":false},
+		{"id":12,
+		"text":{
+			"FR":"Le stimulus n'était pas suffisant pour me faire me sentir touché",
+			"EN":"The stimulus was not sufficient to elicit the impression of being touched"
+		},
+		"answer":"",
+		"panelType":"Slider",
+		"certainty":"",
+		"condition":false}
+		],
+	"id":3,
+	"conditionalGroup":false,
+	"toRemember":""}
+]

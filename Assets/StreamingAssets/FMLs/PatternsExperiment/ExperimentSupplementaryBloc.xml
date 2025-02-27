@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+        <bml>
+            <speech id="s1" language="english" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+                <tm id="tm1"/>Hello
+				<tm id="tm2"/>!
+				<tm id="tm3"/>Welcome
+				<tm id="tm4"/>and
+				<tm id="tm5"/>thank
+				<tm id="tm6"/>you
+				<tm id="tm7"/>for
+				<tm id="tm8"/>accepting
+				<tm id="tm9"/>to
+				<tm id="tm10"/>participate
+				<tm id="tm11"/>in
+				<tm id="tm12"/>this
+				<tm id="tm13"/>experiment.
+				<tm id="tm14"/>
+		</speech>
+        </bml>
+		<fml>
+        <fml/>
+    
+		<emotion id="e1" type="joyStrong" start="0" end="3" importance="1.0"/>
+        <ideationalunit end="s1:tm11-0.2" id="id_2" importance="1.0" main="im_10" start="s1:tm1-0.2"/>
+
+
+</fml>
+</fml-apml>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+
+    
+        <bml>
+            <speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+					<tm id="tm1"/>Super
+					<tm id="tm2"/>!
+					<tm id="tm3"/>C'aitait
+					<tm id="tm4"/>pas
+					<tm id="tm5"/>si
+					<tm id="tm6"/>facile
+					<tm id="tm7"/>non
+					<tm id="tm8"/>plus,
+					<tm id="tm9"/>maime
+					<tm id="tm10"/>la
+					<tm id="tm11"/>deuxiaime
+					<tm id="tm12"/>fois,
+					<tm id="tm13"/>mais
+					<tm id="tm14"/>on
+					<tm id="tm15"/>s'en
+					<tm id="tm16"/>est
+					<tm id="tm17"/>vraiment
+					<tm id="tm18"/>bien
+					<tm id="tm19"/>sortis
+					<tm id="tm20"/>!
+					<tm id="tm21"/>Merci
+					<tm id="tm22"/>beaucoup
+					<tm id="tm23"/>pour
+					<tm id="tm24"/>ta
+					<tm id="tm25"/>participation
+					<tm id="tm26"/>et
+					<tm id="tm27"/>maintenant
+					<tm id="tm28"/>je
+					<tm id="tm29"/>t'invite
+					<tm id="tm30"/>a
+					<tm id="tm31"/>retirer
+					<tm id="tm32"/>ton
+					<tm id="tm33"/>casque
+					<tm id="tm34"/>et
+					<tm id="tm35"/>praivenir
+					<tm id="tm36"/>l'expairimentateur
+					<tm id="tm37"/>pour
+					<tm id="tm38"/>qu'il
+					<tm id="tm39"/>te
+					<tm id="tm40"/>fasse
+					<tm id="tm41"/>remplir
+					<tm id="tm42"/>quelques
+					<tm id="tm43"/>questionnaires
+					<tm id="tm44"/>avant
+					<tm id="tm45"/>de
+					<tm id="tm46"/>te
+					<tm id="tm47"/>libairer.
+					<tm id="tm48"/>Si
+					<tm id="tm49"/>tu
+					<tm id="tm50"/>as
+					<tm id="tm51"/>des
+					<tm id="tm52"/>questions,
+					<tm id="tm53"/>tu
+					<tm id="tm54"/>pourras
+					<tm id="tm55"/>les
+					<tm id="tm56"/>lui
+					<tm id="tm57"/>poser
+					<tm id="tm58"/>aprais
+					<tm id="tm59"/>le
+					<tm id="tm60"/>questionnaire.
+</speech>
+        </bml>
+    
+    
+        <ideationalunit end="s1:tm42-0.2" id="id_3" importance="1.0" main="im_17" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm30-0.2" id="im_17" importance="1.0" indexword="7" previous="true" start="s1:tm27-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm31-0.2" id="im_18" importance="1.0" indexword="9" start="s1:tm30-0.2" type="object"/>
+        <imageschema POSroot="verb" end="s1:tm38-0.2" id="im_21" importance="1.0" previous="true" start="s1:tm34-0.2" type="enablement"/>
+        <imageschema POSroot="adverb" end="s1:tm40-0.2" id="im_22" importance="1.0" previous="true" start="s1:tm38-0.2" type="far"/>
+        <imageschema POSroot="noun" end="s1:tm41-0.2" id="im_23" importance="1.0" indexword="19" start="s1:tm40-0.2" type="whole"/>
+        <imageschema POSroot="verb" end="s1:tm44-0.2" id="im_24" importance="1.0" previous="true" start="s1:tm42-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm56-0.2" id="im_25" importance="1.0" indexword="23" previous="true" start="s1:tm44-0.2" type="whole"/>
+        <imageschema POSroot="noun" end="s1:tm59-0.2" id="im_26" importance="1.0" indexword="35" previous="true" start="s1:tm56-0.2" type="object"/>
+        <imageschema POSroot="adverb" end="s1:tm63-0.2" id="im_27" importance="1.0" previous="true" start="s1:tm59-0.2" type="out"/>
+        <imageschema POSroot="verb" end="s1:tm64-0.2" id="im_28" importance="1.0" start="s1:tm63-0.2" type="interval"/>
+        <ideationalunit end="s1:tm27-0.2" id="id_4" importance="1.0" main="im_31" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm72-0.2" id="im_31" importance="1.0" previous="true" start="s1:tm69-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm73-0.2" id="im_32" importance="1.0" indexword="8" start="s1:tm72-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm81-0.2" id="im_37" importance="1.0" indexword="16" start="s1:tm79-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm92-0.2" id="im_38" importance="1.0" indexword="19" previous="true" start="s1:tm82-0.2" type="whole"/>
+    
+
+
+</fml>
+</fml-apml>
