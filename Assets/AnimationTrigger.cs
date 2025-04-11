@@ -13,6 +13,7 @@ public class AnimationTrigger : MonoBehaviour
 
     void Start()
     {
+        Debug.Log(rigBlendCurve == null);
         animator.SetBool("testAnim", false);
         if (rigToBlend != null)
             rigToBlend.weight = 0f;
@@ -44,10 +45,12 @@ public class AnimationTrigger : MonoBehaviour
             if (stateInfo.IsName("caresse_libre"))
             {
                 float t = Mathf.Clamp01(stateInfo.normalizedTime);
+                Debug.Log("Animation Time: " + t);
 
                 if (rigToBlend != null && rigBlendCurve != null)
                 {
                     rigToBlend.weight = rigBlendCurve.Evaluate(t);
+                    Debug.Log("Rig Weight: " + rigToBlend.weight);
                 }
 
                 if (stateInfo.normalizedTime >= 1f)
