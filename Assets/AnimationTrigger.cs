@@ -9,12 +9,13 @@ public class AnimationTrigger : MonoBehaviour
     public AnimationCurve rigBlendCurve; // Assignée dans l'inspector
 
     private bool animationPlayed = false;
-    private int touchID = 1;
+    // private int touchID = 1;
 
     void Start()
     {
         Debug.Log(rigBlendCurve == null);
         animator.SetBool("testAnim", false);
+        animator.SetBool("animHit", false);
         if (rigToBlend != null)
             rigToBlend.weight = 0f;
 
@@ -38,19 +39,25 @@ public class AnimationTrigger : MonoBehaviour
             animationPlayed = true;
         }
 
+        if (Keyboard.current.nKey.wasPressedThisFrame)
+        {
+            animator.SetBool("animHit", true);
+            animationPlayed = true;
+        }
+
         if (animationPlayed)
         {
             AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(2);
-
-            if (stateInfo.IsName("caresse_libre"))
+            // Debug.Log(" state Caresse: " + stateInfo.IsName("caresse"));
+            // Debug.Log("Current state hit: " + stateInfo.IsName("hit"));
+            if (stateInfo.IsName("caresse"))
             {
                 float t = Mathf.Clamp01(stateInfo.normalizedTime);
-                Debug.Log("Animation Time: " + t);
 
                 if (rigToBlend != null && rigBlendCurve != null)
                 {
-                    rigToBlend.weight = rigBlendCurve.Evaluate(t);
-                    Debug.Log("Rig Weight: " + rigToBlend.weight);
+                    float targetWeight = rigBlendCurve.Evaluate(t);
+                    rigToBlend.weight = Mathf.Lerp(rigToBlend.weight, targetWeight, Time.deltaTime * 10f);
                 }
 
                 if (stateInfo.normalizedTime >= 1f)
@@ -61,6 +68,25 @@ public class AnimationTrigger : MonoBehaviour
 
                     if (rigToBlend != null)
                         rigToBlend.weight = 0f;
+                }
+            }
+
+            if (stateInfo.IsName("hit"))
+            {
+                float t = Mathf.Clamp01(stateInfo.normalizedTime);
+                // Debug.Log("Animation Time: " + t);
+
+                if (rigToBlend != null && rigBlendCurve != null)
+                {
+                    float targetWeight = rigBlendCurve.Evaluate(t);
+                    rigToBlend.weight = Mathf.Lerp(rigToBlend.weight, targetWeight, Time.deltaTime * 10f);
+                }
+
+                if (stateInfo.normalizedTime >= 1f)
+                {
+                    Debug.Log("Animation is finished");
+                    animator.SetBool("animHit", false);
+                    animationPlayed = false;
                 }
             }
         }

@@ -2,6 +2,8 @@
 using System.Net.Sockets;
 using System.Text;
 using UnityEngine;
+using System.Collections.Generic; // pour Queue<>
+using System.Threading;           // pour Thread
 
 public class TCPManager : MonoBehaviour
 {
@@ -16,6 +18,11 @@ public class TCPManager : MonoBehaviour
     private TcpClient client;
     private NetworkStream stream;
     private bool isConnected = false;
+
+    private Queue<string> messageQueue = new Queue<string>();
+    private Thread sendingThread;
+    private bool keepRunning = true;
+
     
     void Awake()
     {
@@ -35,7 +42,52 @@ public class TCPManager : MonoBehaviour
     {
         // Établir la connexion au démarrage
         ConnectToServer();
+        sendingThread = new Thread(ProcessQueue);
+        sendingThread.Start();
     }
+
+    public void EnqueueData(string data)
+    {
+        lock (messageQueue)
+        {
+            messageQueue.Enqueue(data);
+        }
+    }
+
+    private void ProcessQueue()
+    {
+        while (keepRunning)
+        {
+            string dataToSend = null;
+
+            lock (messageQueue)
+            {
+                if (messageQueue.Count > 0)
+                {
+                    dataToSend = messageQueue.Dequeue();
+                }
+            }
+
+            if (dataToSend != null && isConnected)
+            {
+                try
+                {
+                    byte[] buffer = Encoding.ASCII.GetBytes(dataToSend);
+                    stream.Write(buffer, 0, buffer.Length);
+                    Debug.Log("Données envoyées: " + dataToSend);
+                }
+                catch (System.Exception e)
+                {
+                    Debug.LogError("Erreur lors de l'envoi des données: " + e.Message);
+                    isConnected = false;
+                }
+            }
+
+            Thread.Sleep(5); // petite pause pour éviter que le thread tourne à vide
+        }
+    }
+
+
     
     void ConnectToServer()
     {
@@ -79,8 +131,12 @@ public class TCPManager : MonoBehaviour
     // Fermer proprement la connexion
     void OnApplicationQuit()
     {
+        keepRunning = false;
+        if (sendingThread != null && sendingThread.IsAlive)
+            sendingThread.Join(); // attendre que le thread finisse
+
         if (stream != null) stream.Close();
         if (client != null) client.Close();
-        Debug.Log("Connexion TCP fermée");
     }
+
 }
