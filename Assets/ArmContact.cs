@@ -9,10 +9,45 @@ public class ArmContact : MonoBehaviour
 
     [Header("FMOD Emitters")]
     [SerializeField] private StudioEventEmitter strokeEmitter;
+    [SerializeField] private StudioEventEmitter rubbingEmitter;
+    [SerializeField] private StudioEventEmitter tapEmitter;
     [SerializeField] private StudioEventEmitter hitEmitter;
 
-    private int caresseID = 1;
-    private int hitID = 3;
+    private string Caresse = "Caresse";
+    private string Frot = "Frottement";
+    private string Tap = "Tapotement";
+    private string Hit = "Frappe";
+
+    private int caresseSoundID = 0;
+    private int frotSoundID = 0;
+    private int tapSoundID = 0;
+    private int hitSoundID = 0;
+
+    private void Update()
+    {
+        var controllers = GetComponents<FMODParameterController>();
+
+        foreach (var controller in controllers)
+        {
+            if (controller.targetEmitter == rubbingEmitter)
+            {
+                frotSoundID = controller.parameterValue;
+            }
+            else if (controller.targetEmitter == strokeEmitter)
+            {
+                caresseSoundID = controller.parameterValue;
+            }
+            else if (controller.targetEmitter == tapEmitter)
+            {
+                tapSoundID = controller.parameterValue;
+            }
+            else if (controller.targetEmitter == hitEmitter)
+            {
+                hitSoundID = controller.parameterValue;
+            }
+
+        }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -29,7 +64,33 @@ public class ArmContact : MonoBehaviour
                     strokeEmitter.Play();
                     if(TCPManager.Instance != null)
                     {
-                        TCPManager.Instance.EnqueueData(caresseID.ToString());
+                        TCPManager.Instance.EnqueueData($"{Caresse}:{caresseSoundID}");
+                    }
+                }
+            }
+            else if (stateInfo.IsName("frot"))
+            {
+                if (rubbingEmitter.IsPlaying()){return;}
+                else
+                {
+                    rubbingEmitter.Stop();
+                    rubbingEmitter.Play();
+                    if(TCPManager.Instance != null)
+                    {
+                        TCPManager.Instance.EnqueueData($"{Frot}:{frotSoundID}");
+                    }
+                }
+            }
+            else if (stateInfo.IsName("tap"))
+            {
+                if (tapEmitter.IsPlaying()){return;}
+                else
+                {
+                    tapEmitter.Stop();
+                    tapEmitter.Play();
+                    if(TCPManager.Instance != null)
+                    {
+                        TCPManager.Instance.EnqueueData($"{Tap}:{tapSoundID}");
                     }
                 }
             }
@@ -42,7 +103,7 @@ public class ArmContact : MonoBehaviour
                     hitEmitter.Play();
                     if(TCPManager.Instance != null)
                     {
-                        TCPManager.Instance.EnqueueData(hitID.ToString());
+                        TCPManager.Instance.EnqueueData($"{Hit}:{hitSoundID}");
                     }
                 }
             }

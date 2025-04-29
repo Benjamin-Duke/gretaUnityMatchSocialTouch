@@ -24,6 +24,30 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-6867602274421092246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FrotMetaRec/soundChoice
+  m_EditorClassIdentifier: 
+  Name: soundChoice
+  StudioPath: 
+  Min: 0
+  Max: 7
+  Default: 0
+  ID:
+    data1: 592905777
+    data2: 1496704041
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-6503855942519221384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47,10 +71,11 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 1
-  Length: 500
+  Parameters:
+  - {fileID: 5856240768528618233}
+  MinDistance: 1
+  MaxDistance: 15
+  Length: 395
 --- !u!114 &-4882503165472299921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,11 +91,39 @@ MonoBehaviour:
   Path: ../FMOD/test/Build/Desktop/Touch.bank
   Name: Touch
   StudioPath: bank:/Touch
-  lastModified: 638802438798852792
+  lastModified: 638814555134968641
   FileSizes:
   - Name: Desktop
-    Value: 639968
+    Value: 1014656
   Exists: 1
+--- !u!114 &-4218361800653415364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Frott/FrotMetaRec
+  m_EditorClassIdentifier: 
+  Path: event:/Frott/FrotMetaRec
+  Guid:
+    Data1: -1789638437
+    Data2: 1192540044
+    Data3: -2140904557
+    Data4: 1527538473
+  Banks:
+  - {fileID: -4882503165472299921}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -6867602274421092246}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4559
 --- !u!114 &-3657028619202527785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,9 +134,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/testTouch/testTapotement
+  m_Name: event:/TestTouch/testTapotement
   m_EditorClassIdentifier: 
-  Path: event:/testTouch/testTapotement
+  Path: event:/TestTouch/testTapotement
   Guid:
     Data1: -772560603
     Data2: 1284904786
@@ -99,6 +152,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 500
+--- !u!114 &-2436750622416351617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Frott/BrushCreamFrott
+  m_EditorClassIdentifier: 
+  Path: event:/Frott/BrushCreamFrott
+  Guid:
+    Data1: 810032435
+    Data2: 1164505625
+    Data3: -1766417752
+    Data4: 528331643
+  Banks:
+  - {fileID: -4882503165472299921}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2798
 --- !u!114 &-1500871689220649151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,7 +194,7 @@ MonoBehaviour:
   Path: ../FMOD/test/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638802431896697518
+  lastModified: 638814511253687507
   FileSizes:
   - Name: Desktop
     Value: 1074
@@ -143,33 +223,6 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &-1026569516645768378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Caresse/longStrokes
-  m_EditorClassIdentifier: 
-  Path: event:/Caresse/longStrokes
-  Guid:
-    Data1: -297019206
-    Data2: 1091633631
-    Data3: -655008117
-    Data4: -682600912
-  Banks:
-  - {fileID: -4882503165472299921}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 3.65
-  Length: 3000
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,24 +242,36 @@ MonoBehaviour:
   EditorEvents:
   - {fileID: -3657028619202527785}
   - {fileID: 7907002313844025880}
-  - {fileID: -1026569516645768378}
   - {fileID: -6503855942519221384}
+  - {fileID: 2014064569315684232}
+  - {fileID: -2436750622416351617}
+  - {fileID: 6933492834102495862}
+  - {fileID: -4218361800653415364}
+  - {fileID: 3598530499386735681}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1500871689220649151}
   StringsBanks:
   - {fileID: 1020255256447942299}
   cacheVersion: 131847
-  cacheTime: 638802438798852792
+  cacheTime: 638814555134968641
   SerializableEventsDict:
-  - key: event:/testTouch/testTapotement
+  - key: event:/TestTouch/testTapotement
     index: 0
-  - key: event:/testTouch/testCarresse
+  - key: event:/TestTouch/testCarresse
     index: 1
-  - key: event:/Caresse/longStrokes
-    index: 2
   - key: event:/HitTap/Hit
+    index: 2
+  - key: event:/Caresse/longStrokesRecord
     index: 3
+  - key: event:/Frott/BrushCreamFrott
+    index: 4
+  - key: event:/Caresse/StrokesMetaRec
+    index: 5
+  - key: event:/Frott/FrotMetaRec
+    index: 6
+  - key: event:/Tap/TapMetaRec
+    index: 7
 --- !u!114 &1020255256447942299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,10 +287,165 @@ MonoBehaviour:
   Path: ../FMOD/test/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638802431896697518
+  lastModified: 638814511253697513
   FileSizes:
   - Name: Desktop
-    Value: 1084
+    Value: 1364
+  Exists: 1
+--- !u!114 &2014064569315684232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Caresse/longStrokesRecord
+  m_EditorClassIdentifier: 
+  Path: event:/Caresse/longStrokesRecord
+  Guid:
+    Data1: -297019206
+    Data2: 1091633631
+    Data3: -655008117
+    Data4: -682600912
+  Banks:
+  - {fileID: -4882503165472299921}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 3.65
+  Length: 3000
+--- !u!114 &3598530499386735681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Tap/TapMetaRec
+  m_EditorClassIdentifier: 
+  Path: event:/Tap/TapMetaRec
+  Guid:
+    Data1: 2099826450
+    Data2: 1198818756
+    Data3: -793998170
+    Data4: 464039641
+  Banks:
+  - {fileID: -4882503165472299921}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 5798236672930172134}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 847
+--- !u!114 &5798236672930172134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TapMetaRec/soundChoice
+  m_EditorClassIdentifier: 
+  Name: soundChoice
+  StudioPath: 
+  Min: 0
+  Max: 7
+  Default: 0
+  ID:
+    data1: 592905777
+    data2: 1496704041
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &5856240768528618233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Hit/soundChoice
+  m_EditorClassIdentifier: 
+  Name: soundChoice
+  StudioPath: 
+  Min: 0
+  Max: 7
+  Default: 0
+  ID:
+    data1: 592905777
+    data2: 1496704041
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &6933492834102495862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Caresse/StrokesMetaRec
+  m_EditorClassIdentifier: 
+  Path: event:/Caresse/StrokesMetaRec
+  Guid:
+    Data1: -1405087353
+    Data2: 1199429303
+    Data3: 1299877554
+    Data4: 1456016281
+  Banks:
+  - {fileID: -4882503165472299921}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 7387682635911412831}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4500
+--- !u!114 &7387682635911412831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/StrokesMetaRec/soundChoice
+  m_EditorClassIdentifier: 
+  Name: soundChoice
+  StudioPath: 
+  Min: 0
+  Max: 7
+  Default: 0
+  ID:
+    data1: 592905777
+    data2: 1496704041
+  Type: 1
+  IsGlobal: 0
+  Labels: []
   Exists: 1
 --- !u!114 &7907002313844025880
 MonoBehaviour:
@@ -237,9 +457,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/testTouch/testCarresse
+  m_Name: event:/TestTouch/testCarresse
   m_EditorClassIdentifier: 
-  Path: event:/testTouch/testCarresse
+  Path: event:/TestTouch/testCarresse
   Guid:
     Data1: 107050573
     Data2: 1168536030

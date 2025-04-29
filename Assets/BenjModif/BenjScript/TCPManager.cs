@@ -4,6 +4,8 @@ using System.Text;
 using UnityEngine;
 using System.Collections.Generic; // pour Queue<>
 using System.Threading;           // pour Thread
+using FMODUnity;
+
 
 public class TCPManager : MonoBehaviour
 {
@@ -23,7 +25,6 @@ public class TCPManager : MonoBehaviour
     private Thread sendingThread;
     private bool keepRunning = true;
 
-    
     void Awake()
     {
         // Implémentation du singleton
