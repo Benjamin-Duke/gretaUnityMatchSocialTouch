@@ -39,7 +39,7 @@ MonoBehaviour:
   Name: soundChoice
   StudioPath: 
   Min: 0
-  Max: 7
+  Max: 8
   Default: 0
   ID:
     data1: 592905777
@@ -73,9 +73,9 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters:
   - {fileID: 5856240768528618233}
-  MinDistance: 1
-  MaxDistance: 15
-  Length: 395
+  MinDistance: 0.90000004
+  MaxDistance: 9.8
+  Length: 1350
 --- !u!114 &-4882503165472299921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,10 +91,10 @@ MonoBehaviour:
   Path: ../FMOD/test/Build/Desktop/Touch.bank
   Name: Touch
   StudioPath: bank:/Touch
-  lastModified: 638814555134968641
+  lastModified: 638828367701748005
   FileSizes:
   - Name: Desktop
-    Value: 1014656
+    Value: 1100416
   Exists: 1
 --- !u!114 &-4218361800653415364
 MonoBehaviour:
@@ -121,8 +121,8 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters:
   - {fileID: -6867602274421092246}
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0.90000004
+  MaxDistance: 10
   Length: 4559
 --- !u!114 &-3657028619202527785
 MonoBehaviour:
@@ -194,7 +194,7 @@ MonoBehaviour:
   Path: ../FMOD/test/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638814511253687507
+  lastModified: 638818006529016884
   FileSizes:
   - Name: Desktop
     Value: 1074
@@ -239,6 +239,7 @@ MonoBehaviour:
   - {fileID: 1020255256447942299}
   - {fileID: -1500871689220649151}
   - {fileID: -4882503165472299921}
+  - {fileID: 5104683651477379112}
   EditorEvents:
   - {fileID: -3657028619202527785}
   - {fileID: 7907002313844025880}
@@ -248,13 +249,14 @@ MonoBehaviour:
   - {fileID: 6933492834102495862}
   - {fileID: -4218361800653415364}
   - {fileID: 3598530499386735681}
+  - {fileID: 2060638983991452745}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1500871689220649151}
   StringsBanks:
   - {fileID: 1020255256447942299}
   cacheVersion: 131847
-  cacheTime: 638814555134968641
+  cacheTime: 638828367701748005
   SerializableEventsDict:
   - key: event:/TestTouch/testTapotement
     index: 0
@@ -272,6 +274,8 @@ MonoBehaviour:
     index: 6
   - key: event:/Tap/TapMetaRec
     index: 7
+  - key: event:/Ambience
+    index: 8
 --- !u!114 &1020255256447942299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,10 +291,10 @@ MonoBehaviour:
   Path: ../FMOD/test/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638814511253697513
+  lastModified: 638818006529026880
   FileSizes:
   - Name: Desktop
-    Value: 1364
+    Value: 1442
   Exists: 1
 --- !u!114 &2014064569315684232
 MonoBehaviour:
@@ -319,6 +323,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 3.65
   Length: 3000
+--- !u!114 &2060638983991452745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience
+  Guid:
+    Data1: 879351136
+    Data2: 1151287993
+    Data3: -2066577243
+    Data4: 1796490527
+  Banks:
+  - {fileID: 5104683651477379112}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 580022
 --- !u!114 &3598530499386735681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,9 +375,29 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters:
   - {fileID: 5798236672930172134}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 847
+  MinDistance: 0.90000004
+  MaxDistance: 10
+  Length: 1051
+--- !u!114 &5104683651477379112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambience.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD/test/Build/Desktop/Ambience.bank
+  Name: Ambience
+  StudioPath: bank:/Ambience
+  lastModified: 638822222354041626
+  FileSizes:
+  - Name: Desktop
+    Value: 14540352
+  Exists: 1
 --- !u!114 &5798236672930172134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -362,7 +413,7 @@ MonoBehaviour:
   Name: soundChoice
   StudioPath: 
   Min: 0
-  Max: 7
+  Max: 8
   Default: 0
   ID:
     data1: 592905777
@@ -386,7 +437,7 @@ MonoBehaviour:
   Name: soundChoice
   StudioPath: 
   Min: 0
-  Max: 7
+  Max: 8
   Default: 0
   ID:
     data1: 592905777
@@ -420,9 +471,9 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters:
   - {fileID: 7387682635911412831}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4500
+  MinDistance: 0.90000004
+  MaxDistance: 15
+  Length: 4508
 --- !u!114 &7387682635911412831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -438,7 +489,7 @@ MonoBehaviour:
   Name: soundChoice
   StudioPath: 
   Min: 0
-  Max: 7
+  Max: 8
   Default: 0
   ID:
     data1: 592905777
