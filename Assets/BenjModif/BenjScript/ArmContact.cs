@@ -14,6 +14,12 @@ public class ArmContact : MonoBehaviour
     [SerializeField] private EventReference tapEvent;
     [SerializeField] private EventReference hitEvent;
 
+    [Header("FMOD Parameters")]
+    [SerializeField] private bool isChoiceEnabled = false;
+
+    [Range(0, 7)]
+    [SerializeField] private int soundChoiceID = 0;
+
     private EventInstance strokeInstance;
     private EventInstance rubbingInstance;
     private EventInstance tapInstance;
@@ -37,6 +43,21 @@ public class ArmContact : MonoBehaviour
         hitInstance = RuntimeManager.CreateInstance(hitEvent);
     }
 
+    void Update()
+    {
+        if (isChoiceEnabled)
+        {
+            strokeInstance.setParameterByName("soundChoice", soundChoiceID);
+            rubbingInstance.setParameterByName("soundChoice", soundChoiceID);
+            tapInstance.setParameterByName("soundChoice", soundChoiceID);
+            hitInstance.setParameterByName("soundChoice", soundChoiceID);
+            caresseSoundID = soundChoiceID;
+            frotSoundID = soundChoiceID;
+            tapSoundID = soundChoiceID;
+            hitSoundID = soundChoiceID;
+        }
+    }
+
     public void SetSoundIDs(string animName, int soundChoice)
     {
         if (animName == "caresse") caresseSoundID = soundChoice;
@@ -55,6 +76,7 @@ public class ArmContact : MonoBehaviour
         {
             if (!IsPlaying(strokeInstance))
             {
+                Debug.Log("Caresse sound played");
                 strokeInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
                 strokeInstance.release();
                 strokeInstance = RuntimeManager.CreateInstance(strokeEvent);
@@ -68,6 +90,7 @@ public class ArmContact : MonoBehaviour
         {
             if (!IsPlaying(rubbingInstance))
             {
+                Debug.Log("Rubbing sound played");
                 rubbingInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
                 rubbingInstance.release();
                 rubbingInstance = RuntimeManager.CreateInstance(rubbingEvent);
@@ -81,6 +104,7 @@ public class ArmContact : MonoBehaviour
         {
             if (!IsPlaying(tapInstance))
             {
+                Debug.Log("Tap sound played");
                 tapInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
                 tapInstance.release();
                 tapInstance = RuntimeManager.CreateInstance(tapEvent);
@@ -94,6 +118,7 @@ public class ArmContact : MonoBehaviour
         {
             if (!IsPlaying(hitInstance))
             {
+                Debug.Log("Hit sound played");
                 hitInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
                 hitInstance.release();
                 hitInstance = RuntimeManager.CreateInstance(hitEvent);

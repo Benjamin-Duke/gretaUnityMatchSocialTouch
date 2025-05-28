@@ -91,10 +91,10 @@ MonoBehaviour:
   Path: ../FMOD/test/Build/Desktop/Touch.bank
   Name: Touch
   StudioPath: bank:/Touch
-  lastModified: 638828367701748005
+  lastModified: 638832607925415403
   FileSizes:
   - Name: Desktop
-    Value: 1100416
+    Value: 1096224
   Exists: 1
 --- !u!114 &-4218361800653415364
 MonoBehaviour:
@@ -117,7 +117,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -4882503165472299921}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters:
   - {fileID: -6867602274421092246}
@@ -256,7 +256,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 1020255256447942299}
   cacheVersion: 131847
-  cacheTime: 638828367701748005
+  cacheTime: 638832607925415403
   SerializableEventsDict:
   - key: event:/TestTouch/testTapotement
     index: 0
@@ -349,7 +349,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 580022
+  Length: 1790022
 --- !u!114 &3598530499386735681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -393,10 +393,10 @@ MonoBehaviour:
   Path: ../FMOD/test/Build/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638822222354041626
+  lastModified: 638830066490340905
   FileSizes:
   - Name: Desktop
-    Value: 14540352
+    Value: 7794912
   Exists: 1
 --- !u!114 &5798236672930172134
 MonoBehaviour:
@@ -467,7 +467,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -4882503165472299921}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters:
   - {fileID: 7387682635911412831}

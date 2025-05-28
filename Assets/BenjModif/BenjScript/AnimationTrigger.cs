@@ -67,6 +67,7 @@ public class AnimationTrigger : MonoBehaviour
 
         if (stateInfo.IsName(currentAnimStateName))
         {
+            //Debug.Log("Temps d'animation : " + stateInfo.normalizedTime);
             if (stateInfo.normalizedTime >= 0.95f)
             {
                 Debug.Log("Animation terminée : " + currentAnimStateName);
