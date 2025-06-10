@@ -167,13 +167,14 @@ public class GRETAnimationManager : MonoBehaviour
     IEnumerator ProcessFml(string fileName, string actionName)
     {
         var filepath = Application.streamingAssetsPath + "/FMLs/" + expFolder + "/";
-        if (actionName == IATConsts.DIALOG_ACTION_KEY)
+        if (actionName == "Dialog")//if (actionName == IATConsts.DIALOG_ACTION_KEY)
         {
             filepath += lang + "/";
             yield return new WaitUntil(() => !_audioSource.isPlaying);
         }
         //To deal with minor reactions we need to select a random file corresponding to this reaction type
         var exactFileName = fileName;
+        Debug.Log("!! Playing FML file : " + exactFileName + " at path: " + filepath + exactFileName);
         if (fileName.Contains("Minor"))
         {
             exactFileName = exactFileName.Replace("Gesture", "");

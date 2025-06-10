@@ -312,15 +312,22 @@ public class GretaCharacterAnimator : MonoBehaviour
 
     public void PlayAgentAnimation(string animationID, InterpersonalAttitude attitude = null)
     {
+        Debug.Log("[GretaCharacterAnimator] PlayAgentAnimation called with: " + animationID);
         animateAgent = true;
         // Send "play" command to distant server
         if (distantConnection)
         {
             if (commandSender.isConnected())
+            {
+                Debug.Log("sending play animation command: " + animationID + " with attitude: " + attitude);
+                Debug.Log("on host: " + commandSender.getHost() + " and port: " + commandSender.getPort());
                 commandSender.playAnimation(animationID + ".xml", attitude);
+            }
             else
+            {
                 Debug.LogWarning("AnimationReceiver on host: " + commandSender.getHost() + " and port: " +
                                  commandSender.getPort() + " not connected");
+            }
         }
     }
 
