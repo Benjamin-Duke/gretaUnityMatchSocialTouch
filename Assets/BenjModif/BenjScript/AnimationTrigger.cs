@@ -9,6 +9,7 @@ public class AnimationTrigger : MonoBehaviour
 
     private string currentAnimStateName = "";
     private bool animationPlayed = false;
+    
 
     void Start()
     {
@@ -46,7 +47,9 @@ public class AnimationTrigger : MonoBehaviour
     public void PlayAnimation(string animName)
     {
         ResetAllBools();
-
+        var gretaAnimator = FindObjectOfType<GretaCharacterAnimator>();
+        if (gretaAnimator != null)
+            gretaAnimator.useBapAnimation = false;
         switch (animName.ToLower())
         {
             case "caresse": animator.SetBool("animCaresse", true); break;
@@ -73,6 +76,10 @@ public class AnimationTrigger : MonoBehaviour
                 Debug.Log("Animation terminée : " + currentAnimStateName);
                 ResetAllBools();
                 animationPlayed = false;
+                var gretaAnimator = FindObjectOfType<GretaCharacterAnimator>();
+                if (gretaAnimator != null)
+                    gretaAnimator.useBapAnimation = true;
+
             }
         }
     }

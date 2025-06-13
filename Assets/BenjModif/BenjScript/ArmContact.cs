@@ -68,10 +68,11 @@ public class ArmContact : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!other.CompareTag("CamilleCollision")) return;
+
+        if (!(other.CompareTag("CamilleCollision") || other.CompareTag("CamilleEtheral"))) return;
 
         AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(animatorLayer);
-
+        //Debug.Log("Current animator state: " + stateInfo.fullPathHash);
         if (stateInfo.IsName("caresse"))
         {
             if (!IsPlaying(strokeInstance))

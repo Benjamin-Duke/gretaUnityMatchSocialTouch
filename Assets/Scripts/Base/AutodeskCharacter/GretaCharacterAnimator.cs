@@ -64,6 +64,8 @@ public class GretaCharacterAnimator : MonoBehaviour
 
     private AnimationParametersFrame lastFAPFrame;
 
+    public bool useBapAnimation = false;
+
     // Use this for initialization
     private void Awake()
     {
@@ -213,21 +215,23 @@ public class GretaCharacterAnimator : MonoBehaviour
 
             if (currentBAPFrame != null)
             {
-                if (lastBAPFrame.isEqualTo(currentBAPFrame))
-                {
-                    cptFrames++;
-                    if (cptFrames > framesBeforeNotAgentPlaying)
+                if (!lastBAPFrame.isEqualTo(currentBAPFrame))
+                    //Debug.Log(">> GRETA BAP frame received and applied");
+                    if (lastBAPFrame.isEqualTo(currentBAPFrame))
                     {
-                        agentPlaying = false;
-                        cptFrames = 0;
+                        cptFrames++;
+                        if (cptFrames > framesBeforeNotAgentPlaying)
+                        {
+                            agentPlaying = false;
+                            cptFrames = 0;
+                        }
                     }
-                }
-                else
-                {
-                    agentPlaying = true;
-                    cptFrames = 0;
-                    lastBAPFrame = new AnimationParametersFrame(currentBAPFrame);
-                }
+                    else
+                    {
+                        agentPlaying = true;
+                        cptFrames = 0;
+                        lastBAPFrame = new AnimationParametersFrame(currentBAPFrame);
+                    }
 
                 applyBapFrame(currentBAPFrame);
             }
@@ -256,8 +260,8 @@ public class GretaCharacterAnimator : MonoBehaviour
                     for (var iPCM = 44; iPCM < len; iPCM++)
                     {
                         float f;
-                        var i = (short) ((currentAudio.rawData[iPCM * 2 + 1] << 8) | currentAudio.rawData[iPCM * 2]);
-                        f = i / (float) 32768;
+                        var i = (short)((currentAudio.rawData[iPCM * 2 + 1] << 8) | currentAudio.rawData[iPCM * 2]);
+                        f = i / (float)32768;
                         if (f > 1) f = 1;
                         if (f < -1) f = -1;
                         buffer[iPCM] = f;
@@ -273,9 +277,9 @@ public class GretaCharacterAnimator : MonoBehaviour
                 {
                     if (_currentAudioSource != null && _currentAudioSource.clip != null)
                     {
-                        var offSet = (characterTimer.getTimeMillis() - (float) currentAudio.getFrameNumber() * 40) /
+                        var offSet = (characterTimer.getTimeMillis() - (float)currentAudio.getFrameNumber() * 40) /
                                      1000;
-                        var samplesOffset = (int) (_currentAudioSource.clip.frequency * offSet *
+                        var samplesOffset = (int)(_currentAudioSource.clip.frequency * offSet *
                                                    _currentAudioSource.clip.channels);
                         _currentAudioSource.timeSamples = samplesOffset;
                         _currentAudioSource.Play();
@@ -312,15 +316,15 @@ public class GretaCharacterAnimator : MonoBehaviour
 
     public void PlayAgentAnimation(string animationID, InterpersonalAttitude attitude = null)
     {
-        Debug.Log("[GretaCharacterAnimator] PlayAgentAnimation called with: " + animationID);
+        //Debug.Log("[GretaCharacterAnimator] PlayAgentAnimation called with: " + animationID);
         animateAgent = true;
         // Send "play" command to distant server
         if (distantConnection)
         {
             if (commandSender.isConnected())
             {
-                Debug.Log("sending play animation command: " + animationID + " with attitude: " + attitude);
-                Debug.Log("on host: " + commandSender.getHost() + " and port: " + commandSender.getPort());
+                // Debug.Log("sending play animation command: " + animationID + " with attitude: " + attitude);
+                // Debug.Log("on host: " + commandSender.getHost() + " and port: " + commandSender.getPort());
                 commandSender.playAnimation(animationID + ".xml", attitude);
             }
             else
@@ -737,7 +741,26 @@ public class GretaCharacterAnimator : MonoBehaviour
 
     public void applyBapFrame(AnimationParametersFrame bapframe)
     {
+        // Debug.Log($"[applyBapFrame] Frame #{bapframe.getFrameNumber()} - APVector count: {bapframe.APVector.Count}");
+        // // Pour chaque valeur, logue les BAP utilisés (optionnel, mais utile pour voir si les bras/corps sont présents)
+        // foreach (var bapType in Enum.GetValues(typeof(BAPType)))
+        // {
+        //     if (bapframe.getMask((BAPType)bapType))
+        //     {
+        //         Debug.Log($"BAP {bapType}: {bapframe.getValue((BAPType)bapType)}");
+        //     }
+        // }
+
         bapframe = concatenator.concatenateJoints(bapframe);
         foreach (var mapper in bapMappers) mapper.applyBap(bapframe);
+    }
+    
+    private void LateUpdate()
+    {
+        // Réapplique la dernière frame BAP pour écraser l'Animator
+        if (useBapAnimation && lastBAPFrame != null)
+        {
+            applyBapFrame(lastBAPFrame);
+        }
     }
 }

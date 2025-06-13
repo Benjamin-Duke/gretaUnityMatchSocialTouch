@@ -56,12 +56,12 @@ public class GRETAnimationManager : MonoBehaviour
         _gretaAnim = GetComponentInChildren<GretaCharacterAnimator>();
         _audioSource = GetComponentInChildren<AudioSource>();
         _headLookController = GetComponent<HeadLookController>();
-        _aiCharacterControl = GetComponent<AICharacterControl>();
+        //_aiCharacterControl = GetComponent<AICharacterControl>();
         _rig = GetComponentInChildren<RigBuilder>();
         _rig!.enabled = false;
         //_ovrtrnsfrm = GetComponentInChildren<OverrideTransform>();
-        _navMeshAgent = GetComponent<NavMeshAgent>();
-        _aiCharacterControl.target = userHead;
+        //_navMeshAgent = GetComponent<NavMeshAgent>();
+        //_aiCharacterControl.target = userHead;
         
         InitializeAllMinorReactions();
     }
@@ -194,14 +194,14 @@ public class GRETAnimationManager : MonoBehaviour
         {
             if (fileName.Contains("Touch"))
             {
-                StartCoroutine(fileName.Contains("PlayAgain")
-                    ? HandleTouchSynchronization(true)
-                    : HandleTouchSynchronization(false));
+                // StartCoroutine(fileName.Contains("PlayAgain")
+                //     ? HandleTouchSynchronization(true)
+                //     : HandleTouchSynchronization(false));
             }
                 
         }
 
-        Debug.Log("!! Playing FML file : " + exactFileName);
+        // Debug.Log("!! Playing FML file : " + exactFileName);
         _gretaAnim.PlayAgentAnimation(filepath + exactFileName);
         if (actionName == IATConsts.DIALOG_ACTION_KEY || exactFileName.Contains("Touch"))
             yield return new WaitUntil(() => _audioSource.isPlaying);
@@ -209,7 +209,7 @@ public class GRETAnimationManager : MonoBehaviour
         {
                 yield return null;
         }
-        ResetMoveTowardsTarget();
+        //ResetMoveTowardsTarget();
         ovrtrnsfrm.rotation = Quaternion.Euler(0,0, 0);
         _rig.enabled = false;
         if (fileName.Contains("Touch"))

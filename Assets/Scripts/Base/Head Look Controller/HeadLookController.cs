@@ -83,7 +83,7 @@ public class HeadLookController : MonoBehaviour
     {
         if (Time.deltaTime == 0)
             return;
-        //UpdateHeadLook();
+        UpdateHeadLook();
         
     }
 
