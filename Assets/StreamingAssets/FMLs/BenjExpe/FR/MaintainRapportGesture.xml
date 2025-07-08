@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+
+    
+        <bml>
+            <speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+                <tm id="tm1"/>On
+				<tm id="tm2"/>s'en
+				<tm id="tm3"/>sort
+				<tm id="tm4"/>bien
+				<tm id="tm5"/>je
+				<tm id="tm6"/>trouve
+				<tm id="tm7"/>!
+				<tm id="tm8"/>C'est
+				<tm id="tm9"/>pas
+				<tm id="tm10"/>facile
+				<tm id="tm11"/>mais
+				<tm id="tm12"/>on
+				<tm id="tm13"/>coopère
+				<tm id="tm14"/>bien.
+</speech>
+        </bml>
+		<fml>
+		<fml/>
+    
+        <ideationalunit end="s1:tm12-0.2" id="id_2" importance="1.0" main="im_15" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm23-0.2" id="im_15" importance="1.0" indexword="11" start="s1:tm20-0.2" type="object"/>
+        <imageschema POSroot="verb" end="s1:tm24-0.2" id="im_16" importance="1.0" start="s1:tm23-0.2" type="interval"/>
+    
+
+
+</fml>
+</fml-apml>

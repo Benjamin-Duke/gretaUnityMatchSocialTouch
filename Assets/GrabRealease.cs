@@ -16,6 +16,9 @@ public class LeapGrabObject : MonoBehaviour
     
     private SimpleTetraminoSnap snapSystem;
 
+    private int lostHandFrames = 0;
+    private const int maxLostHandFrames = 10;
+
     void Start()
     {
         snapSystem = FindObjectOfType<SimpleTetraminoSnap>();
@@ -26,19 +29,26 @@ public class LeapGrabObject : MonoBehaviour
     {
         Frame frame = leapProvider.CurrentFrame;
 
-        foreach (Hand hand in frame.Hands)
+        // Si on ne tient rien, on essaie de grab
+        if (grabbedObject == null)
         {
-            if (grabbedObject == null)
+            foreach (Hand hand in frame.Hands)
             {
                 if (hand.GrabStrength > 0.8f)
                 {
                     TryGrabObject(hand);
+                    break; // On ne grab qu'avec une main à la fois
                 }
             }
-            else
+        }
+        else // Si on tient un objet
+        {
+            bool handFound = false;
+            foreach (Hand hand in frame.Hands)
             {
                 if (hand.Id == grabbingHandId)
                 {
+                    handFound = true;
                     if (hand.GrabStrength > 0.8f)
                     {
                         MoveObjectWithHand(hand);
@@ -47,11 +57,16 @@ public class LeapGrabObject : MonoBehaviour
                     {
                         ReleaseObject();
                     }
+                    break;
                 }
             }
-        }
 
-        
+            // Sécurité : si aucune main n'est détectée, on relâche l'objet
+            if (frame.Hands.Count == 0)
+            {
+                ReleaseObject();
+            }
+        }
     }
 
     void TryGrabObject(Hand hand)

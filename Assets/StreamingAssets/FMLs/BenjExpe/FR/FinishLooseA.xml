@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+
+    
+        <bml>
+            <speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+                <tm id="tm1"/>Ne
+                <tm id="tm2"/>t'en
+                <tm id="tm3"/>fais
+                <tm id="tm4"/>pas,
+                <tm id="tm5"/>celui-là
+                <tm id="tm6"/>était
+                <tm id="tm7"/>vraiment
+                <tm id="tm8"/>pas
+                <tm id="tm9"/>facile.
+                <tm id="tm10"/>Mais
+                <tm id="tm11"/>c'est
+                <tm id="tm12"/>pas
+                <tm id="tm13"/>un
+                <tm id="tm14"/>souci,
+                <tm id="tm15"/>on
+                <tm id="tm16"/>le
+                <tm id="tm17"/>laisse
+                <tm id="tm18"/>de
+                <tm id="tm19"/>côté
+                <tm id="tm20"/>et
+                <tm id="tm21"/>on
+                <tm id="tm22"/>passe
+                <tm id="tm23"/>au
+                <tm id="tm24"/>prochain.
+                <tm id="tm25"/>Dis
+                <tm id="tm26"/>moi
+                <tm id="tm27"/>quand
+                <tm id="tm28"/>tu
+                <tm id="tm29"/>es
+                <tm id="tm30"/>prêt.
+            </speech>
+        </bml>
+        <fml>
+        <fml/>
+    
+    
+        <!-- <ideationalunit end="s1:tm22-0.2" id="id_1" importance="1.0" main="im_5" start="s1:tm1-0.2"/> -->
+        <!-- <imageschema POSroot="noun" end="s1:tm11-0.2" id="im_5" importance="1.0" indexword="9" start="s1:tm9-0.2" type="object"/> -->
+    
+
+
+</fml>
+</fml-apml>

@@ -39,13 +39,14 @@ public class AnimationTrigger : MonoBehaviour
 
     void TriggerManual(string animName)
     {
-        Debug.Log($"Animation manuelle déclenchée : {animName}");
+        //Debug.Log($"Animation manuelle déclenchée : {animName}");
         PlayAnimation(animName);
     }
 
     // Appelé automatiquement par d'autres scripts
     public void PlayAnimation(string animName)
     {
+        Debug.Log($"Animation manuelle déclenchée : {animName}");
         ResetAllBools();
         var gretaAnimator = FindObjectOfType<GretaCharacterAnimator>();
         if (gretaAnimator != null)
@@ -76,9 +77,9 @@ public class AnimationTrigger : MonoBehaviour
                 Debug.Log("Animation terminée : " + currentAnimStateName);
                 ResetAllBools();
                 animationPlayed = false;
-                var gretaAnimator = FindObjectOfType<GretaCharacterAnimator>();
-                if (gretaAnimator != null)
-                    gretaAnimator.useBapAnimation = true;
+                // var gretaAnimator = FindObjectOfType<GretaCharacterAnimator>();
+                // if (gretaAnimator != null)
+                //     gretaAnimator.useBapAnimation = true;
 
             }
         }

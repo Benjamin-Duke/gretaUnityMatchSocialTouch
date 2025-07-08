@@ -12,6 +12,7 @@ public class GRETATestRunner : MonoBehaviour
     public string testFmlFile = "TestFml"; // nom de fichier sans .xml
     public string testActionName = "Dialog"; // ou "Touch", "MinorSuccess", etc.
 
+    public float blendDuration = 0.5f; // durée du blending en secondes
 
     void Update()
     {
@@ -23,8 +24,15 @@ public class GRETATestRunner : MonoBehaviour
                 gretaAnimator.useBapAnimation = true;
 
             if (gretaManager != null)
-                gretaManager.PlayFml(testFmlFile, testActionName);
+                gretaManager.PlayFml("ResetPose", "ResetPose");
+            gretaManager.PlayFml(testFmlFile, testActionName);
         }
     }
 
+    public void OnFinishGame()
+    {
+        if (gretaManager != null)
+            gretaManager.PlayFml(testFmlFile, testActionName);
+
+    }
 }

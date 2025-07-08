@@ -174,7 +174,7 @@ public class GRETAnimationManager : MonoBehaviour
         }
         //To deal with minor reactions we need to select a random file corresponding to this reaction type
         var exactFileName = fileName;
-        Debug.Log("!! Playing FML file : " + exactFileName + " at path: " + filepath + exactFileName);
+
         if (fileName.Contains("Minor"))
         {
             exactFileName = exactFileName.Replace("Gesture", "");
@@ -212,6 +212,7 @@ public class GRETAnimationManager : MonoBehaviour
         //ResetMoveTowardsTarget();
         ovrtrnsfrm.rotation = Quaternion.Euler(0,0, 0);
         _rig.enabled = false;
+
         if (fileName.Contains("Touch"))
             PlayFml("ResetPose", "ResetPose");
     }

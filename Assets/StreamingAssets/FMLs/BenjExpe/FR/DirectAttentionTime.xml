@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+
+    
+        <bml>
+			<speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+				<description level="1" type="gretabml">
+					<reference>tmp/from-fml-apml.pho</reference>
+				</description>
+				<tm id="tm1"/>
+					Fait
+				<tm id="tm2"/>
+					attention
+				<tm id="tm3"/>
+					au
+				<tm id="tm4"/>
+					temps
+				<tm id="tm5"/>
+					qu'
+				<tm id="tm6"/>
+					il
+				<tm id="tm7"/>
+					te
+				<tm id="tm8"/>
+					reste
+				<tm id="tm9"/>
+					!
+			</speech>
+        </bml>
+    
+	<fml>
+        <!-- <ideationalunit end="s1:tm27-0.2" id="id_1" importance="1.0" main="im_6" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm11-0.2" id="im_6" importance="1.0" start="s1:tm10-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm19-0.2" id="im_9" importance="1.0" start="s1:tm18-0.2" type="enablement"/>
+        <imageschema POSroot="noun" end="s1:tm24-0.2" id="im_11" importance="1.0" indexword="22" start="s1:tm22-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm29-0.2" id="im_14" importance="1.0" indexword="27" start="s1:tm27-0.2" type="object"/> -->
+    
+
+
+	</fml>
+</fml-apml>

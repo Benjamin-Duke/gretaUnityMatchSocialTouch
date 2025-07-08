@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+    <bml>
+        <speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+            <description level="1" type="gretabml">
+                <reference>tmp/from-fml-apml.pho</reference>
+            </description>
+            <tm id="tm1"/>
+                Devant
+            <tm id="tm2"/>
+                toi,
+            <tm id="tm3"/>
+                tu
+            <tm id="tm4"/>
+                peux
+            <tm id="tm5"/>
+                voir
+            <tm id="tm6"/>
+                un
+            <tm id="tm7"/>
+                exemple
+            <tm id="tm8"/>
+                de
+            <tm id="tm9"/>
+                puzzle
+            <tm id="tm10"/>
+                comme
+            <tm id="tm11"/>
+                ceux
+            <tm id="tm12"/>
+                que
+            <tm id="tm13"/>
+                tu
+            <tm id="tm14"/>
+                devras
+            <tm id="tm15"/>
+                résoudre
+            <tm id="tm16"/>
+                pendant
+            <tm id="tm17"/>
+                l'expérience.
+            <tm id="tm18"/>
+                Le
+            <tm id="tm19"/>
+                but
+            <tm id="tm20"/>
+                est
+            <tm id="tm21"/>
+                de
+            <tm id="tm22"/>
+                remplir
+            <tm id="tm23"/>
+                la
+            <tm id="tm24"/>
+                grille
+            <tm id="tm25"/>
+                avec
+            <tm id="tm26"/>
+                les
+            <tm id="tm27"/>
+                objets
+            <tm id="tm28"/>
+                autour
+            <tm id="tm29"/>
+                de
+            <tm id="tm30"/>
+                toi.
+            <tm id="tm31"/>
+                Mais
+            <tm id="tm32"/>
+                pas
+            <tm id="tm33"/>
+                de
+            <tm id="tm34"/>
+                stress,
+            <tm id="tm35"/>
+                ici
+            <tm id="tm36"/>
+                tu
+            <tm id="tm37"/>
+                peux
+            <tm id="tm38"/>
+                t'entraîner
+            <tm id="tm39"/>
+                tranquillement
+            <tm id="tm40"/>
+                et
+            <tm id="tm41"/>
+                te
+            <tm id="tm42"/>
+                familiariser
+            <tm id="tm43"/>
+                avec
+            <tm id="tm44"/>
+                l'interaction
+            <tm id="tm45"/>
+                des
+            <tm id="tm46"/>
+                objets.
+            <tm id="tm47"/>
+                Pour
+            <tm id="tm48"/>
+                prendre
+            <tm id="tm49"/>
+                un
+            <tm id="tm50"/>
+                objet,
+            <tm id="tm51"/>
+                ferme
+            <tm id="tm52"/>
+                la
+            <tm id="tm53"/>
+                main.
+            <tm id="tm54"/>
+                Pour
+            <tm id="tm55"/>
+                poser
+            <tm id="tm56"/>
+                l'objet,
+            <tm id="tm57"/>
+                ouvre
+            <tm id="tm58"/>
+                la
+            <tm id="tm59"/>
+                main.
+        </speech>
+    </bml>
+    <fml>
+        <emotion id="e1" type="joyStrong" start="0" end="2.5" importance="1.0"/>
+        <beat end="s1:tm15" id="1" importance="1.0" start="s1:tm8" type="LowLf1"/>
+        <performative end="s1:tm7" id="p1" importance="1.0" start="s1:tm1" type="Suggest_Ges_R"/>
+        <deictic end="s1:tm24" id="2" importance="1.0" start="s1:tm9" type="me"/>
+        
+        <!-- Ajout de gestes supplémentaires pour accompagner le discours -->
+        <deictic id="3" type="deictic-down" start="s1:tm1" end="s1:tm2" importance="0.8"/>
+        <iconic id="4" type="iconic-chop" start="s1:tm16" end="s1:tm18" importance="0.7"/>
+        <beat id="5" type="beat-right" start="s1:tm20" end="s1:tm22" importance="0.6"/>
+        <performative id="6" type="performative-greet" start="s1:tm35" end="s1:tm36" importance="0.9"/>
+        <deictic id="7" type="deictic-index" start="s1:tm48" end="s1:tm50" importance="0.8"/>
+        <iconic id="8" type="iconic-HereBt01" start="s1:tm54" end="s1:tm56" importance="0.7"/>
+        <beat id="9" type="beat-left" start="s1:tm57" end="s1:tm59" importance="0.6"/>
+        
+        <ideationalunit end="s1:tm19-0.2" id="id_1" importance="1.0" main="im_8" start="s1:tm0-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm20-0.2" id="im_8" importance="1.0" indexword="13" previous="true" start="s1:tm11-0.2" type="whole"/>
+    </fml>
+</fml-apml>

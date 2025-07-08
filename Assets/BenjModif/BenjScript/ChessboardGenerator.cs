@@ -18,13 +18,16 @@ public class ChessboardGenerator : MonoBehaviour
     public Vector3 BoardStartOffset { get; private set; }
     public Vector3 BoardCenter { get; private set; }
 
-    void Start()
-    {
-        GenerateBoard();
-    }
+    // void Start()
+    // {
+    //     GenerateBoard(width, height);
+    // }
 
-    void GenerateBoard()
+    public void GenerateBoard(int customWidth, int customHeight)
     {
+        DestroyBoard(); 
+        width = customWidth;
+        height = customHeight;
         // 1. D'abord placer le parent à la bonne position
         if (centerTarget != null)
         {
@@ -63,6 +66,19 @@ public class ChessboardGenerator : MonoBehaviour
                 Material chosenMaterial = isWhite ? whiteMaterial : blackMaterial;
                 tile.GetComponent<Renderer>().material = chosenMaterial;
             }
+        }
+    }
+
+    public void DestroyBoard()
+    {
+        var children = new System.Collections.Generic.List<Transform>();
+        foreach (Transform child in transform)
+        {
+            children.Add(child);
+        }
+        foreach (Transform child in children)
+        {
+            Destroy(child.gameObject);
         }
     }
 

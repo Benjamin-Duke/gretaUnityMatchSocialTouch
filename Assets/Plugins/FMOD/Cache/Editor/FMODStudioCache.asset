@@ -1,5 +1,53 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7623116332594894809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/CarExpe/soundChoice
+  m_EditorClassIdentifier: 
+  Name: soundChoice
+  StudioPath: 
+  Min: 0
+  Max: 8
+  Default: 0
+  ID:
+    data1: 592905777
+    data2: 1496704041
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-6977112527512096798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FrotExpe/soundChoice
+  m_EditorClassIdentifier: 
+  Name: soundChoice
+  StudioPath: 
+  Min: 0
+  Max: 8
+  Default: 0
+  ID:
+    data1: 592905777
+    data2: 1496704041
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-6889176570071722243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,10 +139,10 @@ MonoBehaviour:
   Path: ../FMOD/test/Build/Desktop/Touch.bank
   Name: Touch
   StudioPath: bank:/Touch
-  lastModified: 638832607925415403
+  lastModified: 638874950062186373
   FileSizes:
   - Name: Desktop
-    Value: 1096224
+    Value: 1107904
   Exists: 1
 --- !u!114 &-4218361800653415364
 MonoBehaviour:
@@ -152,6 +200,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 500
+--- !u!114 &-2769647401018876856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/HitTap/HitExpe
+  m_EditorClassIdentifier: 
+  Path: event:/HitTap/HitExpe
+  Guid:
+    Data1: 938689113
+    Data2: 1210011168
+    Data3: -728328776
+    Data4: 1929637739
+  Banks:
+  - {fileID: -4882503165472299921}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1300
 --- !u!114 &-2436750622416351617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,11 +269,39 @@ MonoBehaviour:
   Path: ../FMOD/test/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638818006529016884
+  lastModified: 638870550998793834
   FileSizes:
   - Name: Desktop
     Value: 1074
   Exists: 1
+--- !u!114 &-1377882284501028331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Tap/TaoExpe
+  m_EditorClassIdentifier: 
+  Path: event:/Tap/TaoExpe
+  Guid:
+    Data1: -40488782
+    Data2: 1203537411
+    Data3: 1593363884
+    Data4: 1806498245
+  Banks:
+  - {fileID: -4882503165472299921}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 1636096672678376332}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 750
 --- !u!114 &-1259458438401906491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,13 +353,17 @@ MonoBehaviour:
   - {fileID: -4218361800653415364}
   - {fileID: 3598530499386735681}
   - {fileID: 2060638983991452745}
+  - {fileID: 1656492973311251865}
+  - {fileID: 5286574938694828976}
+  - {fileID: -2769647401018876856}
+  - {fileID: -1377882284501028331}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1500871689220649151}
   StringsBanks:
   - {fileID: 1020255256447942299}
   cacheVersion: 131847
-  cacheTime: 638832607925415403
+  cacheTime: 638874950062186373
   SerializableEventsDict:
   - key: event:/TestTouch/testTapotement
     index: 0
@@ -276,6 +383,14 @@ MonoBehaviour:
     index: 7
   - key: event:/Ambience
     index: 8
+  - key: event:/Frott/FrotExpe
+    index: 9
+  - key: event:/Caresse/CarExpe
+    index: 10
+  - key: event:/HitTap/HitExpe
+    index: 11
+  - key: event:/Tap/TaoExpe
+    index: 12
 --- !u!114 &1020255256447942299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -291,11 +406,63 @@ MonoBehaviour:
   Path: ../FMOD/test/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638818006529026880
+  lastModified: 638870550998808850
   FileSizes:
   - Name: Desktop
-    Value: 1442
+    Value: 1620
   Exists: 1
+--- !u!114 &1636096672678376332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TaoExpe/soundChoice
+  m_EditorClassIdentifier: 
+  Name: soundChoice
+  StudioPath: 
+  Min: 0
+  Max: 8
+  Default: 0
+  ID:
+    data1: 592905777
+    data2: 1496704041
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &1656492973311251865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Frott/FrotExpe
+  m_EditorClassIdentifier: 
+  Path: event:/Frott/FrotExpe
+  Guid:
+    Data1: -1648525436
+    Data2: 1221465684
+    Data3: -446889027
+    Data4: 2127294881
+  Banks:
+  - {fileID: -4882503165472299921}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -6977112527512096798}
+  MinDistance: 1
+  MaxDistance: 5
+  Length: 2000
 --- !u!114 &2014064569315684232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -398,6 +565,34 @@ MonoBehaviour:
   - Name: Desktop
     Value: 7794912
   Exists: 1
+--- !u!114 &5286574938694828976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Caresse/CarExpe
+  m_EditorClassIdentifier: 
+  Path: event:/Caresse/CarExpe
+  Guid:
+    Data1: 1506331442
+    Data2: 1090833613
+    Data3: 1804382897
+    Data4: -350718252
+  Banks:
+  - {fileID: -4882503165472299921}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -7623116332594894809}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3956
 --- !u!114 &5798236672930172134
 MonoBehaviour:
   m_ObjectHideFlags: 0

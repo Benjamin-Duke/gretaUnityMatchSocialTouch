@@ -3,7 +3,7 @@
 
 	<bml>
 
-		<speech id="s1" start="0.0" language="english" voice="marytts" type="SAPI4" text="">
+		<!-- <speech id="s1" start="0.0" language="english" voice="marytts" type="SAPI4" text="">
 			
 			<description level="1" type="gretabml">
 				<reference>tmp/from-fml-apml.pho</reference>
@@ -22,7 +22,7 @@
 			<pitchaccent id="pa2" type="HStar" level="medium" start="s1:tm3" end="s1:tm4" importance="1"/>
 			<boundary type="LL" id="b1" start="s1:tm5" end="s1:tm5+0.5"/>
 			
-		</speech>
+		</speech> -->
 
 	</bml>
 
@@ -35,6 +35,7 @@
 		<emotion id="e1" type="joyStrong" start="2" end="3" importance="1.0"/>
 		<performative id="p2" type="propose" start="3" end="5" importance="1.0"/>
 		<rest id="rp1" type="restpose" start="0" end="5" importance="1.0"/>
+
 
 	</fml>
 

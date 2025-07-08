@@ -13,19 +13,50 @@ public class ButtonVR : MonoBehaviour
 
     private Renderer rend;
 
+    private ButtonManager buttonManager;
+    private SimpleTetraminoSnap snapManager;
+    private TimerManagerB timeManager;
+
     void Start()
     {
         rend = GetComponent<Renderer>();
         SetColor(defaultColor);
+        snapManager = FindObjectOfType<SimpleTetraminoSnap>();
+        buttonManager = FindObjectOfType<ButtonManager>();
+        timeManager = FindObjectOfType<TimerManagerB>();
     }
 
     void OnTriggerEnter(Collider other)
     {
-        // Vérifier si le bouton peut être appuyé
-        if (ButtonManager.CanPress(this))
+        if (other.CompareTag("Index"))
         {
-            PressButton();
-            ButtonManager.RegisterPress(this);
+            Debug.Log($"[ButtonVR] Appui détecté sur le bouton {buttonID} par {other.name}");
+            // Vérifier si le bouton peut être appuyé
+            if (buttonManager != null && ButtonManager.CanPress(this))
+            {
+                PressButton();
+                ButtonManager.RegisterPress(this);
+            }
+            else if (snapManager != null)
+            {
+                if (buttonID == "Undo")
+                {
+                    PressButton();
+                    snapManager.UndoLastAction();
+                }
+                else if (buttonID == "Reset")
+                {
+                    PressButton();
+                    snapManager.ResetAllTetraminos();
+                }
+                else if (buttonID == "Start")
+                {
+                    PressButton();
+                    if (timeManager.gameStarted == false)
+                        timeManager.StartStopTimer();
+                }
+
+            }
         }
     }
 
@@ -50,7 +81,7 @@ public class ButtonVR : MonoBehaviour
         }
 
         // Change la couleur uniquement si ce n'est pas un bouton "Next" ou "End"
-        if (buttonID != "Next" && buttonID != "End")
+        if (buttonID != "Next" && buttonID != "End" && buttonID != "Undo" && buttonID != "Reset" && buttonID != "Start") 
         {
             SetColor(lockedColor);
         }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+    <bml>
+        <speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+            <description level="1" type="gretabml">
+                <reference>tmp/from-fml-apml.pho</reference>
+            </description>
+            <tm id="tm1"/>
+                Bon
+            <tm id="tm2"/>
+                courage.
+        </speech>
+    </bml>
+    <fml>
+        <emotion id="e1" type="small_joy" start="0" end="10" importance="1.0"/>
+        <rest id="rp1" type="restpose_restexpe" start="0" end="1" importance="1.0"/>
+    </fml>
+</fml-apml>

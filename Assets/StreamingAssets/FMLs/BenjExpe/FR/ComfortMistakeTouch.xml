@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+
+    
+        <bml>
+            <speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+                <tm id="tm1"/>Je
+				<tm id="tm2"/>te
+				<tm id="tm3"/>rassure,
+				<tm id="tm4"/>c'est
+				<tm id="tm5"/>pas
+				<tm id="tm6"/>facile
+				<tm id="tm7"/>du
+				<tm id="tm8"/>tout,
+				<tm id="tm9"/>ni
+				<tm id="tm10"/>du
+				<tm id="tm11"/>cotai
+				<tm id="tm12"/>de
+				<tm id="tm13"/>la
+				<tm id="tm14"/>manipulation
+				<tm id="tm15"/>ni
+				<tm id="tm16"/>du
+				<tm id="tm17"/>cotai
+				<tm id="tm18"/>de
+				<tm id="tm19"/>trouver
+				<tm id="tm20"/>comment
+				<tm id="tm21"/>assembler
+				<tm id="tm22"/>les
+				<tm id="tm23"/>piaices.
+				<tm id="tm24"/>Mais
+				<tm id="tm25"/>sa
+				<tm id="tm26"/>va
+				<tm id="tm27"/>aller,
+				<tm id="tm28"/>accroche-toi,
+				<tm id="tm29"/>tu
+				<tm id="tm30"/>vas
+				<tm id="tm31"/>t'en
+				<tm id="tm32"/>sortir
+				<tm id="tm33"/>!
+</speech>
+        </bml>
+		<fml>
+		<fml/>
+    
+    
+        <ideationalunit end="s1:tm22-0.2" id="id_1" importance="1.0" main="im_5" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm11-0.2" id="im_5" importance="1.0" indexword="9" start="s1:tm9-0.2" type="object"/>
+    
+
+
+</fml>
+</fml-apml>

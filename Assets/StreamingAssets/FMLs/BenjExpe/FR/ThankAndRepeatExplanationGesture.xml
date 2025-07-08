@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+
+    
+        <bml>
+            <speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+				<tm id="tm1"/>Super
+				<tm id="tm2"/>merci
+				<tm id="tm3"/>!
+				<tm id="tm4"/>Okay,
+				<tm id="tm5"/>donc
+				<tm id="tm6"/>sa
+				<tm id="tm7"/>va
+				<tm id="tm8"/>aitre
+				<tm id="tm9"/>exactement
+				<tm id="tm10"/>pareil,
+				<tm id="tm11"/>mais
+				<tm id="tm12"/>cette
+				<tm id="tm13"/>fois
+				<tm id="tm14"/>le
+				<tm id="tm15"/>contour
+				<tm id="tm16"/>sera
+				<tm id="tm17"/>diffairent
+				<tm id="tm18"/>donc
+				<tm id="tm19"/>la
+				<tm id="tm20"/>solution
+				<tm id="tm21"/>aussi.
+				<tm id="tm22"/>Tout
+				<tm id="tm23"/>le
+				<tm id="tm24"/>reste
+				<tm id="tm25"/>est
+				<tm id="tm26"/>pareil,
+				<tm id="tm27"/>tu
+				<tm id="tm28"/>peux
+				<tm id="tm29"/>me
+				<tm id="tm30"/>demander
+				<tm id="tm31"/>de
+				<tm id="tm32"/>l'aide
+				<tm id="tm33"/>en
+				<tm id="tm34"/>me
+				<tm id="tm35"/>touchant
+				<tm id="tm36"/>et
+				<tm id="tm37"/>n'haisite
+				<tm id="tm38"/>pas
+				<tm id="tm39"/>a
+				<tm id="tm40"/>tester
+				<tm id="tm41"/>diffairentes
+				<tm id="tm42"/>choses,
+				<tm id="tm43"/>je
+				<tm id="tm44"/>te
+				<tm id="tm45"/>dirai
+				<tm id="tm46"/>comment
+				<tm id="tm47"/>sa
+				<tm id="tm48"/>se
+				<tm id="tm49"/>praisente
+				<tm id="tm50"/>au
+				<tm id="tm51"/>fur
+				<tm id="tm52"/>et
+				<tm id="tm53"/>a
+				<tm id="tm54"/>mesure.
+
+</speech>
+        </bml>
+    
+    
+        <ideationalunit end="s1:tm22-0.2" id="id_2" importance="1.0" main="im_9" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm19-0.2" id="im_9" importance="1.0" indexword="11" start="s1:tm15-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm25-0.2" id="im_11" importance="1.0" indexword="17" start="s1:tm22-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm30-0.2" id="im_13" importance="1.0" indexword="22" start="s1:tm27-0.2" type="object"/>
+        <ideationalunit end="s1:tm33-0.2" id="id_3" importance="1.0" main="im_21" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm46-0.2" id="im_21" importance="1.0" previous="true" start="s1:tm42-0.2" type="enablement"/>
+        <imageschema POSroot="noun" end="s1:tm55-0.2" id="im_23" importance="1.0" indexword="23" previous="true" start="s1:tm52-0.2" type="link"/>
+        <imageschema POSroot="verb" end="s1:tm64-0.2" id="im_29" importance="1.0" indexword="33" start="s1:tm62-0.2" type="interval"/>
+    
+
+
+</fml>
+</fml-apml>

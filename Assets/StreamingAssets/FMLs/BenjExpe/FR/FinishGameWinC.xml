@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+        <bml>
+			<speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+				<description level="1" type="gretabml">
+					<reference>tmp/from-fml-apml.pho</reference>
+				</description>
+				<tm id="tm1"/>
+					Incroyable
+				<tm id="tm2"/>
+					!
+				<tm id="tm3"/>
+					Tu
+				<tm id="tm4"/>
+					as
+				<tm id="tm5"/>
+					réussi
+				<tm id="tm6"/>
+					à
+				<tm id="tm7"/>
+					résoudre
+				<tm id="tm8"/>
+					tout
+				<tm id="tm9"/>
+					les
+				<tm id="tm10"/>
+					puzzles,
+				<tm id="tm11"/>
+					je
+				<tm id="tm12"/>
+					savais
+				<tm id="tm13"/>
+					depuis
+				<tm id="tm14"/>
+					le
+				<tm id="tm15"/>
+					début
+				<tm id="tm16"/>
+					que
+				<tm id="tm17"/>
+					tu
+				<tm id="tm18"/>
+					en
+				<tm id="tm19"/>
+					étais
+				<tm id="tm20"/>
+					capable.
+				<tm id="tm21"/>
+					Encore
+				<tm id="tm22"/>
+					une
+				<tm id="tm23"/>
+					fois
+				<tm id="tm24"/>
+					bravo
+				<tm id="tm25"/>
+					!
+			</speech>
+        </bml>
+	<fml>
+		<!--<beat end="s1:tm15" id="1" importance="1.0" start="s1:tm3" type="LowLf1"/>
+		<deictic end="s1:tm24" id="2" importance="1.0" start="s1:tm9" type="me"/>
+        <ideationalunit end="s1:tm19-0.2" id="id_1" importance="1.0" main="im_8" start="s1:tm0-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm20-0.2" id="im_8" importance="1.0" indexword="13" previous="true" start="s1:tm11-0.2" type="whole"/>-->
+	</fml>
+</fml-apml>

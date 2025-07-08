@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+
+    
+        <bml>
+            <speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+                <tm id="tm1"/>Si
+				<tm id="tm2"/>tu
+				<tm id="tm3"/>te
+				<tm id="tm4"/>sens
+				<tm id="tm5"/>perdu,
+				<tm id="tm6"/>n'haisite
+				<tm id="tm7"/>pas
+				<tm id="tm8"/>a
+				<tm id="tm9"/>me
+				<tm id="tm10"/>demander
+				<tm id="tm11"/>de
+				<tm id="tm12"/>l'aide
+				<tm id="tm13"/>ou
+				<tm id="tm14"/>placer
+				<tm id="tm15"/>diffairentes
+				<tm id="tm16"/>piaices
+				<tm id="tm17"/>et
+				<tm id="tm18"/>aicouter
+				<tm id="tm19"/>mes
+				<tm id="tm20"/>indications
+				<tm id="tm21"/>sur
+				<tm id="tm22"/>leurs
+				<tm id="tm23"/>positions.
+				<tm id="tm24"/>On
+				<tm id="tm25"/>va
+				<tm id="tm26"/>y
+				<tm id="tm27"/>arriver
+				<tm id="tm28"/>!
+
+</speech>
+        </bml>
+    
+    
+        <ideationalunit end="s1:tm27-0.2" id="id_1" importance="1.0" main="im_6" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm11-0.2" id="im_6" importance="1.0" start="s1:tm10-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm19-0.2" id="im_9" importance="1.0" start="s1:tm18-0.2" type="enablement"/>
+        <imageschema POSroot="noun" end="s1:tm24-0.2" id="im_11" importance="1.0" indexword="22" start="s1:tm22-0.2" type="object"/>
+        <imageschema POSroot="noun" end="s1:tm29-0.2" id="im_14" importance="1.0" indexword="27" start="s1:tm27-0.2" type="object"/>
+    
+
+
+</fml>
+</fml-apml>

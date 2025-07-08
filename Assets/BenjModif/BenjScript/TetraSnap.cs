@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using System.Collections.Generic;
 
 public class SimpleTetraminoSnap : MonoBehaviour
@@ -11,8 +12,15 @@ public class SimpleTetraminoSnap : MonoBehaviour
     public Material previewGoodMaterial; 
     public Material previewBadMaterial;
 
+    [Header("Events")]
+    public UnityEvent isFinishedEvent;
+
     private LeapGrabObject grabSystem;
     private List<GameObject> previewCubes = new List<GameObject>();
+
+    private GameObject lastSnappedTetramino = null;
+    public Dictionary<GameObject, Vector3> initialPositions = new Dictionary<GameObject, Vector3>();
+   
 
     void Start()
     {
@@ -37,12 +45,38 @@ public class SimpleTetraminoSnap : MonoBehaviour
                 ShowPreview(tetramino);
             }
         }
-
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            Debug.Log("Annuler la dernière action");
+            UndoLastAction();
+        }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Debug.Log("Réinitialiser tous les Tétraminos");
+            ResetAllTetraminos();
+        }
         // if (IsBoardFull()) {
         //     Debug.Log("Plateau rempli - plus assez d'espace libre !");
         // }
     }
 
+    public void UndoLastAction()
+    {
+        if (lastSnappedTetramino != null && initialPositions.ContainsKey(lastSnappedTetramino))
+        {
+            lastSnappedTetramino.transform.position = initialPositions[lastSnappedTetramino];
+        }
+    }
+    public void ResetAllTetraminos()
+    {
+        foreach (GameObject t in GameObject.FindGameObjectsWithTag("iii"))
+        {
+            if (initialPositions.ContainsKey(t))
+            {
+                t.transform.position = initialPositions[t];
+            }
+        }
+    }
     void ShowPreview(GameObject tetramino)
     {
         Vector3 snapPos = GetSnapPosition(tetramino.transform.position);
@@ -163,7 +197,7 @@ public class SimpleTetraminoSnap : MonoBehaviour
 
         int largestFreeArea = GetLargestFreeArea(board);
 
-        if (largestFreeArea < 4)
+        if (largestFreeArea == 0)
         {
             Debug.Log($"Plus grande zone libre: {largestFreeArea} cases - plateau probablement plein");
             return true;
@@ -227,8 +261,8 @@ public class SimpleTetraminoSnap : MonoBehaviour
             {
                 Vector3 localPos = chessboard.InverseTransformPoint(child.position);
 
-                int x = Mathf.RoundToInt((localPos.x - offset.x) / tileSize);
-                int z = Mathf.RoundToInt((localPos.z - offset.z) / tileSize);
+                int x = Mathf.FloorToInt((localPos.x - offset.x + tileSize * 0.5f) / tileSize);
+                int z = Mathf.FloorToInt((localPos.z - offset.z + tileSize * 0.5f) / tileSize);
 
                 if (x >= 0 && x < board.width && z >= 0 && z < board.height)
                 {
@@ -252,6 +286,8 @@ public class SimpleTetraminoSnap : MonoBehaviour
     public void SnapToGrid(GameObject tetramino)
     {
         if (tetramino == null || !tetramino.CompareTag("iii")) return;
+
+        lastSnappedTetramino = tetramino;
 
         Vector3 snapPos = GetSnapPosition(tetramino.transform.position);
 
@@ -282,6 +318,7 @@ public class SimpleTetraminoSnap : MonoBehaviour
 
         if (IsBoardFull())
         {
+            isFinishedEvent.Invoke();
             Debug.Log("Plateau rempli - plus assez d'espace libre !");
         }
     }

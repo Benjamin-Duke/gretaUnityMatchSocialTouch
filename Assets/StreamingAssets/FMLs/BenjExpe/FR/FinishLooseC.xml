@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+
+    
+        <bml>
+            <speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+                <description level="1" type="gretabml">
+                    <reference>tmp/from-fml-apml.pho</reference>
+                </description>
+                <tm id="tm1"/>Ce
+                <tm id="tm2"/>naitait
+                <tm id="tm3"/>
+                <tm id="tm4"/>pas
+                <tm id="tm5"/>évident,
+                <tm id="tm6"/>mais
+                <tm id="tm7"/>tu
+                <tm id="tm8"/>as
+                <tm id="tm9"/>tout
+                <tm id="tm10"/>donné.
+                <tm id="tm11"/>Tu
+                <tm id="tm12"/>ten
+                <tm id="tm13"/>es
+                <tm id="tm14"/>super
+                <tm id="tm15"/>bien
+                <tm id="tm16"/>sorti
+                <tm id="tm17"/>jusquau
+                <tm id="tm18"/>bout,
+                <tm id="tm19"/>et
+                <tm id="tm20"/>cest
+                <tm id="tm21"/>tout
+                <tm id="tm22"/>ce
+                <tm id="tm23"/>qui
+                <tm id="tm24"/>compte.
+            </speech>
+        </bml>
+        <fml>
+        <fml/>
+    
+    
+        <ideationalunit end="s1:tm22-0.2" id="id_1" importance="1.0" main="im_5" start="s1:tm1-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm11-0.2" id="im_5" importance="1.0" indexword="9" start="s1:tm9-0.2" type="object"/>
+    
+
+
+</fml>
+</fml-apml>

@@ -27,12 +27,7 @@ namespace autodeskcharacter.bapmapper
 
         public virtual void applyBap(AnimationParametersFrame bf)
         {
-            // if (needsUpdate(bf)) bone.localRotation = postRotation * getRotation(bf) * preRotation;
-                if (needsUpdate(bf))
-            {
-                Debug.Log($"{bone.name} reçoit une rotation {getRotation(bf).eulerAngles}");
-                bone.localRotation = postRotation * getRotation(bf) * preRotation;
-            }
+            if (needsUpdate(bf)) bone.localRotation = postRotation * getRotation(bf) * preRotation;
         }
 
         public virtual bool needsUpdate(AnimationParametersFrame bf)

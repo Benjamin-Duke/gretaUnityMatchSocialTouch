@@ -88,6 +88,7 @@ public class GretaCharacterAnimator : MonoBehaviour
         agentPlaying = false;
 
         _currentAudioSource = getBone("Head").gameObject.AddComponent<AudioSource>();
+        _currentAudioSource.spatialBlend = 1.0f;
         audioFilePlayer = new AudioFilePlayer();
     }
 
@@ -754,7 +755,6 @@ public class GretaCharacterAnimator : MonoBehaviour
         bapframe = concatenator.concatenateJoints(bapframe);
         foreach (var mapper in bapMappers) mapper.applyBap(bapframe);
     }
-    
     private void LateUpdate()
     {
         // Réapplique la dernière frame BAP pour écraser l'Animator

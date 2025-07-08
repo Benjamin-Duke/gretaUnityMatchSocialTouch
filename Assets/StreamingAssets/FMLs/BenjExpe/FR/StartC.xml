@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fml-apml>
+        <bml>
+			<speech id="s1" language="french" start="0.0" text="" type="SAPI4" voice="cereproc">
+				<description level="1" type="gretabml">
+					<reference>tmp/from-fml-apml.pho</reference>
+				</description>
+				<tm id="tm1"/>
+					Voici
+				<tm id="tm2"/>
+					le
+				<tm id="tm3"/>
+					dernier
+				<tm id="tm4"/>
+					jeu
+				<tm id="tm5"/>
+					qu'
+				<tm id="tm6"/>
+					on
+				<tm id="tm7"/>
+					jouera
+				<tm id="tm8"/>
+					ensemble.
+				<tm id="tm9"/>
+					C'est
+				<tm id="tm10"/>
+					le
+				<tm id="tm11"/>
+					plus
+				<tm id="tm12"/>
+					difficile
+				<tm id="tm13"/>
+					mais
+				<tm id="tm14"/>
+					vu
+				<tm id="tm15"/>
+					comment
+				<tm id="tm16"/>
+					tu
+				<tm id="tm17"/>
+					t'en
+				<tm id="tm18"/>
+					sort,
+				<tm id="tm19"/>
+					c'est
+				<tm id="tm20"/>
+					sûr
+				<tm id="tm21"/>
+					que
+				<tm id="tm22"/>
+					tu
+				<tm id="tm23"/>
+					vas
+				<tm id="tm24"/>
+					le
+				<tm id="tm25"/>
+					réussir.
+				<tm id="tm26"/>
+					Je
+				<tm id="tm27"/>
+					crois
+				<tm id="tm28"/>
+					en
+				<tm id="tm29"/>
+					toi.
+				<tm id="tm30"/>
+					Dès
+				<tm id="tm31"/>
+					que
+				<tm id="tm32"/>
+					tu
+				<tm id="tm33"/>
+					es
+				<tm id="tm34"/>
+					prêt
+				<tm id="tm35"/>
+					appuie
+				<tm id="tm36"/>
+					sur
+				<tm id="tm37"/>
+					le
+				<tm id="tm38"/>
+					bouton
+				<tm id="tm39"/>
+					start.
+			</speech>
+        </bml>
+	<fml>
+		<emotion id="e1" type="small_joy" start="0" end="25" importance="1.0"/>
+		<!-- <emotion id="e1" type="joy_signal_1" start="0" end="25" importance="1.0"/> -->
+		<beat end="s1:tm15" id="1" importance="1.0" start="s1:tm3" type="LowLf1"/>
+		<deictic end="s1:tm24" id="2" importance="1.0" start="s1:tm9" type="me"/>
+        <ideationalunit end="s1:tm19-0.2" id="id_1" importance="1.0" main="im_8" start="s1:tm0-0.2"/>
+        <imageschema POSroot="noun" end="s1:tm20-0.2" id="im_8" importance="1.0" indexword="13" previous="true" start="s1:tm11-0.2" type="whole"/>
+	</fml>
+</fml-apml>
