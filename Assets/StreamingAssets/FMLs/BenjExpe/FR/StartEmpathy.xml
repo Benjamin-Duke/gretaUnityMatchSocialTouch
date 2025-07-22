@@ -38,23 +38,25 @@
             <tm id="tm16"/>
                 mieux.
             <tm id="tm17"/>
-                Quand
             <tm id="tm18"/>
-                tu
             <tm id="tm19"/>
-                es
+                Quand
             <tm id="tm20"/>
-                prêt,
+                tu
             <tm id="tm21"/>
-                appuie
+                es
             <tm id="tm22"/>
-                sur
+                prêt,
             <tm id="tm23"/>
-                le
+                appuie
             <tm id="tm24"/>
-                bouton
+                sur
             <tm id="tm25"/>
-                start.
+                le
+            <tm id="tm26"/>
+                bouton
+            <tm id="tm27"/>
+                start
         </speech>
     </bml>
     <fml>

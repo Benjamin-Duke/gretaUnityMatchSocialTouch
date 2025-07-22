@@ -35,16 +35,21 @@ public class ArmContact : MonoBehaviour
     private int tapSoundID = 0;
     private int hitSoundID = 0;
 
+    private ScenarioManagerB scenarioManager;
+
     void Start()
     {
         strokeInstance = RuntimeManager.CreateInstance(strokeEvent);
         rubbingInstance = RuntimeManager.CreateInstance(rubbingEvent);
         tapInstance = RuntimeManager.CreateInstance(tapEvent);
         hitInstance = RuntimeManager.CreateInstance(hitEvent);
+
+        scenarioManager = FindObjectOfType<ScenarioManagerB>();
     }
 
     void Update()
     {
+
         if (isChoiceEnabled)
         {
             strokeInstance.setParameterByName("soundChoice", soundChoiceID);
@@ -58,6 +63,7 @@ public class ArmContact : MonoBehaviour
         }
     }
 
+
     public void SetSoundIDs(string animName, int soundChoice)
     {
         if (animName == "caresse") caresseSoundID = soundChoice;
@@ -70,6 +76,7 @@ public class ArmContact : MonoBehaviour
     {
 
         if (!(other.CompareTag("CamilleCollision") || other.CompareTag("CamilleEtheral"))) return;
+        
 
         AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(animatorLayer);
         //Debug.Log("Current animator state: " + stateInfo.fullPathHash);
@@ -85,6 +92,12 @@ public class ArmContact : MonoBehaviour
                 strokeInstance.setParameterByName("soundChoice", caresseSoundID);
                 strokeInstance.start();
                 TCPManager.Instance?.EnqueueData($"{Caresse}:{caresseSoundID}");
+
+                if (scenarioManager != null && scenarioManager.isTimerEnabled)
+                {
+                    Debug.Log("Touch timer started");
+                    scenarioManager.StartTouchTimer("Caresse");
+                }
             }
         }
         else if (stateInfo.IsName("frot"))
@@ -99,6 +112,13 @@ public class ArmContact : MonoBehaviour
                 rubbingInstance.setParameterByName("soundChoice", frotSoundID);
                 rubbingInstance.start();
                 TCPManager.Instance?.EnqueueData($"{Frot}:{frotSoundID}");
+
+                if (scenarioManager != null && scenarioManager.isTimerEnabled)
+                {
+                    Debug.Log("Touch timer started");
+                    scenarioManager.StartTouchTimer("Frottement");
+                }
+                
             }
         }
         else if (stateInfo.IsName("tap"))
@@ -113,6 +133,12 @@ public class ArmContact : MonoBehaviour
                 tapInstance.setParameterByName("soundChoice", tapSoundID);
                 tapInstance.start();
                 TCPManager.Instance?.EnqueueData($"{Tap}:{tapSoundID}");
+                
+                if (scenarioManager != null && scenarioManager.isTimerEnabled)
+                {
+                    Debug.Log("Touch timer started");
+                    scenarioManager.StartTouchTimer("Tapotement");
+                };
             }
         }
         else if (stateInfo.IsName("hit"))
@@ -127,6 +153,12 @@ public class ArmContact : MonoBehaviour
                 hitInstance.setParameterByName("soundChoice", hitSoundID);
                 hitInstance.start();
                 TCPManager.Instance?.EnqueueData($"{Hit}:{hitSoundID}");
+
+                if (scenarioManager != null && scenarioManager.isTimerEnabled)
+                {
+                    Debug.Log("Touch timer started");
+                    scenarioManager.StartTouchTimer("Frappe");
+                }
             }
         }
     }

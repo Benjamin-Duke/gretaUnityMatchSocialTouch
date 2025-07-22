@@ -7,6 +7,13 @@ public class HeadDirectionAndGaze_CameraBased : MonoBehaviour
     public float gazeDistance = 10f;          // Distance max du regard
     public Transform targetParent; // à assigner dans l'inspecteur
 
+    private ScenarioManagerB scenarioManager;
+
+    public void Start()
+    {
+        scenarioManager = FindObjectOfType<ScenarioManagerB>();
+    }
+
     void Update()
     {
         if (vrCamera == null)
@@ -42,7 +49,8 @@ public class HeadDirectionAndGaze_CameraBased : MonoBehaviour
             if (hit.collider.transform.IsChildOf(targetParent))
             {
                 Debug.DrawRay(gazeRay.origin, gazeRay.direction * hit.distance, Color.green);
-                Debug.Log("Regarde enfant de " + targetParent.name + " : " + hit.collider.gameObject.name);
+                // Debug.Log("Regarde enfant de " + targetParent.name + " : " + hit.collider.gameObject.name);
+                scenarioManager.StopTouchTimer();
             }
         }
         else

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
 
 public class ScenarioManagerB : MonoBehaviour
 {
@@ -28,6 +29,13 @@ public class ScenarioManagerB : MonoBehaviour
     private GameObject timerB;
 
     private bool fmlTriggered = false;
+
+    public bool isTimerEnabled = false;
+    private bool isTouchTimerRunning = false;
+    private float touchTimer = 0f;
+    private string currentTouchAnimation = "";
+    public string fileName = "touch_timer_log.csv";
+
 
     public enum ScenarioType
     {
@@ -122,7 +130,7 @@ public class ScenarioManagerB : MonoBehaviour
                     { "OnStartGame", new FmlParams("StartEmpathyGame", "Dialog") },
                     { "OnFinishGame", new FmlParams("FinishGameWinC", "Dialog") },
                     { "OnFinishGameWithTimer", new FmlParams("FinishLooseC", "Dialog") },
-                    { "OnMidTime", new FmlParams("DirectAttentionTime", "Dialog") },
+                    { "OnMidTime", new FmlParams("DirectAttentionTimeWithTips", "Dialog") },
                     { "OnEnd", new FmlParams("End", "Dialog") }
                 }
             },
@@ -157,10 +165,18 @@ public class ScenarioManagerB : MonoBehaviour
     }
     void Update()
     {
+        if (isTouchTimerRunning)
+        {
+            touchTimer += Time.deltaTime;
+            if (touchTimer >= 15f) 
+            {
+                StopTouchTimer();
+            }
+        }
         if (Input.GetKeyDown(KeyCode.D))
         {
             gretaManager.expFolder = "BenjExpe";
-            
+
             gretaAnimator.useBapAnimation = true;
             gretaManager.PlayFml("ResetPose", "ResetPose");
         }
@@ -240,12 +256,40 @@ public class ScenarioManagerB : MonoBehaviour
             gretaManager.expFolder = "BenjExpe";
             SetScenario(ScenarioType.Tutoriel);
 
-            boardGenerator.GenerateBoard(4, 3);
-            SetActivePuzzle(puzzleWelcome);
-            buttonReset.SetActive(true);
-            buttonUndo.SetActive(true);
-
             OnStart();
+        }
+    }
+
+    public void StartTouchTimer(string animationName = "")
+    {
+        isTouchTimerRunning = true;
+        touchTimer = 0f;
+        currentTouchAnimation = animationName;
+    }
+
+    // Appelle cette méthode pour arrêter le timer
+    public void StopTouchTimer()
+    {
+        if (isTouchTimerRunning)
+        {
+            isTouchTimerRunning = false;
+            Debug.Log("Temps écoulé entre le toucher et le regard : " + touchTimer + " secondes pour l'animation : " + currentTouchAnimation);
+            LogTouchTimerToCSV(currentTouchAnimation, touchTimer);
+            currentTouchAnimation = "";
+        }
+    }
+
+    private void LogTouchTimerToCSV(string animation, float time)
+    {
+        string filePath = "D:/Users/bdukatar/perso/STAGE_ANR_Match/i/Expe/" + fileName;
+        bool fileExists = File.Exists(filePath);
+
+        using (StreamWriter writer = new StreamWriter(filePath, true))
+        {
+            if (!fileExists)
+                writer.WriteLine("Animation,Time"); // En-tête si nouveau fichier
+
+            writer.WriteLine($"{animation},{time}");
         }
     }
 
@@ -360,12 +404,19 @@ public class ScenarioManagerB : MonoBehaviour
             {
                 if (gretaManager != null && param != null)
                     gretaManager.PlayFml(param.gesture, param.type);
-                    if (currentScenario == ScenarioType.Celebration && animName == "caresse")
+                    if (currentScenario == ScenarioType.Celebration && (animName == "caresse" || animName == "hit"))
                     {
                         Debug.Log("Celebration scenario: waiting 10 seconds before ending");
                         yield return new WaitForSeconds(10f);
                         Debug.Log("Ending Celebration scenario");
                         OnEnd();
+                    }
+                    if (currentScenario == ScenarioType.Tutoriel && animName == "tap")
+                    {
+                        boardGenerator.GenerateBoard(4, 3);
+                        SetActivePuzzle(puzzleWelcome);
+                        buttonReset.SetActive(true);
+                        buttonUndo.SetActive(true);
                     }
                 fmlTriggered = true;
 
@@ -398,7 +449,7 @@ public class ScenarioManagerB : MonoBehaviour
                 gretaAnimator.useBapAnimation = false;
                 armContact.SetSoundIDs("tap", 0);
                 animTrigg.PlayAnimation("tap");
-                StartCoroutine(WaitAndPlayFml("tap", param, 0.10f));
+                StartCoroutine(WaitAndPlayFml("tap", param, 0.35f));
             }
             else
             {
@@ -409,20 +460,21 @@ public class ScenarioManagerB : MonoBehaviour
         }
         if (currentScenario == ScenarioType.Empathy)
         {
-            gretaAnimator.useBapAnimation = true;
+            gretaAnimator.useBapAnimation = false;
             gretaManager.PlayFml(param.gesture, param.type);
+            animator.CrossFade("Start1", 0.2f);
         }
         if (currentScenario == ScenarioType.Attention)
         {
-            
-            gretaAnimator.useBapAnimation = true;
+            gretaAnimator.useBapAnimation = false;
             gretaManager.PlayFml(param.gesture, param.type);
+            animator.CrossFade("Start2", 0.2f);
         }
         if (currentScenario == ScenarioType.Celebration)
         {
-            
-            gretaAnimator.useBapAnimation = true;
+            gretaAnimator.useBapAnimation = false;
             gretaManager.PlayFml(param.gesture, param.type);
+            animator.CrossFade("Start3", 0.2f);
         }
     }
 
@@ -448,8 +500,9 @@ public class ScenarioManagerB : MonoBehaviour
 
         if (currentScenario == ScenarioType.Tutoriel)
         {
-            gretaAnimator.useBapAnimation = true;
+            gretaAnimator.useBapAnimation = false;
             gretaManager.PlayFml(param.gesture, param.type);
+            animator.CrossFade("Tuto", 0.2f);
         }
         if (currentScenario == ScenarioType.Empathy)
         {
@@ -531,7 +584,7 @@ public class ScenarioManagerB : MonoBehaviour
         {
             gretaAnimator.useBapAnimation = false;
             animTrigg.PlayAnimation("tap");
-            StartCoroutine(WaitAndPlayFml("tap", param, 0.35f));
+            StartCoroutine(WaitAndPlayFml("tap", param, 0.30f));
         }
         else
         {
@@ -546,7 +599,8 @@ public class ScenarioManagerB : MonoBehaviour
         var param = GetFmlParams("OnEnd");
         if (gretaManager != null && param != null)
             
-            gretaAnimator.useBapAnimation = true;
+            gretaAnimator.useBapAnimation = false;
             gretaManager.PlayFml(param.gesture, param.type);
+            animator.CrossFade("End", 0.2f);
     }
 }

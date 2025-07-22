@@ -32,12 +32,13 @@ public class ButtonVR : MonoBehaviour
         {
             Debug.Log($"[ButtonVR] Appui détecté sur le bouton {buttonID} par {other.name}");
             // Vérifier si le bouton peut être appuyé
-            if (buttonManager != null && ButtonManager.CanPress(this))
-            {
-                PressButton();
-                ButtonManager.RegisterPress(this);
-            }
-            else if (snapManager != null)
+            // if (buttonManager != null && ButtonManager.CanPress(this))
+            // {
+            //     PressButton();
+            //     ButtonManager.RegisterPress(this);
+            // }
+            // else 
+            if (snapManager != null)
             {
                 if (buttonID == "Undo")
                 {

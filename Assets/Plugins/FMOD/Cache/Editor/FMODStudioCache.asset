@@ -139,10 +139,10 @@ MonoBehaviour:
   Path: ../FMOD/test/Build/Desktop/Touch.bank
   Name: Touch
   StudioPath: bank:/Touch
-  lastModified: 638874950062186373
+  lastModified: 638887927151182103
   FileSizes:
   - Name: Desktop
-    Value: 1107904
+    Value: 1109888
   Exists: 1
 --- !u!114 &-4218361800653415364
 MonoBehaviour:
@@ -269,10 +269,10 @@ MonoBehaviour:
   Path: ../FMOD/test/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638870550998793834
+  lastModified: 638876691680697816
   FileSizes:
   - Name: Desktop
-    Value: 1074
+    Value: 6048
   Exists: 1
 --- !u!114 &-1377882284501028331
 MonoBehaviour:
@@ -357,13 +357,14 @@ MonoBehaviour:
   - {fileID: 5286574938694828976}
   - {fileID: -2769647401018876856}
   - {fileID: -1377882284501028331}
+  - {fileID: 1859715871434953494}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1500871689220649151}
   StringsBanks:
   - {fileID: 1020255256447942299}
   cacheVersion: 131847
-  cacheTime: 638874950062186373
+  cacheTime: 638887927151182103
   SerializableEventsDict:
   - key: event:/TestTouch/testTapotement
     index: 0
@@ -391,6 +392,8 @@ MonoBehaviour:
     index: 11
   - key: event:/Tap/TaoExpe
     index: 12
+  - key: event:/HitTap/HitExpe 2
+    index: 13
 --- !u!114 &1020255256447942299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -406,10 +409,10 @@ MonoBehaviour:
   Path: ../FMOD/test/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638870550998808850
+  lastModified: 638876691680712848
   FileSizes:
   - Name: Desktop
-    Value: 1620
+    Value: 1664
   Exists: 1
 --- !u!114 &1636096672678376332
 MonoBehaviour:
@@ -463,6 +466,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 5
   Length: 2000
+--- !u!114 &1859715871434953494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/HitTap/HitExpe 2
+  m_EditorClassIdentifier: 
+  Path: event:/HitTap/HitExpe 2
+  Guid:
+    Data1: 814818071
+    Data2: 1114819655
+    Data3: -633499218
+    Data4: 1512020523
+  Banks:
+  - {fileID: -1500871689220649151}
+  - {fileID: -4882503165472299921}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1300
 --- !u!114 &2014064569315684232
 MonoBehaviour:
   m_ObjectHideFlags: 0
